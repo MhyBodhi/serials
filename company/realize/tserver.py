@@ -65,6 +65,7 @@ class TSerial(Basic):
         while True:
             logging.info("判断transmit是否准备...")
             if self.redis.hget(self.tname,"transmit")=="1":
+                logging.info(("传输源文件srcfile大小", os.path.getsize(self.srcpath)))
                 while True:
                     if times > self.times:
                         break
@@ -72,11 +73,9 @@ class TSerial(Basic):
                     if self.trstatus=="write":
                         self.fileenable = int(self.redis.hget(self.tname,"fileenable"))
                         if self.fileenable:
-                            print("fileenable",self.fileenable)
                             data = self.srcfile.read(1024)
                             if data:
                                 self.bytes_number = self.ser.write(data)
-                                logging.info(("写入字节数",self.bytes_number))
                                 self.redis.hset(self.tname,"bytes_number",self.bytes_number)
                                 self.redis.hset(self.tname, "trstatus", "read")
                             else:
@@ -92,7 +91,6 @@ class TSerial(Basic):
                                 logging.info("测试单个ascii码")
                                 sendstr = random.choice(self.ascii)
                                 self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                                logging.info(sendstr)
                                 self.ser.flush()
                                 times -= 1
                                 count += 1
@@ -100,7 +98,6 @@ class TSerial(Basic):
                                 logging.info("测试多个ascii码")
                                 sendstr = "".join(random.sample(self.ascii, random.randint(2, 255)))
                                 self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                                logging.info(sendstr)
                                 self.ser.flush()
                                 times -= 1
                                 count += 1
@@ -108,12 +105,12 @@ class TSerial(Basic):
                                 logging.info("测试全部ascii码")
                                 sendstr = self.ascii
                                 self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                                logging.info(sendstr)
                                 self.ser.flush()
                                 count = 1
+                                logging.info(("传输源文件srcfile大小", os.path.getsize(self.srcpath)))
                                 self.srcfile = open(r"%s"%self.srcpath, "rb")
                                 self.redis.hset(self.tname, "srcfile", 1)
-
+                            logging.info(("写入的字节数大小:",self.bytes_number))
                             self.redis.hset(self.tname, "bytes_number", self.bytes_number)
                             self.redis.hset(self.tname, "ascii", sendstr)
                             self.redis.hset(self.tname, "trstatus", "read")

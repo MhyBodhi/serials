@@ -1,4 +1,5 @@
 import time
+import os
 from basic.basic import logging,Basic
 
 
@@ -54,6 +55,7 @@ class RSerial(Basic):
             if times>3*self.times:
                 break
             self.trstatus = self.redis.hget(self.tstatus,"trstatus")
+
             if self.trstatus=="read":
                 rdata = ""
                 self.bytes_number = int(self.redis.hget(self.tstatus, "bytes_number"))
@@ -66,15 +68,15 @@ class RSerial(Basic):
                     else:
                         if filestatus:
                             self.dstfile.close()
+                            logging.info(("接收生成文件大小",os.path.getsize(self.fileprefix+"dst")))
                             if self.getFileMd5(self.fileprefix+"dst")==self.redis.hget(self.tstatus,"srcmd5"):
                                 self.md5_success += 1
-                        logging.info(("接收到的bytes-number", self.bytes_number))
                         try:
                             rdata = self.ser.read(self.bytes_number).decode("utf-8")
                         except:
                             pass
                         self.startcontent = self.redis.hget(self.tstatus,"ascii")
-                        logging.info(("接收到的数据：",rdata))
+                        logging.info(("接收到的字节大小：",len(rdata.encode("utf-8"))))
                         yield rdata == self.startcontent
                         if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
                             self.redis.hset(self.tstatus,"fileenable",1)
