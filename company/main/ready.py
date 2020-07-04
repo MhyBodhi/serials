@@ -40,7 +40,7 @@ def main(baudrate,args,server):
         i.start()
     for j in plist:
         j.join()
-    if server == "r":
+    if server == "r" or server == "tr":
         report()
 
 def report():
