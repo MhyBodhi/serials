@@ -5,19 +5,17 @@ sys.path.append("..")
 import os
 import hashlib
 import csv
-import argparse
 import random
 from functools import reduce
 import threading
-from threading import Lock
-import serial
 import requests
 from basic.basic import logging
 
 class Serial():
-    def __init__(self,ser,lock,status="write"):
+    def __init__(self,ser,lock,args,status="write"):
         self.status = status
         self.ser = ser
+        self.args = args
         self.lock = lock
         self.startcontent = ""
         self.endcontent = ""
@@ -179,7 +177,7 @@ class Serial():
                 self.lock.release()
 
     def getFile(self):
-        print("args.p",args.p)
+        print("args.p",self.args.p)
         print("url",self.url)
         res = requests.get(self.url).content
         try:
@@ -257,62 +255,3 @@ class Serial():
             l_csv.writerow([])
 
 
-def run(ser):
-    lock = Lock()
-    r = Serial(ser, lock)
-    r.run()
-
-def main(baudrate):
-    devices = []
-    devices.extend(args.devices.strip().split(","))
-    sers = []
-    for device in devices:
-        try:
-            sers.append(serial.Serial(device, baudrate,timeout=None,write_timeout=None))
-        except:
-            pass
-
-    plist = []
-    if not sers:
-        logging.info("设备读取失败")
-        return
-    for ser in sers:
-        plist.append(threading.Thread(target=run, args=(ser,)))
-    for i in plist:
-        i.start()
-    for i in plist:
-        i.join()
-    report()
-
-def report():
-    csvfiles = [file for file in os.listdir(".") if file.endswith("csv")]
-    try:
-        with open("total.csv", "a", newline="", encoding="utf-8") as f:
-            fw_csv = csv.writer(f)
-            for csvfile in csvfiles:
-                with open(csvfile, "r", encoding="utf-8") as fl:
-                    fr_csv = csv.reader(fl)
-                    for row in fr_csv:
-                        fw_csv.writerow(row)
-    except Exception as e:
-        return
-if __name__ == '__main__':
-    try:
-        os.remove("total.csv")
-    except:
-        pass
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--times", type=int, default=10, help="test_times:number")
-    parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")
-    parser.add_argument("-b", default="115200", help="baudrates:eg.115200,9600...")
-    parser.add_argument("-p",default="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3455238864,153902017&fm=26&gp=0.jpg",help="url:download image eg.https://www.baidu.com/.../xxx.jpg")
-    parser.add_argument("-t", action='store_true', default=False, help="txserver:threading transmit data")
-    parser.add_argument("-r", action='store_true', default=False, help="rxserver:listening receive data")
-    args = parser.parse_args()
-    baudrates = []
-    baudrates.extend(args.b.strip().split(","))
-    if args.devices==None:
-        logging.info("请输入设备名称,-n")
-        parser.print_help()
-    for baudrate in baudrates:
-        main(baudrate)

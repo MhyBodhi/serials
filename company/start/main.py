@@ -1,9 +1,11 @@
 import csv
 import os
 import threading
+from threading import Lock
 import serial
 from realize.tserver import TSerial
 from realize.rserial import RSerial
+from trlocal.trlocal import Serial
 from basic.basic import logging
 
 
@@ -13,6 +15,10 @@ def run(ser,server,args):
         r.run()
     elif server=="r":
         r = RSerial(ser,args)
+        r.run()
+    elif server=="tr":
+        lock = Lock()
+        r = Serial(ser, lock)
         r.run()
 
 def main(baudrate,args,server):
