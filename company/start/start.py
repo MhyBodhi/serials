@@ -9,10 +9,10 @@ def start():
     parser.add_argument("-c", "--times", type=int, default=10, help="test_times:number")
     parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")
     parser.add_argument("-b", default="115200", help="baudrates:eg.115200,9600...")
-    parser.add_argument("-p",default="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3455238864,153902017&fm=26&gp=0.jpg",help="url:download image eg.https://www.baidu.com/.../xxx.jpg")
-    parser.add_argument("-t", action='store_true', default=False, help="txserver:threading transmit data")
-    parser.add_argument("-r", action='store_true', default=False, help="rxserver:listening receive dat")
-    parser.add_argument("-tr", action='store_true', default=False, help="trlocal:local transmit and receive data")
+    parser.add_argument("-p",default="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3455238864,153902017&fm=26&gp=0.jpg",help="path:Local address eg./home/kylin/a.jpg or network address eg.https://www.baidu.com/.../xxx.jpg")
+    parser.add_argument("-t", action='store_true', default=False, help="start-up txserver:listening transmit data")
+    parser.add_argument("-r", action='store_true', default=False, help="start-up rxserver:listening receive data")
+    parser.add_argument("-tr", action='store_true', default=False, help="start-up trlocal:listening transmit and receive data On this machine")
     try:
         os.remove("../total.csv")
     except:
