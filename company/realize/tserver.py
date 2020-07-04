@@ -58,6 +58,7 @@ class TSerial(Basic):
                         self.redis.hset(self.tname,"ok",1)
                         logging.info("rserver准备就绪...")
                         break
+                    logging.info("发送本机设备名称...")
                     time.sleep(1)
                 break
             time.sleep(3)
