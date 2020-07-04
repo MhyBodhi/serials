@@ -54,4 +54,5 @@ def report():
                     for row in fr_csv:
                         fw_csv.writerow(row)
     except Exception as e:
+        print("生成总报告发生错误:",e)
         return
