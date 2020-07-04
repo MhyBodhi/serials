@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6b34ec0-4b7c-40d0-b361-da0409af9fac" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/main/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/main/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/realize/trserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/trserial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/main/ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/main/ready.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -55,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ready.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ready.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/company/main/ready.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1269">
-              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="230">
+              <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -91,7 +89,7 @@
       <file leaf-file-name="rserial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/realize/rserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1539">
+            <state relative-caret-position="486">
               <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -138,7 +136,6 @@
         <option value="$PROJECT_DIR$/company/run/tstart.bat" />
         <option value="$PROJECT_DIR$/company/run/tstart.sh" />
         <option value="$PROJECT_DIR$/company/run/trstart.sh" />
-        <option value="$PROJECT_DIR$/company/main/ready.py" />
         <option value="$PROJECT_DIR$/company/realize/rserial.py" />
         <option value="$PROJECT_DIR$/company/basic/test.py" />
         <option value="$PROJECT_DIR$/company/realize/tserial.py" />
@@ -146,6 +143,7 @@
         <option value="$PROJECT_DIR$/company/main/start.py" />
         <option value="$PROJECT_DIR$/company/realize/trserial.py" />
         <option value="$PROJECT_DIR$/company/basic/basic.py" />
+        <option value="$PROJECT_DIR$/company/main/ready.py" />
       </list>
     </option>
   </component>
@@ -317,7 +315,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2641166" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.12568305" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19489981" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27604976" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -666,31 +664,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/company/report/a.jpg" />
     <entry file="file://$PROJECT_DIR$/company/report/a.txt" />
-    <entry file="file://$PROJECT_DIR$/company/main/ready.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/company/basic/test.py" />
     <entry file="file://$PROJECT_DIR$/company/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/company/main/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,9 +692,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/company/realize/rserial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
+        <state relative-caret-position="486">
           <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -724,12 +712,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
+    <entry file="file://$PROJECT_DIR$/company/main/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/main/ready.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
