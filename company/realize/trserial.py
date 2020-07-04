@@ -33,7 +33,7 @@ class TRSerial():
         self.ac_fail = 0
         self.ac_success = 0
         #测试次数
-        self.times = args.times
+        self.times = int(args.times)
         #文件对象
         self.srcfile = None
         self.dstfile = None

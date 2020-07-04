@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6b34ec0-4b7c-40d0-b361-da0409af9fac" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/company/main/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/main/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/realize/trserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/trserial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/serials$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1593851845260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/company/basic" />
-    <SUITE FILE_PATH="coverage/serials$test.coverage" NAME="test Coverage Results" MODIFIED="1593850780288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/company" />
+    <SUITE FILE_PATH="coverage/serials$test.coverage" NAME="test Coverage Results" MODIFIED="1593856325737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/company" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trserial.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trserial.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/company/realize/trserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
                 <element signature="e#22#33#0" expanded="true" />
               </folding>
@@ -32,7 +33,7 @@
       <file leaf-file-name="tserial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/realize/tserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="1080">
               <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -44,8 +45,8 @@
       <file leaf-file-name="basic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -65,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/main/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="216">
               <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -89,7 +90,7 @@
       <file leaf-file-name="rserial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/realize/rserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
+            <state relative-caret-position="1539">
               <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -136,14 +137,14 @@
         <option value="$PROJECT_DIR$/company/run/tstart.bat" />
         <option value="$PROJECT_DIR$/company/run/tstart.sh" />
         <option value="$PROJECT_DIR$/company/run/trstart.sh" />
-        <option value="$PROJECT_DIR$/company/basic/basic.py" />
         <option value="$PROJECT_DIR$/company/main/ready.py" />
-        <option value="$PROJECT_DIR$/company/test.py" />
         <option value="$PROJECT_DIR$/company/realize/rserial.py" />
         <option value="$PROJECT_DIR$/company/basic/test.py" />
-        <option value="$PROJECT_DIR$/company/realize/trserial.py" />
         <option value="$PROJECT_DIR$/company/realize/tserial.py" />
         <option value="$PROJECT_DIR$/company/main/start.py" />
+        <option value="$PROJECT_DIR$/company/test.py" />
+        <option value="$PROJECT_DIR$/company/basic/basic.py" />
+        <option value="$PROJECT_DIR$/company/realize/trserial.py" />
       </list>
     </option>
   </component>
@@ -242,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Python.test">
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="serials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,8 +288,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -307,14 +308,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="0" width="1346" height="688" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52459013" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.50091076" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2641166" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3387978" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27604976" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -673,12 +675,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/test.py" />
     <entry file="file://$PROJECT_DIR$/company/basic/test.py" />
-    <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
+    <entry file="file://$PROJECT_DIR$/company/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/main/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -687,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/company/realize/rserial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
+        <state relative-caret-position="1539">
           <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -695,19 +703,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/realize/trserial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#22#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/company/realize/tserial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="1080">
           <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -715,12 +713,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/main/start.py">
+    <entry file="file://$PROJECT_DIR$/company/basic/basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="162">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/realize/trserial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="e#22#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
