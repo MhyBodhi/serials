@@ -12,7 +12,7 @@ def start():
     parser.add_argument("-p",default="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3455238864,153902017&fm=26&gp=0.jpg",help="path:Local address eg./home/kylin/a.jpg or network address eg.https://www.baidu.com/.../xxx.jpg")
     parser.add_argument("-t", action='store_true', default=False, help="start-up txserver:listening transmit data")
     parser.add_argument("-r", action='store_true', default=False, help="start-up rxserver:listening receive data")
-    parser.add_argument("-tr", action='store_true', default=False, help="start-up trlocal:listening transmit and receive data On this machine")
+    parser.add_argument("-tr", action='store_true', default=False, help="start-up trlocal:listening transmit and receive data on this machine")
     try:
         os.remove("../total.csv")
     except:
