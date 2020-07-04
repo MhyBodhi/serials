@@ -74,7 +74,7 @@ class RSerial(Basic):
                     else:
                         if filestatus:
                             self.dstfile.close()
-                            logging.info(("接收生成文件大小",os.path.getsize(self.dstpath)))
+                            logging.info(("接收生成文件大小",os.path.getsize(self.dstpath+self.filetype)))
                             if self.getFileMd5(self.dstpath+self.filetype)==self.redis.hget(self.tstatus,"srcmd5"):
                                 self.md5_success += 1
                         try:
