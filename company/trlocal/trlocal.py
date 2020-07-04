@@ -11,7 +11,7 @@ import threading
 import requests
 from basic.basic import logging
 
-class Serial():
+class TRSerial():
     def __init__(self,ser,lock,args,status="write"):
         self.status = status
         self.ser = ser

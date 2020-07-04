@@ -34,7 +34,7 @@ def start():
     elif args.r:
         server = "r"
     else:
-        logging.info("请输入参数确认发送或接收数据-t or -r \n本地测试请输入参数-tr")
+        logging.info("\n请输入参数确认发送或接收数据-t or -r \n本地自收发测试请输入参数-tr")
         parser.print_help()
         sys.exit()
     baudrates.extend(args.b.split(","))

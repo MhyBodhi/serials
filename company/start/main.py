@@ -5,7 +5,7 @@ from threading import Lock
 import serial
 from realize.tserver import TSerial
 from realize.rserial import RSerial
-from trlocal.trlocal import Serial
+from trlocal.trlocal import TRSerial
 from basic.basic import logging
 
 
@@ -18,7 +18,7 @@ def run(ser,server,args):
         r.run()
     elif server=="tr":
         lock = Lock()
-        r = Serial(ser, lock,args)
+        r = TRSerial(ser, lock,args)
         r.run()
 
 def main(baudrate,args,server):
