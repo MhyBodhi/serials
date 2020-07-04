@@ -121,7 +121,6 @@ class TSerial(Basic):
                             self.redis.hset(self.tname, "ascii", sendstr)
                             self.redis.hset(self.tname, "trstatus", "read")
                             times += 1
-                            time.sleep(0.5)
                 break
             time.sleep(3)
         self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read"})
