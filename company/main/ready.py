@@ -53,9 +53,5 @@ def report():
                     fr_csv = csv.reader(fl)
                     for row in fr_csv:
                         fw_csv.writerow(row)
-                try:
-                    os.remove("../report/"+csvfile)
-                except:
-                    pass
     except Exception as e:
         return
