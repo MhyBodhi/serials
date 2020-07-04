@@ -20,7 +20,7 @@ class Basic():
         # Tserver status
         self.tserverstatus = False
         # 测试次数
-        self.times = int(args.times)
+        self.times = args.times
         if self.times == 0:
             raise ValueError("times不能为0")
         #hkey
