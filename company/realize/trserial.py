@@ -182,16 +182,9 @@ class TRSerial():
         print("args.p",self.args.p)
         print("url",self.url)
         res = requests.get(self.url).content
-        try:
-                os.remove(self.fileprefix+"src."+self.url.split(".")[-1][0:3])
-        except:
-            pass
-        try:
-            with open(self.fileprefix+"src."+self.url.split(".")[-1][0:3],"wb") as f:
-                f.write(res)
-            logging.info("下载成功...")
-        except:
-            os.remove(self.fileprefix + "src." + self.url.split(".")[-1][0:3])
+        with open(self.srcpath,"wb") as f:
+            f.write(res)
+        logging.info("下载成功...")
 
     def getFileMd5(self,filename):
         if not os.path.isfile(filename):
