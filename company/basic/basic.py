@@ -10,7 +10,7 @@ class Basic():
     def __init__(self,ser,args):
         self.ser = ser
         self.fileprefix = "".join(self.ser.name.split("/"))
-        self.url = args.p
+        self.url = args.p.strip()
 
         # redis实例
         pool = redis.ConnectionPool(host='192.168.1.113', port=6379, decode_responses=True)

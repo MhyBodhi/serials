@@ -44,7 +44,7 @@ class TRSerial():
         #ascii码
         self.ascii = reduce(lambda x,y:x+y,map(lambda x:chr(x),range(256)))
         #下载jpg的url路径
-        self.url = args.p
+        self.url = args.p.strip()
         self.dstpath = "../resources/"+self.fileprefix + "dst." + self.url.split(".")[-1][0:3]
         if self.url.startswith("http"):
             try:
