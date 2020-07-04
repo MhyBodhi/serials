@@ -55,7 +55,6 @@ class TSerial(Basic):
             if self.redis.hget(self.tname,"read") == "0" and self.redis.hget(self.tname,"end") == "1":
                 self.redis.hset(self.tname, "write", 1)
                 logging.info("与rserver没有建立连接...")
-                logging.info(("self.tname",self.tname))
                 while True:
                     self.ser.write(self.ser.name.encode("utf-8"))
                     logging.info(("设备名称",self.ser.name))
