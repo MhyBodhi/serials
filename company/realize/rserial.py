@@ -10,8 +10,7 @@ logging = logging.getLogger()
 class RSerial(Basic):
     def __init__(self,ser,args):
         super().__init__(ser,args)
-        self.dstpath = "../resources/"+self.fileprefix+"dst"
-        self.dstfile = open(self.dstpath,"wb")
+        self.dstpath = "../resources/"+self.fileprefix+"dst."
         self.devices = self.redis.hvals("devices")
 
     def read(self):
@@ -53,8 +52,10 @@ class RSerial(Basic):
             if self.redis.hget(self.tstatus,"ok")=="1":
                 self.ser.reset_input_buffer()
                 break
+        self.filetype = self.redis.hget(self.tstatus,"filetype")
+        self.times = int(self.redis.hget(self.tstatus, "reporttimes"))
         self.redis.hset(self.tstatus, "transmit", 1)
-        self.times = int(self.redis.hget(self.tstatus,"reporttimes"))
+        self.dstfile = open(self.dstpath+self.filetype, "wb")
         logging.info("准备接收数据...")
         while True:
             if times>3*self.times:
@@ -74,7 +75,7 @@ class RSerial(Basic):
                         if filestatus:
                             self.dstfile.close()
                             logging.info(("接收生成文件大小",os.path.getsize(self.dstpath)))
-                            if self.getFileMd5(self.dstpath)==self.redis.hget(self.tstatus,"srcmd5"):
+                            if self.getFileMd5(self.dstpath+self.filetype)==self.redis.hget(self.tstatus,"srcmd5"):
                                 self.md5_success += 1
                         try:
                             rdata = self.ser.read(self.bytes_number).decode("utf-8")
@@ -85,7 +86,7 @@ class RSerial(Basic):
                         yield rdata == self.startcontent
                         if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
                             self.redis.hset(self.tstatus,"fileenable",1)
-                            self.dstfile = open(self.dstpath, "wb")
+                            self.dstfile = open(self.dstpath+self.filetype, "wb")
                         filestatus = 0
                         times += 1
                 if self.redis.hget(self.tstatus, "write") == "0":

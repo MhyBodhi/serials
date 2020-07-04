@@ -60,6 +60,7 @@ class TSerial(Basic):
                     self.ser.write(self.ser.name.encode("utf-8"))
                     logging.info(("设备名称",self.ser.name))
                     if self.redis.hget(self.tname,"read") == "1" and self.redis.hget(self.tname,"end") == "0":
+                        self.redis.hset(self.tname, "filetype", self.srcpath.split(".")[-1][0:3])
                         self.redis.hset(self.tname,"ok",1)
                         logging.info("rserver准备就绪...")
                         break
