@@ -31,10 +31,7 @@ class RSerial(Basic):
                 except Exception as e:
                     print("错误2:",e)
                 if self.device_name:
-                    logging.info("执行到了这里...")
                     self.tstatus = self.device_name + "status"
-                    logging.info(("self.tstatus", self.tstatus))
-                    logging.info(("缓冲区大小", self.ser.in_waiting))
                     self.redis.hmset(self.tstatus, {"read": 1})
                     self.redis.hmset(self.tstatus, {"end": 0})
                     logging.info("正在建立连接...")
