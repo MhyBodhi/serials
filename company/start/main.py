@@ -18,7 +18,7 @@ def run(ser,server,args):
         r.run()
     elif server=="tr":
         lock = Lock()
-        r = Serial(ser, lock)
+        r = Serial(ser, lock,args)
         r.run()
 
 def main(baudrate,args,server):
