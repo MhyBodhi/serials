@@ -57,6 +57,7 @@ class Basic():
 
     def getFile(self):
         res = requests.get(self.url).content
+        print("url",self.url)
         with open("../resources/"+self.fileprefix+"src."+self.url.split(".")[-1][0:3],"wb") as f:
             f.write(res)
 
