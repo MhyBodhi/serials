@@ -179,8 +179,6 @@ class TRSerial():
                 self.lock.release()
 
     def getFile(self):
-        print("args.p",self.args.p)
-        print("url",self.url)
         res = requests.get(self.url).content
         with open(self.srcpath,"wb") as f:
             f.write(res)
