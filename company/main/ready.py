@@ -3,10 +3,9 @@ import os
 import threading
 from threading import Lock
 import serial
-from realize.tserver import TSerial
+from realize.tserial import TSerial
 from realize.rserial import RSerial
-from trlocal.trlocal import TRSerial
-from basic.basic import logging
+from realize.trserial import TRSerial
 
 
 def run(ser,server,args):
@@ -24,17 +23,16 @@ def run(ser,server,args):
 def main(baudrate,args,server):
     devices = []
     devices.extend(args.devices.split(","))
-    logging.info((devices,baudrate))
+    print((devices,baudrate))
     sers = []
     for device in devices:
         try:
             sers.append(serial.Serial(device, baudrate, timeout=None))
         except:
             pass
-    logging.info(sers)
     plist = []
     if not sers:
-        logging.info("设备读取失败")
+        print("设备读取失败")
         return
     for ser in sers:
         plist.append(threading.Thread(target=run, args=(ser,server,args)))

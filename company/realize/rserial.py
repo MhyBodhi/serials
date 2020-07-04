@@ -1,6 +1,10 @@
 import time
 import os
-from basic.basic import logging,Basic
+import logging.config
+from basic.basic import Basic
+
+logging.config.fileConfig("../log/rlog.conf")
+logging = logging.getLogger()
 
 
 class RSerial(Basic):
@@ -89,7 +93,7 @@ class RSerial(Basic):
                 self.redis.hset(self.tstatus, "trstatus", "write")
 
     def run(self):
-        logging.info("start receive...")
+        logging.info("main receive...")
         results = self.read()
         for result in results:
             if result == False:

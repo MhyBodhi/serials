@@ -4,9 +4,8 @@ import csv
 from functools import reduce
 import redis
 import requests
-import logging.config
-logging.config.fileConfig("../log/log.conf")
-logging = logging.getLogger()
+
+
 class Basic():
     def __init__(self,ser,args):
         self.ser = ser

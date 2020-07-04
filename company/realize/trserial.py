@@ -1,15 +1,17 @@
 #_*_ coding:utf-8 _*_
 import time
 import sys
-sys.path.append("..")
 import os
 import hashlib
 import csv
 import random
+import logging.config
 from functools import reduce
 import threading
 import requests
-from basic.basic import logging
+
+logging.config.fileConfig("../log/trlog.conf")
+logging = logging.getLogger()
 
 class TRSerial():
     def __init__(self,ser,lock,args,status="write"):
@@ -69,7 +71,7 @@ class TRSerial():
                 logging.info("文件不存在...")
                 raise FileNotFoundError
 
-        logging.info("start...")
+        logging.info("main...")
     def read(self):
         times = 1
         while True:

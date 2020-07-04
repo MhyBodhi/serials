@@ -2,8 +2,13 @@ import os
 import sys
 import time
 import random
+import logging.config
 import requests
-from basic.basic import Basic,logging
+from basic.basic import Basic
+
+logging.config.fileConfig("../log/tlog.conf")
+logging = logging.getLogger()
+
 
 class TSerial(Basic):
 
