@@ -45,7 +45,7 @@ def main(baudrate,args,server):
         report()
 
 def getTime():
-    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    now = time.strftime("%Y-%m-%d_%H_%M_%S")
     return now
 
 def report():
