@@ -22,7 +22,6 @@ class Basic():
         # 测试次数
         self.times = args.times
         if self.times == 0:
-            logging.info("测试次数不能为0")
             raise ValueError("times不能为0")
         #hkey
         self.tname = self.ser.name + "status"
@@ -58,17 +57,13 @@ class Basic():
 
     def getFile(self):
         res = requests.get(self.url).content
-        try:
-                os.remove(self.fileprefix+"src."+self.url.split(".")[-1][0:3])
-        except:
-            pass
-        with open(self.fileprefix+"src."+self.url.split(".")[-1][0:3],"wb") as f:
+        with open("../resources/"+self.fileprefix+"src."+self.url.split(".")[-1][0:3],"wb") as f:
             f.write(res)
 
     @staticmethod
     def getFileMd5(filename):
         if not os.path.isfile(filename):
-            logging.info("file not found")
+            print("文件不存在...")
             return
         myHash = hashlib.md5()
         f = open(filename, 'rb')
@@ -101,7 +96,7 @@ class Basic():
             {"测试项": "文件md5", "次数": self.times, "成功": self.md5_success, "失败": self.times - self.md5_success,
              "成功率": "%.2f%%" % md5_percent},
         ]
-        with open("".join(self.ser.name.split("/")) + 'report.csv', 'w', newline='', encoding="utf-8")as f:
+        with open("../report/"+"".join(self.ser.name.split("/")) + 'r.csv', 'w', newline='', encoding="utf-8")as f:
             l_csv = csv.writer(f)
             l_csv.writerow(device_baudrate)
 

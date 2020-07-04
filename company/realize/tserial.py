@@ -16,7 +16,7 @@ class TSerial(Basic):
         super().__init__(ser,args)
         if self.url.startswith("http"):
             try:
-                self.srcpath = self.fileprefix + "src." + self.url.split(".")[-1][0:3]
+                self.srcpath = "../report/"+self.fileprefix + "src." + self.url.split(".")[-1][0:3]
                 self.getFile()
             except requests.exceptions.ConnectionError:
                 if os.path.exists(self.srcpath):

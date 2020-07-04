@@ -10,7 +10,8 @@ logging = logging.getLogger()
 class RSerial(Basic):
     def __init__(self,ser,args):
         super().__init__(ser,args)
-        self.dstfile = open(self.fileprefix+"dst","wb")
+        self.dstpath = "../resources/"+self.fileprefix+"dst"
+        self.dstfile = open(self.dstpath,"wb")
         self.devices = self.redis.hvals("devices")
 
     def read(self):
@@ -72,8 +73,8 @@ class RSerial(Basic):
                     else:
                         if filestatus:
                             self.dstfile.close()
-                            logging.info(("接收生成文件大小",os.path.getsize(self.fileprefix+"dst")))
-                            if self.getFileMd5(self.fileprefix+"dst")==self.redis.hget(self.tstatus,"srcmd5"):
+                            logging.info(("接收生成文件大小",os.path.getsize(self.dstpath)))
+                            if self.getFileMd5(self.dstpath)==self.redis.hget(self.tstatus,"srcmd5"):
                                 self.md5_success += 1
                         try:
                             rdata = self.ser.read(self.bytes_number).decode("utf-8")
@@ -84,7 +85,7 @@ class RSerial(Basic):
                         yield rdata == self.startcontent
                         if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
                             self.redis.hset(self.tstatus,"fileenable",1)
-                            self.dstfile = open(self.fileprefix+"dst", "wb")
+                            self.dstfile = open(self.dstpath, "wb")
                         filestatus = 0
                         times += 1
                 if self.redis.hget(self.tstatus, "write") == "0":

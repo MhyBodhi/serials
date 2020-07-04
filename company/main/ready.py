@@ -44,17 +44,17 @@ def main(baudrate,args,server):
         report()
 
 def report():
-    csvfiles = [file for file in os.listdir(".") if file.endswith("csv")]
+    csvfiles = [file for file in os.listdir("../report/") if file.endswith("csv")]
     try:
         with open("../total.csv", "a", newline="", encoding="utf-8") as f:
             fw_csv = csv.writer(f)
             for csvfile in csvfiles:
-                with open(csvfile, "r", encoding="utf-8") as fl:
+                with open("../report/"+csvfile, "r", encoding="utf-8") as fl:
                     fr_csv = csv.reader(fl)
                     for row in fr_csv:
                         fw_csv.writerow(row)
                 try:
-                    os.remove(csvfile)
+                    os.remove("../report/"+csvfile)
                 except:
                     pass
     except Exception as e:

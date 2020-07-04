@@ -45,10 +45,10 @@ class TRSerial():
         self.ascii = reduce(lambda x,y:x+y,map(lambda x:chr(x),range(256)))
         #下载jpg的url路径
         self.url = args.p
-        self.dstpath = self.fileprefix + "dst." + self.url.split(".")[-1][0:3]
+        self.dstpath = "../resources/"+self.fileprefix + "dst." + self.url.split(".")[-1][0:3]
         if self.url.startswith("http"):
             try:
-                self.srcpath = self.fileprefix + "src." + self.url.split(".")[-1][0:3]
+                self.srcpath = "../resources/"+self.fileprefix + "src." + self.url.split(".")[-1][0:3]
                 self.getFile()
             except requests.exceptions.ConnectionError:
                 if os.path.exists(self.srcpath):
@@ -247,7 +247,7 @@ class TRSerial():
             {"测试项":"总计", "次数":3*self.times, "成功":self.ac_success+self.mc_success+self.sc_success,"失败":self.ac_fail+self.mc_fail+self.sc_fail,"成功率":"%.2f%%"%(sum_percent)},
             {"测试项": "文件md5", "次数": self.times, "成功": self.md5_success, "失败": self.times-self.md5_success,"成功率": "%.2f%%" % md5_percent},
         ]
-        with open("".join(self.ser.name.split("/"))+'report.csv', 'w', newline='',encoding="utf-8")as f:
+        with open("../report/"+"".join(self.ser.name.split("/"))+'tr.csv', 'w', newline='',encoding="utf-8")as f:
             l_csv = csv.writer(f)
             l_csv.writerow(device_baudrate)
 
