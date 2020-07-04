@@ -1,3 +1,4 @@
+import os
 import sys
 sys.path.append("..")
 import argparse
@@ -13,7 +14,8 @@ def start():
     parser.add_argument("-r", action='store_true', default=False, help="main-up rxserver:listening receive data")
     parser.add_argument("-tr", action='store_true', default=False, help="main-up run:listening transmit and receive data on this machine")
     try:
-        os.remove("../total.csv")
+        for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
+            os.remove("../report/"+file)
     except:
         pass
     baudrates = []

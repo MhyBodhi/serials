@@ -1,5 +1,6 @@
 import csv
 import os
+import time
 import threading
 from threading import Lock
 import serial
@@ -43,10 +44,14 @@ def main(baudrate,args,server):
     if server == "r" or server == "tr":
         report()
 
+def getTime():
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    return now
+
 def report():
     csvfiles = [file for file in os.listdir("../report/") if file.endswith("csv")]
     try:
-        with open("../total.csv", "a", newline="", encoding="utf-8") as f:
+        with open("../"+getTime()+"total.csv", "a", newline="", encoding="utf-8") as f:
             fw_csv = csv.writer(f)
             for csvfile in csvfiles:
                 with open("../report/"+csvfile, "r", encoding="utf-8") as fl:
