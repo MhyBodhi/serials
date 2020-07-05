@@ -34,3 +34,6 @@
      1. 自收发,eg.sudo python3 ../main/start.py  -tr -n com3,com4,com5 -c 3 -p C:\Users\zhang\Desktop\a.jpg
      2. 发送数据端,eg.sudo python3 ../main/start.py -n com3 -t -b 115200 -c 3 -p C:\Users\zhang\Desktop\a.jpg
      3. 接收数据端,eg.sudo python3 ../main/start.py -n com3 -r -b 115200
+## 说明
+   * 执行bash install.sh安装kylin机依赖
+   * 多机收发通过redis建立的通信，需要安装配置redis,修改redis配置文件,将监听地址改为0.0.0.0,启动redis,eg.redis-server xxx.conf 
