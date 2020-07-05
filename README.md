@@ -25,7 +25,7 @@
     5. 指定测试次数
       - -c 指定测试次数number,eg.-c 10，默认值为10次
 
-  ## 例子
+  ### 例子
     * linux：
       1. 自收发,eg.sudo python3 ../main/start.py  -tr -n /dev/ttyXRUSB0,/dev/ttyXRUSB1,/dev/ttyXRUSB2 -c 3 -p /home/kylin/a.jpg
       2. 发送数据端,eg.sudo python3 ../main/start.py -n /dev/ttyXRUSB0 -t -b 115200 -c 3 -p /home/kylin/a.txt
