@@ -1,9 +1,9 @@
 #!/usr/bin/bash
-test -e ~/.pip/pip.conf
 cat > /etc/apt/sources.list <<-MHY
-    deb http://zhangchao-2:igentwva@archive.kylinos.cn/kylin/KYLIN-ALL 4.0.2sp2 main restricted universe multiverse
-    deb http://archive.kylinos.cn/kylin/KYLIN-ALL 4.0.2sp2-desktop main restricted universe multiverse
+deb http://zhangchao-2:igentwva@archive.kylinos.cn/kylin/KYLIN-ALL 4.0.2sp2 main restricted universe multiverse
+deb http://archive.kylinos.cn/kylin/KYLIN-ALL 4.0.2sp2-desktop main restricted universe multiverse
 MHY
+test -e ~/.pip/pip.conf
 if [ $? -ne 0 ];then
 	mkdir ~/.pip
 	cat > ~/.pip/pip.conf <<-MHY
