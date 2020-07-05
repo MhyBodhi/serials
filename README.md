@@ -20,8 +20,8 @@
   3. 指定测试设备
     - -n单个或多个设备，指定多个设备时为开启多线程模式eg.-n /dev/ttyXRUSB0,/dev/ttyXRUSB1,/dev/ttyXRUSB2，必选参数，无默认值
   4. 指定测试源文件路径,本地或网络路径
-    - -p 指定本地或网络路径作为传输源文件,eg.-p /home/kylin/a.jpg or -p https://ss0.bdstatic.com/.../xxx.jpg，默认值为一网络路径
-    - 支持txt、png、jpg、doc、pdf、mp3、MP4等文件格式，严格上文件格式无要求
+    - -p 指定本地或网络路径作为传输源文件,eg.-p /home/kylin/a.jpg or -p https://.../.../xxx.jpg
+    - 支持txt、png、jpg、doc、pdf、mp3、MP4等文件格式，严格上文件格式无具体要求
   5. 指定测试次数
     - -c 指定测试次数number,eg.-c 10，默认值为10次
 
