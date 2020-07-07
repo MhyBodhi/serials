@@ -27,7 +27,7 @@ def main(baudrate,args,server):
     sers = []
     for device in devices:
         try:
-            sers.append(serial.Serial(device, baudrate, timeout=None,dsrdtr=True))
+            sers.append(serial.Serial(device, baudrate,timeout=20,dsrdtr=True))
         except:
             pass
     plist = []

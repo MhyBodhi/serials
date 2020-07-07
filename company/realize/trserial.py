@@ -7,6 +7,7 @@ import csv
 import random
 import logging.config
 from functools import reduce
+from multiprocessing import Process
 import threading
 import requests
 
@@ -199,8 +200,10 @@ class TRSerial():
         return myHash.hexdigest()
 
     def run(self):
-        threading.Thread(target=self.read).start()
-        threading.Thread(target=self.write).start()
+        t1 = threading.Thread(target=self.read)
+        t2 = threading.Thread(target=self.write)
+        t1.start()
+        t2.start()
         results = self.read()
         for result in results:
             if result == False:

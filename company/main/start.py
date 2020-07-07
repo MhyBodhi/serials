@@ -17,7 +17,10 @@ def start():
     #清理生成的子报告
     for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
         os.remove("../report/"+file)
-
+    try:
+        os.remove("../total.csv")
+    except:
+        pass
     baudrates = []
     args = parser.parse_args()
     if (args.tr and args.r) or (args.tr and args.t):
