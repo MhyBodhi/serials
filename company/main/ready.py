@@ -1,8 +1,7 @@
 import csv
 import os
 import time
-import threading
-from threading import Lock
+from multiprocessing import Process,Lock
 import serial
 from realize.tserial import TSerial
 from realize.rserial import RSerial
@@ -36,7 +35,7 @@ def main(baudrate,args,server):
         print("设备读取失败")
         return
     for ser in sers:
-        plist.append(threading.Thread(target=run, args=(ser,server,args)))
+        plist.append(Process(target=run, args=(ser,server,args)))
     for i in plist:
         i.start()
     for j in plist:
@@ -51,7 +50,7 @@ def getTime():
 def report():
     csvfiles = [file for file in os.listdir("../report/") if file.endswith("csv")]
     try:
-        with open("../"+getTime()+"total.csv", "a", newline="", encoding="utf-8") as f:
+        with open("../total.csv", "a", newline="", encoding="utf-8") as f:
             fw_csv = csv.writer(f)
             for csvfile in csvfiles:
                 with open("../report/"+csvfile, "r", encoding="utf-8") as fl:
