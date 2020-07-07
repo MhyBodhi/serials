@@ -7,7 +7,6 @@ import csv
 import random
 import logging.config
 from functools import reduce
-from multiprocessing import Process
 import threading
 import requests
 
