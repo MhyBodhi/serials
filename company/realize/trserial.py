@@ -15,6 +15,7 @@ logging = logging.getLogger()
 
 class TRSerial():
     def __init__(self,ser,lock,args,status="write"):
+        os.system("sudo bash ../__init__.sh &> /dev/null")
         self.status = status
         self.ser = ser
         self.args = args
