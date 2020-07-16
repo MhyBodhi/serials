@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo mkdir ./{resources,reports}
+sudo mkdir ./{resources,report}
