@@ -5,6 +5,7 @@ import argparse
 from ready import os,main
 
 def start():
+    os.system("bash ../__init__.sh &> /dev/null")
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--times",type=int,default=10, help="test_times:number")
     parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")
@@ -15,8 +16,11 @@ def start():
     parser.add_argument("-tr", action='store_true', default=False, help="main-up run:listening transmit and receive data on this machine")
 
     #清理生成的子报告
-    for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
-        os.remove("../report/"+file)
+    try:
+        for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
+            os.remove("../report/"+file)
+    except:
+        pass
     try:
         os.remove("../total.csv")
     except:

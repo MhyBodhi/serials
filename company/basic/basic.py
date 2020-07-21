@@ -8,7 +8,6 @@ import requests
 
 class Basic():
     def __init__(self,ser,args):
-        os.system("sudo bash ../__init__.sh &> /dev/null")
         self.ser = ser
         self.fileprefix = "".join(self.ser.name.split("/"))
         self.url = args.p.strip()
