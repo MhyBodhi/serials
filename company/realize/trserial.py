@@ -233,7 +233,7 @@ class TRSerial():
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
                     # 统计接收数据速率
-                    self.receive_speed += 256 / (self.receive_end - self.receive_start) / 1024
+                    self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
                     print("receive_speed",self.receive_speed)
                 logging.info("测试通过!")
         self.writecsv()
