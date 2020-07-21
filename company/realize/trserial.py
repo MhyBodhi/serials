@@ -108,7 +108,6 @@ class TRSerial():
                                 self.srcfile.close()
                             self.status = "write"
                             times += 1
-                        self.ser.reset_input_buffer()
                 self.lock.release()
 
     def write(self):
@@ -212,7 +211,7 @@ class TRSerial():
         results = self.read()
         for result in results:
             if result == False:
-
+                self.ser.reset_input_buffer()
                 if(len(self.startcontent))==1:
                     self.sc_fail += 1
                 elif 1<len(self.startcontent)<256:

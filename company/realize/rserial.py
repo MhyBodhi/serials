@@ -86,7 +86,7 @@ class RSerial(Basic):
                             self.dstfile = open(self.dstpath+self.filetype, "wb")
                         filestatus = 0
                         times += 1
-                    self.ser.reset_input_buffer()
+
                 if self.redis.hget(self.tstatus, "write") == "0":
                     self.redis.hmset(self.tstatus, {"end": 1, "read": 0})
                     break
@@ -97,6 +97,7 @@ class RSerial(Basic):
         results = self.read()
         for result in results:
             if result == False:
+                self.ser.reset_input_buffer()
                 if (len(self.startcontent)) == 1:
                     self.sc_fail += 1
                 elif 1 < len(self.startcontent) < 256:
