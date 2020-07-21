@@ -5,7 +5,10 @@ import argparse
 from ready import os,main
 
 def start():
-    os.system("bash ../__init__.sh &> /dev/null")
+    if sys.platform=="win32":
+        os.system("start ..\__init__.bat")
+    else:
+        os.system("bash ../__init__.sh")
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--times",type=int,default=10, help="test_times:number")
     parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")

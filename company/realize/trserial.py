@@ -34,6 +34,11 @@ class TRSerial():
         self.ac_success = 0
         #发送数据速率
         self.transmit_speed = 0
+        #接受数据速率
+        self.receive_speed = 0
+        #接受数据起始、结束时间
+        self.receive_start = 0
+        self.receive_end = 0
         #测试次数
         self.times = args.times
         #文件对象
@@ -92,8 +97,9 @@ class TRSerial():
                             logging.info(("读取字节数:",self.bytes_number))
                             logging.info(self.startcontent)
                             try:
-
+                                self.receive_start = time.time()
                                 text = self.ser.read(self.bytes_number).decode("utf-8")
+                                self.receive_end = time.time()
                                 self.endcontent = text
                                 logging.info(("接收字节数：",self.bytes_number))
                                 logging.info(text)
@@ -226,11 +232,13 @@ class TRSerial():
                     self.mc_success+= 1
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
+                    # 统计接收数据速率
+                    self.receive_speed += 256 / (self.receive_end - self.receive_start) / 1024
                 logging.info("测试通过!")
         self.writecsv()
 
     def writecsv(self):
-        device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "传输速率","%.2fKB/s" % (self.transmit_speed / self.times)]
+        device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "发送速率","%.2fKB/s" % (self.transmit_speed / self.times),"接收速率","%.2fKB/s" % (self.receive_speed / self.ac_success)]
 
         headers = ["测试项","次数","成功","失败","成功率"]
         sc_percent = self.sc_success/self.times*100

@@ -1,4 +1,5 @@
 import time
+import os
 from threading import Thread
 # from multiprocessing import Process
 import serial
@@ -17,8 +18,10 @@ if __name__ == '__main__':
     # Thread(target=write,args=(ser,)).start()
     # Thread(target=read,args=(ser,)).start()
     # print(ser)
-    import time
-    start = time.time()
-    time.sleep(1)
-    end = time.time()
-    print(end-start)
+    # import time
+    # start = time.time()
+    # time.sleep(1)
+    # end = time.time()
+    # print(end-start)
+    import sys
+    print(sys.platform)
