@@ -3,7 +3,7 @@ import os
 from threading import Thread
 # from multiprocessing import Process
 import serial
-# ser = serial.Serial("com3",baudrate=115200)
+ser = serial.Serial("com3",baudrate=115200)
 def write(ser):
     while True:
         ser.write("data".encode("utf-8"))
@@ -23,5 +23,4 @@ if __name__ == '__main__':
     # time.sleep(1)
     # end = time.time()
     # print(end-start)
-    import sys
-    print(sys.platform)
+    print(ser)
