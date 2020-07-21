@@ -171,6 +171,7 @@ class TRSerial():
                         sendstr = self.ascii
                         logging.info(("总的字节数",len(sendstr.encode("utf-8"))))
                         start = time.time()
+                        print("send_time",end-start)
                         self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
                         end = time.time()
 
@@ -233,6 +234,7 @@ class TRSerial():
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
                     # 统计接收数据速率
+                    print("receive_time",self.receive_end-self.receive_start)
                     self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
                     print("receive_speed",self.receive_speed)
                 logging.info("测试通过!")
