@@ -171,10 +171,9 @@ class TRSerial():
                         sendstr = self.ascii
                         logging.info(("总的字节数",len(sendstr.encode("utf-8"))))
                         start = time.time()
-                        print("send_time",end-start)
                         self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
                         end = time.time()
-
+                        print("send_time", end - start)
                         self.transmit_speed += self.bytes_number / (end - start) / 1024
                         logging.info(("写入的字节数：", self.bytes_number))
                         logging.info(sendstr)
