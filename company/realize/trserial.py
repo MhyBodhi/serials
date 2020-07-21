@@ -165,10 +165,10 @@ class TRSerial():
                         logging.info("测试全部ascii码")
                         sendstr = self.ascii
                         logging.info(("总的字节数",len(sendstr.encode("utf-8"))))
-                        self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
                         start = time.time()
                         self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
                         end = time.time()
+
                         self.transmit_speed += self.bytes_number / (end - start) / 1024
                         logging.info(("写入的字节数：", self.bytes_number))
                         logging.info(sendstr)
@@ -231,7 +231,6 @@ class TRSerial():
         self.writecsv()
 
     def writecsv(self):
-
         device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "传输速率","%.2fKB/s" % (self.transmit_speed / self.times)]
 
         headers = ["测试项","次数","成功","失败","成功率"]

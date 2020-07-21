@@ -2,6 +2,7 @@ import csv
 import os
 import time
 from multiprocessing import Process,Lock
+from threading import Thread
 import serial
 from realize.tserial import TSerial
 from realize.rserial import RSerial
@@ -35,7 +36,7 @@ def main(baudrate,args,server):
         print("设备读取失败")
         return
     for ser in sers:
-        plist.append(Process(target=run, args=(ser,server,args)))
+        plist.append(Thread(target=run, args=(ser,server,args)))
     for i in plist:
         i.start()
     for j in plist:
