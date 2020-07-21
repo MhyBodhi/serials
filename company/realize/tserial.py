@@ -110,7 +110,11 @@ class TSerial(Basic):
                             elif count == 3:
                                 logging.info("测试全部ascii码")
                                 sendstr = self.ascii
+
+                                start = time.time()
                                 self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
+                                end = time.time()
+                                self.transmit_speed += self.bytes_number / (end - start) / 1024
                                 self.ser.flush()
                                 count = 1
                                 logging.info(("传输源文件srcfile大小", os.path.getsize(self.srcpath)))
@@ -123,7 +127,7 @@ class TSerial(Basic):
                             times += 1
                 break
             time.sleep(3)
-        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read"})
+        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read","transmitspeed":self.transmit_speed})
         time.sleep(0.5)
 
 

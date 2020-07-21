@@ -75,7 +75,9 @@ class RSerial(Basic):
                             if self.getFileMd5(self.dstpath+self.filetype)==self.redis.hget(self.tstatus,"srcmd5"):
                                 self.md5_success += 1
                         try:
+                            self.receive_start = time.time()
                             rdata = self.ser.read(self.bytes_number).decode("utf-8")
+                            self.receive_end = time.time()
                         except:
                             pass
                         self.startcontent = self.redis.hget(self.tstatus,"ascii")
@@ -112,5 +114,8 @@ class RSerial(Basic):
                     self.mc_success += 1
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
+                    #接收数据速率
+                    self.receive_speed += self.bytes_number/(self.receive_end - self.receive_start) /1024
                 logging.info("测试通过!")
+        self.transmit_speed = float(self.redis.hget(self.tstatus,"transmitspeed"))
         self.report()
