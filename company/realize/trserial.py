@@ -239,7 +239,11 @@ class TRSerial():
         self.writecsv()
 
     def writecsv(self):
-        device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "发送速率","%.2fKB/s" % (self.transmit_speed / self.times),"接收速率","%.2fKB/s" % (self.receive_speed / self.ac_success)]
+        if self.ac_success == 0:
+            receive_speed = 0
+        else:
+            receive_speed = (self.receive_speed / self.ac_success)
+        device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "发送速率","%.2fKB/s" % (self.transmit_speed / self.times),"接收速率","%.2fKB/s" % receive_speed]
 
         headers = ["测试项","次数","成功","失败","成功率"]
         sc_percent = self.sc_success/self.times*100

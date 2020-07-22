@@ -1,3 +1,3 @@
 @echo off
-python ../main/start.py -n com3 -t -b 115200 -c 3
+python ../main/start.py -n com7 -t -b 2000000 -c 3
 pause...

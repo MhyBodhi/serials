@@ -46,6 +46,14 @@ class TSerial(Basic):
             self.redis.hset("devices", "device3", self.ser.name)
         elif self.ser.name.endswith("4"):
             self.redis.hset("devices", "device4", self.ser.name)
+        elif self.ser.name.endswith("5"):
+            self.redis.hset("devices", "device5", self.ser.name)
+        elif self.ser.name.endswith("6"):
+            self.redis.hset("devices", "device6", self.ser.name)
+        elif self.ser.name.endswith("7"):
+            self.redis.hset("devices", "device7", self.ser.name)
+        elif self.ser.name.endswith("8"):
+            self.redis.hset("devices", "device8", self.ser.name)
 
     def write(self):
         times = 1
@@ -115,6 +123,7 @@ class TSerial(Basic):
                                 self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
                                 end = time.time()
                                 self.transmit_speed += self.bytes_number / (end - start) / 1024
+                                print("发送速率",self.transmit_speed/times)
                                 self.ser.flush()
                                 count = 1
                                 logging.info(("传输源文件srcfile大小", os.path.getsize(self.srcpath)))
