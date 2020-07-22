@@ -116,7 +116,10 @@ class RSerial(Basic):
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
                     #接收数据速率
-                    self.receive_speed += self.bytes_number/(self.receive_end - self.receive_start) /1024
+                    if self.receive_end - self.receive_start:
+                        self.receive_speed += self.bytes_number/(self.receive_end - self.receive_start) /1024
+                    else:
+                        self.receive_speed_zero = True
                 logging.info("测试通过!")
         self.transmit_speed = float(self.redis.hget(self.tstatus,"transmitspeed"))
         self.report()

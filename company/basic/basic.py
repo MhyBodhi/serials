@@ -60,7 +60,8 @@ class Basic():
         # 接受数据起始、结束时间
         self.receive_start = 0
         self.receive_end = 0
-
+        # 接收不耗时
+        self.receive_speed_zero = False
 
     def getFile(self):
         res = requests.get(self.url).content
@@ -84,7 +85,7 @@ class Basic():
         return myHash.hexdigest()
 
     def report(self):
-        if self.ac_success==0:
+        if self.ac_success==0 or self.receive_speed_zero:
             receive_speed = 0
         else:
             receive_speed = (self.receive_speed / self.ac_success)
