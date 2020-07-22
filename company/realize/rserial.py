@@ -11,12 +11,12 @@ class RSerial(Basic):
     def __init__(self,ser,args):
         super().__init__(ser,args)
         self.dstpath = "../resources/"+self.fileprefix+"dst."
-        self.devices = self.redis.hvals("devices")
 
     def read(self):
         times = 1
         filestatus = 0
         while True:
+            self.devices = self.redis.hvals("devices")
             if self.ser.in_waiting:
                 device_data = ""
                 try:
@@ -62,7 +62,6 @@ class RSerial(Basic):
             if self.trstatus=="read":
                 rdata = ""
                 self.bytes_number = int(self.redis.hget(self.tstatus, "bytes_number"))
-                print("bytes_number",self.bytes_number)
                 self.fileenable = int(self.redis.hget(self.tstatus, "fileenable"))
                 if self.ser.in_waiting:
                     if self.fileenable:

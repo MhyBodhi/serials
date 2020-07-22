@@ -100,7 +100,6 @@ class TRSerial():
                                 self.receive_start = time.time()
                                 text = self.ser.read(self.bytes_number).decode("utf-8")
                                 self.receive_end = time.time()
-                                print("receive_time", self.receive_end - self.receive_start)
                                 self.endcontent = text
                                 logging.info(("接收字节数：",self.bytes_number))
                                 logging.info(text)
@@ -234,7 +233,6 @@ class TRSerial():
                     self.ac_success += 1
                     # 统计接收数据速率
                     self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
-                    print("receive_speed",self.receive_speed)
                 logging.info("测试通过!")
         self.writecsv()
 
