@@ -106,5 +106,11 @@ class Refactor(TRSerial):
 
     def getWriteSpeed(self):
         return "%.2fKB/s" % (self.transmit_speed / self.times)
+    def write(self):
+        #总方法
+        pass
+    def read(self):
+        #总方法
+        pass
     def getReadSpeed(self):
         return
