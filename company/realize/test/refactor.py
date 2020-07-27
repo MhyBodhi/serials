@@ -101,16 +101,35 @@ class Refactor(TRSerial):
             self.endcontent = text
             logging.info(("接收字节数：", self.bytes_number))
             logging.info(text)
+            yield self.startcontent == self.endcontent
         except:
             self.endcontent = None
 
-    def getWriteSpeed(self):
-        return "%.2fKB/s" % (self.transmit_speed / self.times)
+    def getSpeed(self):
+        speeds = {"发送速率":"%.2fKB/s" % (self.transmit_speed / self.times),"接收速率":1}
+        return speeds
+
     def write(self):
-        #总方法
+        # 总方法
         pass
+
     def read(self):
-        #总方法
-        pass
+        # 总方法
+        times = 1
+        while True:
+            if times > self.times:
+                break
+            if self.args.f:
+                self.writeFiles()
+            if self.args.a:
+                for result in self.writeAscii():
+                    yield result
+
+            if self.srcfile.closed and self.dstfile.closed:
+                self.fileenable = True
+                self.dstfile = open(self.dstpath, "wb")
+                self.srcfile = open(r"%s" % self.srcpath, "rb")
+            times += 1
+        self.getSpeed()
     def getReadSpeed(self):
         return
