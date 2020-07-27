@@ -75,7 +75,7 @@ class Basic():
             return
         myHash = hashlib.md5()
         f = open(filename, 'rb')
-        while True:
+        while True:git
             b = f.read(8096)
             if not b:
                 break
