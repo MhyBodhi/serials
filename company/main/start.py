@@ -17,7 +17,14 @@ def start():
     parser.add_argument("-t", action='store_true', default=False, help="main-up txserver:listening transmit data")
     parser.add_argument("-r", action='store_true', default=False, help="main-up rxserver:listening receive data")
     parser.add_argument("-tr", action='store_true', default=False, help="main-up run:listening transmit and receive data on this machine")
-
+    #测试Ascii码选项
+    parser.add_argument("-a",action='store_true', default=False, help="add Test ASCII code")
+    #测试文件传输选项
+    parser.add_argument("-f",action='store_true', default=False, help="add Test file transfer")
+    #测试传输速率选项
+    parser.add_argument("-s",action='store_true', default=False, help="add Test transmission rate")
+    #传输所有项
+    parser.add_argument("-A",action='store_true', default=False, help="Test All options")
     #清理生成的子报告
     try:
         for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
