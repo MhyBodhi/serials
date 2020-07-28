@@ -1,2 +1,3 @@
 @echo off
-python start.py -tr -n com7 -c 3 -a
+python start.py -tr -n com3 -c 3 -s -a -f
+pause

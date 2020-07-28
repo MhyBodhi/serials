@@ -10,6 +10,8 @@ class Refactor(TRSerial):
         super().__init__(ser,lock,args)
         #Ascii码测试下标
         self.count = 1
+        #接受速率是否可控
+        self.receive_speed_zero = False
 
     def writeFiles(self):
 
@@ -37,10 +39,9 @@ class Refactor(TRSerial):
                 self.lock.release()
 
     def writeAscii(self):
-
         while True:
-            print("writeAscii",self.status)
             if self.status == "write":
+                print("进入成功...")
                 self.lock.acquire()
                 if self.count==1:
                     logging.info("测试单个ascii码")
@@ -122,23 +123,50 @@ class Refactor(TRSerial):
                     yield self.startcontent == self.endcontent
                     if len(self.startcontent) == 256:
                         print("ok...")
+                        self.lock.release()
                         self.status = "write"
                         break
                     self.status = "write"
                 self.lock.release()
         print("结束readAscii码...")
 
-    def getSpeed(self):
-        start = time.time()
-        self.bytes_number = self.ser.write(self.ascii.encode("utf-8"))
-        end = time.time()
-        self.transmit_speed = self.bytes_number / (end - start) / 1024
-        self.ser.reset_input_buffer()
-        speeds = {"发送速率":"%.2fKB/s" % self.transmit_speed,"接收速率":1}
-        return speeds
+    def getWriteSpeed(self):
+        times = self.times
+        while times:
+            if self.status == "write":
+                self.lock.acquire()
+                sendstr = self.ascii.encode("utf-8")
+                start = time.time()
+                self.bytes_numbers = self.ser.write(sendstr)
+                end = time.time()
+                self.transmit_speed += self.bytes_numbers/(end-start)/1024
+                self.status = "read"
+                times -= 1
+                self.lock.release()
+        return "发送速率%.2fKB/s"%(self.transmit_speed/self.times)
+
+    def getReadSpeed(self):
+        times = self.times
+        while times:
+            if self.ser.in_waiting:
+                if self.status == "read":
+                    self.lock.acquire()
+                    self.receive_start = time.time()
+                    receivestr = self.ser.read(self.bytes_number).decode("utf-8")
+                    self.receive_end = time.time()
+                    # 接收数据速率
+                    if self.receive_end - self.receive_start:
+                        self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
+                    else:
+                        self.receive_speed_zero = True
+                    print("接收到的数据",receivestr)
+                    self.status = "write"
+                    times -= 1
+                    self.lock.release()
+        return "接收速率%.2fKB/s"%(self.receive_speed/self.times)
 
     def write(self):
-        # 总方法
+        # 发送数据
         times = 1
         while True:
             if times > self.times:
@@ -152,9 +180,12 @@ class Refactor(TRSerial):
             print("write执行第"+str(times)+"次完成...")
             print(self.status)
             times += 1
-
+        #测试发送速率
+        if self.args.s:
+            print(self.getWriteSpeed())
+        print("write over...")
     def read(self):
-        # 总方法
+        # 接收数据
         times = 1
         while True:
             if times > self.times:
@@ -169,36 +200,46 @@ class Refactor(TRSerial):
             if self.args.f:
                 self.readFiles()
             if self.args.a:
+                print("读取asciii码")
                 for result in self.readAscii():
                     yield result
             print("read执行第"+str(times)+"次完成...")
-
             times += 1
-        # print(self.getSpeed())
+        #测试接收速率
+        if self.args.s:
+            print(self.getReadSpeed())
+        print("read over...")
 
     def run(self):
-        # #传输文件测试
-        # t1 = Thread(target=self.writeFiles)
-        # t2 = Thread(target=self.readFiles)
-        # t1.start()
-        # t2.start()
-        #传输Ascii码测试
-        # t1 = Thread(target=self.writeAscii)
-        # t2 = Thread(target=self.readAscii)
-        # t1.start()
-        # t2.start()
-        # for result in self.readAscii():
-        #     print(result)
         t1 = Thread(target=self.write)
         t2 = Thread(target=self.read)
         t1.start()
         t2.start()
-        for result in self.read():
-            print("start...")
-            print(result)
+        results = self.read()
+        for result in results:
+            if result == False:
+                self.ser.reset_input_buffer()
+                if(len(self.startcontent))==1:
+                    self.sc_fail += 1
+                elif 1<len(self.startcontent)<256:
+                    self.mc_fail += 1
+                elif len(self.startcontent)==256:
+                    self.ac_fail += 1
+                logging.info("测试Ascii码失败!")
+            elif result == True:
+                if (len(self.startcontent)) == 1:
+                    self.sc_success += 1
+                elif 1 < len(self.startcontent) < 256:
+                    self.mc_success+= 1
+                elif len(self.startcontent) == 256:
+                    self.ac_success += 1
+                logging.info("测试Ascii码成功!")
 
-    def getReadSpeed(self):
-        return
+    def report(self):
+        if self.receive_speed_zero:
+            receive_speed = 0
+        else:
+            receive_speed = (self.receive_speed / self.times)
 
 if __name__ == '__main__':
     pass
