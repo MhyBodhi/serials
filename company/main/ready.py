@@ -1,12 +1,12 @@
 import csv
 import os
 import time
-from multiprocessing import Process,Lock
+from multiprocessing import Lock
 from threading import Thread
 import serial
 from realize.tserial import TSerial
 from realize.rserial import RSerial
-from realize.trserial import TRSerial
+from realize.refactor import Refactor
 
 
 def run(ser,server,args):
@@ -18,7 +18,7 @@ def run(ser,server,args):
         r.run()
     elif server=="tr":
         lock = Lock()
-        r = TRSerial(ser, lock,args)
+        r = Refactor(ser, lock,args) #r = TRSerial(ser, lock,args)
         r.run()
 
 def main(baudrate,args,server):
