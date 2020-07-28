@@ -39,6 +39,7 @@ class Refactor(TRSerial):
     def writeAscii(self):
 
         while True:
+            print("writeAscii",self.status)
             if self.status == "write":
                 self.lock.acquire()
                 if self.count==1:
@@ -79,6 +80,7 @@ class Refactor(TRSerial):
                 self.startcontent = sendstr
                 self.status = "read"
                 self.lock.release()
+        print("结束writeAscii码...")
 
 
     def readFiles(self):
@@ -124,6 +126,7 @@ class Refactor(TRSerial):
                         break
                     self.status = "write"
                 self.lock.release()
+        print("结束readAscii码...")
 
     def getSpeed(self):
         start = time.time()
