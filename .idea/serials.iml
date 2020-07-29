@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/company" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (serials)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (complete)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

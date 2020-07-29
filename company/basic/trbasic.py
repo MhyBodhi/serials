@@ -107,7 +107,7 @@ class TRBasic():
 
         device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate]
 
-        headers = ["测试项", "次数", "传输文件名","大小(单位B)","成功次数", "失败次数", "成功率","速率（KB/s）","单次传输所花时间（秒）"]
+        headers = ["测试项", "次数", "传输文件名","大小(单位:字节B)","成功次数", "失败次数", "成功率","速率（KB/s）","单次传输所花时间（单位:秒s）"]
         report_dicts = []
         #统计Ascii码
         if self.args.a:
@@ -116,16 +116,16 @@ class TRBasic():
             ac_percent = self.ac_success / self.times * 100
             ascii_rows = [
                 {"测试项": "单个ascii码", "次数": self.times, "传输文件名":"/",
-                 "大小(单位B)":"/","成功次数": self.sc_success,"失败次数": self.sc_fail,
-                 "成功率": "%.2f%%" % (sc_percent),"速率（KB/s）":"/","单次传输所花时间（秒）":"/",
+                 "大小(单位:字节B)":"/","成功次数": self.sc_success,"失败次数": self.sc_fail,
+                 "成功率": "%.2f%%" % (sc_percent),"速率（KB/s）":"/","单次传输所花时间（单位:秒s）":"/",
                  },
-                {"测试项": "单个ascii码", "次数": self.times, "传输文件名": "/",
-                 "大小(单位B)": "/", "成功次数": self.mc_success, "失败次数": self.mc_fail,
-                 "成功率": "%.2f%%" % (mc_percent), "速率（KB/s）": "/", "单次传输所花时间（秒）": "/",
+                {"测试项": "多个ascii码", "次数": self.times, "传输文件名": "/",
+                 "大小(单位:字节B)": "/", "成功次数": self.mc_success, "失败次数": self.mc_fail,
+                 "成功率": "%.2f%%" % (mc_percent), "速率（KB/s）": "/", "单次传输所花时间（单位:秒s）": "/",
                  },
-                {"测试项": "单个ascii码", "次数": self.times, "传输文件名": "/",
-                 "大小(单位B)": "/", "成功次数": self.ac_success, "失败次数": self.ac_fail,
-                 "成功率": "%.2f%%" % (ac_percent), "速率（KB/s）": "/", "单次传输所花时间（秒）": "/",
+                {"测试项": "全部个ascii码", "次数": self.times, "传输文件名": "/",
+                 "大小(单位:字节B)": "/", "成功次数": self.ac_success, "失败次数": self.ac_fail,
+                 "成功率": "%.2f%%" % (ac_percent), "速率（KB/s）": "/", "单次传输所花时间（单位:秒s）": "/",
                  },
             ]
             report_dicts.extend(ascii_rows)
@@ -136,8 +136,8 @@ class TRBasic():
                 success = self.files_nature[file]["success"]
                 files_rows = [
                 {"测试项": "md5", "次数": self.times, "传输文件名": file,
-                 "大小(单位B)": self.files_nature[file]["size"], "成功次数": success, "失败次数": self.times-success,
-                 "成功率": "%.2f%%" % (success/self.times*100), "速率（KB/s）": "/", "单次传输所花时间（秒）": "%.2f"%(self.files_nature[file]["time"]),
+                 "大小(单位:字节B)": self.files_nature[file]["size"], "成功次数": success, "失败次数": self.times-success,
+                 "成功率": "%.2f%%" % (success/self.times*100), "速率（KB/s）": "/", "单次传输所花时间（单位:秒s）": "%.2f"%(self.files_nature[file]["time"]),
                  },
                 ]
                 report_dicts.extend(files_rows)
@@ -152,12 +152,12 @@ class TRBasic():
                 receive_speed = (self.receive_speed / self.times)
             speed_rows = [
                 {"测试项": "发送速率", "次数": self.times, "传输文件名": "/",
-                 "大小(单位B)":"/", "成功次数":"/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": "%.2f"%(self.transmit_speed/self.times), "单次传输所花时间（秒）":"/",
+                 "大小(单位:字节B)":"/", "成功次数":"/", "失败次数": "/",
+                 "成功率": "/", "速率（KB/s）": "%.2f"%(self.transmit_speed/self.times), "单次传输所花时间（单位:秒s）":"/",
                  },
                 {"测试项": "接收速率", "次数": self.times, "传输文件名": "/",
-                 "大小(单位B)": "/", "成功次数": "/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": "%.2f"%(self.receive_speed / self.times), "单次传输所花时间（秒）": "/",
+                 "大小(单位:字节B)": "/", "成功次数": "/", "失败次数": "/",
+                 "成功率": "/", "速率（KB/s）": "%.2f"%receive_speed, "单次传输所花时间（单位:秒s）": "/",
                  },
                 ]
             report_dicts.extend(speed_rows)
