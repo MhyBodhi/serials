@@ -6,7 +6,7 @@ from threading import Thread
 import serial
 from realize.tserial import TSerial
 from realize.rserial import RSerial
-from realize.refactor import Refactor
+from realize.trserial import TRSerial
 
 
 def run(ser,server,args):
@@ -18,7 +18,7 @@ def run(ser,server,args):
         r.run()
     elif server=="tr":
         lock = Lock()
-        r = Refactor(ser, lock,args) #r = TRSerial(ser, lock,args)
+        r = TRSerial(ser, lock,args)
         r.run()
 
 def main(baudrate,args,server):

@@ -1,216 +1,250 @@
-#_*_ coding:utf-8 _*_
-import time
-import sys
 import os
-import hashlib
-import csv
+import time
 import random
-import logging.config
-from functools import reduce
-import threading
-import requests
+from threading import Thread
+import serial
+from basic.trbasic import TRBasic,logging
 
-logging.config.fileConfig("../log/trlog.conf")
-logging = logging.getLogger()
 
-class TRSerial():
-    def __init__(self,ser,lock,args,status="write"):
-        self.status = status
-        self.ser = ser
-        self.args = args
-        self.lock = lock
-        self.startcontent = ""
-        self.endcontent = ""
-        #文件md5验证
-        self.md5_success = 0
-        #单个ascii字符
-        self.sc_fail = 0
-        self.sc_success = 0
-        #多个ascii字符
-        self.mc_fail = 0
-        self.mc_success = 0
-        #全部ascii字符
-        self.ac_fail = 0
-        self.ac_success = 0
-        #发送数据速率
-        self.transmit_speed = 0
-        #接受数据速率
-        self.receive_speed = 0
-        #接受数据起始、结束时间
-        self.receive_start = 0
-        self.receive_end = 0
-        #测试次数
-        self.times = args.times
-        #文件对象
-        self.srcfile = None
-        self.dstfile = None
-        #是否测试文件
-        self.fileenable = True
-        #文件前缀prefix
-        self.fileprefix = "".join(self.ser.name.split("/"))
-        #ascii码
-        self.ascii = reduce(lambda x,y:x+y,map(lambda x:chr(x),range(256)))
-        #下载jpg的url路径
-        self.url = args.p.strip()
-        self.dstpath = "../resources/"+self.fileprefix + "dst." + self.url.split(".")[-1][0:3]
-        if self.url.startswith("http"):
-            try:
-                self.srcpath = "../resources/"+self.fileprefix + "src." + self.url.split(".")[-1][0:3]
-                self.getFile()
-            except requests.exceptions.ConnectionError:
-                if os.path.exists(self.srcpath):
-                    logging.info("使用现有文件验证...")
-                    self.srcfile = open(self.srcpath, "rb")
-                    self.dstfile = open(self.dstpath, "wb")
-                    time.sleep(3)
-                else:
-                    logging.info("请检查网络连接是否正常...")
-                    sys.exit()
-            else:
-                self.srcfile = open(self.srcpath, "rb")
-                self.dstfile = open(self.dstpath, "wb")
-        else:
-            self.srcpath = self.url.strip()
-            if os.path.exists(self.srcpath):
-                self.srcfile = open(r"%s"%self.srcpath, "rb")
-                self.dstfile = open(self.dstpath, "wb")
-            else:
-                logging.info("文件不存在...")
-                raise FileNotFoundError
+class TRSerial(TRBasic):
 
-        logging.info("main...")
-    def read(self):
-        times = 1
+    def __init__(self,ser,lock,args):
+        super().__init__(ser,lock,args)
+        #Ascii码测试下标
+        self.count = 1
+        #队列传输文件,准备状态
+        self.nextfile = True
+
+    def writeFiles(self):
+        #发送文件
+        self.start_sendfile_time = time.time()
         while True:
-            if times>3*self.times:
-                break
-            if self.status == "read":
-                self.lock.acquire()
-                if self.ser.in_waiting:
-                        if self.fileenable:
-                            logging.info("开始接收data...")
-                            recstr = self.ser.read(self.ser.in_waiting) #self.bytes_number
-                            self.dstfile.write(recstr)
-                            self.status = "write"
-                        else:
-                            logging.info("read...")
-                            logging.info(("读取字节数:",self.bytes_number))
-                            logging.info(self.startcontent)
-                            try:
-                                self.receive_start = time.time()
-                                text = self.ser.read(self.bytes_number).decode("utf-8")
-                                self.receive_end = time.time()
-                                self.endcontent = text
-                                logging.info(("接收字节数：",self.bytes_number))
-                                logging.info(text)
-                            except:
-                                self.endcontent = None
-
-                            yield self.endcontent == self.startcontent
-                            if not self.srcfile.closed and times<3*self.times:
-                                self.fileenable = True
-                                self.dstfile = open(self.dstpath, "wb")
-                            else:
-                                self.srcfile.close()
-                            self.status = "write"
-                            times += 1
-                self.lock.release()
-
-    def write(self):
-        times = 1
-        count = 1
-        while True:
-            if times > self.times:
-                break
             if self.status == "write":
-                logging.info("第" + str(times) + "次测试")
                 self.lock.acquire()
                 if self.fileenable:
-                    logging.info("测试文件...")
+                    print("开始写入...")
                     data = self.srcfile.read(2048)
                     if data:
-                        self.bytes_number = self.ser.write(data)
-                        logging.info("发送data成功...")
+                        try:
+                            self.bytes_number = self.ser.write(data)
+                        except serial.serialutil.SerialTimeoutException as e:
+                            self.fileenable = False
+                            self.srcfile.close()
+                            self.ser.reset_input_buffer()
+                            self.status = "read"
+                            logging.info("发生超时错误...")
+                            self.lock.release()
+                            break
+                        print("写入字节数",self.bytes_number)
                         self.status = "read"
+                        print("切换read成功...")
                     else:
                         if not self.ser.in_waiting:
                             self.fileenable = False
                             self.srcfile.close()
-                            self.status = "write"
+                            self.lock.release()
+                            self.status = "read"
+                            logging.info("文件传输完成...")
+                            break
                         else:
                             self.status = "read"
-                    logging.info(("输入缓冲区:",self.ser.in_waiting))
-
-                else:
-                    self.dstfile.close()
-                    logging.info("write...")
-                    if count==1:
-                        logging.info("测试单个ascii码")
-                        sendstr = random.choice(self.ascii)
-                        logging.info(("总的字节数", len(sendstr.encode("utf-8"))))
-                        self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                        logging.info(("写入的字节数：",self.bytes_number))
-                        logging.info(sendstr)
-                        self.ser.flush()
-                        logging.info(("输入缓冲区：", self.ser.in_waiting))
-                        times -= 1
-                        count += 1
-                    elif count==2:
-                        logging.info("测试多个ascii码")
-                        sendstr = "".join(random.sample(self.ascii, random.randint(2, 255)))
-                        logging.info(("总的字节数", len(sendstr.encode("utf-8"))))
-                        self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                        logging.info(("写入的字节数：", self.bytes_number))
-                        logging.info(sendstr)
-                        self.ser.flush()
-                        logging.info(("输入缓冲区：",self.ser.in_waiting))
-                        times -= 1
-                        count += 1
-                    elif count==3:
-                        logging.info("测试全部ascii码")
-                        sendstr = self.ascii
-                        logging.info(("总的字节数",len(sendstr.encode("utf-8"))))
-                        start = time.time()
-                        self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                        end = time.time()
-                        self.transmit_speed += self.bytes_number / (end - start) / 1024
-                        logging.info(("写入的字节数：", self.bytes_number))
-                        logging.info(sendstr)
-                        self.ser.flush()
-                        logging.info(("输入缓冲区：",self.ser.in_waiting))
-                        count = 1
-                        #验证md5
-                        if self.getFileMd5(self.srcpath) == self.getFileMd5(self.dstpath):
-                            self.md5_success += 1
-                        self.srcfile = open(r"%s"%self.srcpath, "rb")
-                    self.startcontent = sendstr
-                    self.status = "read"
-                    times += 1
                 self.lock.release()
 
-    def getFile(self):
-        res = requests.get(self.url).content
-        with open(self.srcpath,"wb") as f:
-            f.write(res)
-        logging.info("下载成功...")
-
-    def getFileMd5(self,filename):
-        if not os.path.isfile(filename):
-            logging.info("file not found")
-            return
-        myHash = hashlib.md5()
-        f = open(r"%s"%filename, 'rb')
+    def writeAscii(self):
+        #发送Ascii码
         while True:
-            b = f.read(8096)
-            if not b:
+            if self.status == "write":
+                print("进入成功...")
+                self.lock.acquire()
+                if self.count==1:
+                    logging.info("测试单个ascii码")
+                    sendstr = random.choice(self.ascii)
+                    logging.info(("总的字节数", len(sendstr.encode("utf-8"))))
+                    self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
+                    logging.info(("写入的字节数：",self.bytes_number))
+                    logging.info(sendstr)
+                    logging.info(("输入缓冲区：", self.ser.in_waiting))
+                    self.count += 1
+                elif self.count==2:
+                    logging.info("测试多个ascii码")
+                    sendstr = "".join(random.sample(self.ascii, random.randint(2, 255)))
+                    logging.info(("总的字节数", len(sendstr.encode("utf-8"))))
+                    self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
+                    logging.info(("写入的字节数：", self.bytes_number))
+                    logging.info(sendstr)
+                    logging.info(("输入缓冲区：",self.ser.in_waiting))
+                    self.count += 1
+                elif self.count==3:
+                    logging.info("测试全部ascii码")
+                    sendstr = self.ascii
+                    logging.info(("总的字节数",len(sendstr.encode("utf-8"))))
+                    start = time.time()
+                    self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
+                    end = time.time()
+                    self.transmit_speed += self.bytes_number / (end - start) / 1024
+                    logging.info(("写入的字节数：", self.bytes_number))
+                    logging.info(sendstr)
+                    logging.info(("输入缓冲区：",self.ser.in_waiting))
+                    self.count = 1
+
+                    self.startcontent = sendstr
+                    self.status = "read"
+                    self.lock.release()
+                    break
+                self.startcontent = sendstr
+                self.status = "read"
+                self.lock.release()
+        print("结束writeAscii码...")
+
+
+    def readFiles(self):
+        #接收文件
+        while True:
+            if self.status == "read":
+                self.nextfile = False
+                self.lock.acquire()
+                if self.ser.in_waiting:
+                    print("缓冲区有数据...")
+                    if self.fileenable:
+                        print("这里...")
+                        recstr = self.ser.read(self.ser.in_waiting)  # self.bytes_number
+                        print("读取内容为",recstr)
+                        self.dstfile.write(recstr)
+                        self.status = "write"
+                else:
+                    print("关闭接收文件...")
+                    self.dstfile.close()
+                    self.end_receive_time = time.time()
+                    self.status = "write"
+                    self.nextfile = True
+                    self.lock.release()
+                    break
+                self.lock.release()
+
+    def readAscii(self):
+        #接收Ascii码
+        while True:
+            if self.status == "read":
+                self.lock.acquire()
+                if self.ser.in_waiting:
+                    logging.info("read...")
+                    logging.info(("读取字节数:", self.bytes_number))
+                    try:
+                        text = self.ser.read(self.bytes_number).decode("utf-8")
+                        self.endcontent = text
+                        logging.info(text)
+                    except:
+                        self.endcontent = None
+                    yield self.startcontent == self.endcontent
+                    if len(self.startcontent) == 256:
+                        print("ok...")
+                        self.lock.release()
+                        self.status = "write"
+                        break
+                    self.status = "write"
+                self.lock.release()
+        print("结束readAscii码...")
+
+    def getWriteSpeed(self):
+        #测试发送速率
+        times = self.times
+        while times:
+            if self.status == "write":
+                self.lock.acquire()
+                sendstr = self.ascii.encode("utf-8")
+                start = time.time()
+                self.bytes_numbers = self.ser.write(sendstr)
+                end = time.time()
+                self.transmit_speed += self.bytes_numbers/(end-start)/1024
+                self.status = "read"
+                times -= 1
+                self.lock.release()
+
+    def getReadSpeed(self):
+        #吃接收速率
+        times = self.times
+        while times:
+            if self.ser.in_waiting:
+                if self.status == "read":
+                    self.lock.acquire()
+                    self.receive_start = time.time()
+                    receivestr = self.ser.read(self.bytes_number).decode("utf-8")
+                    self.receive_end = time.time()
+                    # 接收数据速率
+                    if self.receive_end - self.receive_start:
+                        self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
+                    else:
+                        self.receive_speed_zero = True
+                    print("接收到的数据",receivestr)
+                    self.status = "write"
+                    times -= 1
+                    self.lock.release()
+
+    def write(self):
+        # 发送数据
+        times = 1
+        while True:
+            if times > self.times:
                 break
-            myHash.update(b)
-        f.close()
-        return myHash.hexdigest()
+            print("write执行第"+str(times)+"次测试")
+            if self.args.f:
+                for url in self.urls:
+                    while True:
+                        #判断文件是否接收完成
+                        if self.nextfile == True:
+                            self.getInitUrl(url)
+                            break
+                    print("发送文件...")
+                    self.writeFiles()
+            if self.args.a:
+                print("测试Ascii码...")
+                self.writeAscii()
+            print("write执行第"+str(times)+"次完成...")
+            print(self.status)
+            times += 1
+        #测试发送速率
+        if self.args.s:
+            print(self.getWriteSpeed())
+        print("write over...")
+
+    def read(self):
+        # 接收数据
+        times = 1
+        while True:
+            if times > self.times:
+                break
+            print("read执行第"+str(times)+"次测试")
+            if self.args.f:
+                for url in self.urls:
+                    self.getInitUrl(url)
+                    print("接收文件...")
+                    self.readFiles()
+                    if times==1:
+                        if url.startswith("http"):
+                            self.files_nature[self.srcpath] = {"size":os.path.getsize(self.srcpath),"time":self.end_receive_time - self.start_sendfile_time,"success":0}
+                        else:
+                            self.files_nature[url] = {"size":os.path.getsize(self.srcpath),"time":self.end_receive_time - self.start_sendfile_time,"success":0}
+                    # 验证md5
+                    if self.getFileMd5(self.srcpath) == self.getFileMd5(self.dstpath):
+                        if url.startswith("http"):
+                            self.files_nature[self.srcpath]["success"] += 1
+                        else:
+                            self.files_nature[url]["success"] += 1
+
+            if self.args.a:
+                print("读取asciii码")
+                for result in self.readAscii():
+                    yield result
+            print("read执行第"+str(times)+"次完成...")
+            times += 1
+        #测试接收速率
+        if self.args.s:
+            print(self.getReadSpeed())
+        print("read over...")
 
     def run(self):
-        t1 = threading.Thread(target=self.read)
-        t2 = threading.Thread(target=self.write)
+        t1 = Thread(target=self.write)
+        t2 = Thread(target=self.read)
         t1.start()
         t2.start()
         results = self.read()
@@ -223,7 +257,7 @@ class TRSerial():
                     self.mc_fail += 1
                 elif len(self.startcontent)==256:
                     self.ac_fail += 1
-                logging.info("测试失败!")
+                logging.info("测试Ascii码失败!")
             elif result == True:
                 if (len(self.startcontent)) == 1:
                     self.sc_success += 1
@@ -231,38 +265,9 @@ class TRSerial():
                     self.mc_success+= 1
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
-                    # 统计接收数据速率
-                    self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
-                logging.info("测试通过!")
-        self.writecsv()
+                logging.info("测试Ascii码成功!")
+        self.report()
 
-    def writecsv(self):
-        if self.ac_success == 0:
-            receive_speed = 0
-        else:
-            receive_speed = (self.receive_speed / self.ac_success)
-        device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate, "发送速率","%.2fKB/s" % (self.transmit_speed / self.times),"接收速率","%.2fKB/s" % receive_speed]
-
-        headers = ["测试项","次数","成功","失败","成功率"]
-        sc_percent = self.sc_success/self.times*100
-        mc_percent = self.mc_success/self.times*100
-        ac_percent = self.ac_success/self.times*100
-        md5_percent = self.md5_success/self.times* 100
-        sum_percent = (self.sc_success + self.mc_success + self.ac_success)/(3*self.times)*100
-        rows = [
-            {"测试项":"单个ascii码", "次数":self.times, "成功":self.sc_success,"失败":self.sc_fail,"成功率":"%.2f%%"%(sc_percent)},
-            {"测试项":"多个ascii码", "次数":self.times, "成功":self.mc_success,"失败":self.mc_fail,"成功率":"%.2f%%"%(mc_percent)},
-            {"测试项":"全部ascii码", "次数":self.times, "成功":self.ac_success,"失败":self.ac_fail,"成功率":"%.2f%%"%(ac_percent)},
-            {"测试项":"总计", "次数":3*self.times, "成功":self.ac_success+self.mc_success+self.sc_success,"失败":self.ac_fail+self.mc_fail+self.sc_fail,"成功率":"%.2f%%"%(sum_percent)},
-            {"测试项": "文件md5", "次数": self.times, "成功": self.md5_success, "失败": self.times-self.md5_success,"成功率": "%.2f%%" % md5_percent},
-        ]
-        with open("../report/"+"".join(self.ser.name.split("/"))+'tr.csv', 'w', newline='',encoding="utf-8")as f:
-            l_csv = csv.writer(f)
-            l_csv.writerow(device_baudrate)
-
-            f_csv = csv.DictWriter(f, headers)
-            f_csv.writeheader()
-            f_csv.writerows(rows)
-            l_csv.writerow([])
-
+if __name__ == '__main__':
+    pass
 
