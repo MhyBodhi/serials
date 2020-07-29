@@ -13,8 +13,8 @@ class Refactor(TRSerial):
         #接受速率是否可控
         self.receive_speed_zero = False
 
-    def writeFiles(self):
-
+    def writeFiles(self,url):
+        self.getInitUrl(url)
         while True:
             if self.status == "write":
                 self.lock.acquire()
@@ -97,6 +97,7 @@ class Refactor(TRSerial):
                         self.dstfile.write(recstr)
                         self.status = "write"
                 else:
+                    print("关闭接收文件...")
                     self.dstfile.close()
                     # 验证md5
                     if self.getFileMd5(self.srcpath) == self.getFileMd5(self.dstpath):
@@ -173,7 +174,9 @@ class Refactor(TRSerial):
                 break
             print("write执行第"+str(times)+"次测试")
             if self.args.f:
-                self.writeFiles()
+                for url in self.urls:
+                    print("发送文件...")
+                    self.writeFiles(url)
             if self.args.a:
                 print("测试Ascii码...")
                 self.writeAscii()
@@ -184,6 +187,7 @@ class Refactor(TRSerial):
         if self.args.s:
             print(self.getWriteSpeed())
         print("write over...")
+
     def read(self):
         # 接收数据
         times = 1
@@ -191,14 +195,10 @@ class Refactor(TRSerial):
             if times > self.times:
                 break
             print("read执行第"+str(times)+"次测试")
-            if self.srcfile.closed and self.dstfile.closed:
-                print("再次传输文件...")
-                self.dstfile = open(self.dstpath, "wb")
-                self.srcfile = open(r"%s" % self.srcpath, "rb")
-                print("打开文件成功..")
-                self.fileenable = True
             if self.args.f:
-                self.readFiles()
+                for url in self.urls:
+                    print("接收文件...")
+                    self.readFiles()
             if self.args.a:
                 print("读取asciii码")
                 for result in self.readAscii():

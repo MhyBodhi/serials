@@ -40,5 +40,4 @@ class Test():
         t1.join()
         t2.join()
 if __name__ == '__main__':
-    r = Test()
-    r.run()
+    print("/home/kylin".split(","))
