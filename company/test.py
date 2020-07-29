@@ -40,4 +40,8 @@ class Test():
         t1.join()
         t2.join()
 if __name__ == '__main__':
-    print("/home/kylin".split(","))
+    a = {"name":1}
+    a["name"] += 1
+    a.setdefault("age",18)
+    a["age"] += 2
+    print(a)

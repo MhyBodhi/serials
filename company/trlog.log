@@ -3062,3 +3062,2168 @@ Zî±u5äÃÑ19Ì'ôÚíÝ°}iþ÷ëÆïÏc>ð7Ô0hyÞ!ËúS¥ºY§
 2020-07-29 12:03:52,301 basic.py[line:85] INFO main...
 2020-07-29 12:03:52,301 refactor.py[line:236] INFO 测试Ascii码成功!
 2020-07-29 12:03:52,398 basic.py[line:85] INFO main...
+2020-07-29 13:52:10,257 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 13:52:10,268 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 13:52:10,285 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 13:52:10,297 refactor.py[line:53] INFO 
+2020-07-29 13:52:10,308 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 13:52:10,326 refactor.py[line:119] INFO read...
+2020-07-29 13:52:10,337 refactor.py[line:120] INFO ('读取字节数:', 1)
+2020-07-29 13:52:10,349 refactor.py[line:124] INFO 
+2020-07-29 13:52:10,361 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:10,385 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 13:52:10,396 refactor.py[line:59] INFO ('总的字节数', 275)
+2020-07-29 13:52:10,436 refactor.py[line:61] INFO ('写入的字节数：', 275)
+2020-07-29 13:52:10,447 refactor.py[line:62] INFO ¼/ôc{Ç+ÊK(SÄxy,ìz-=6úþtqÓ§H]ÎÀÜÿ\`1°ÁBdÍ³Þs¸ãglµGND½÷¦Ãð|<¡h&k ó¾®r»çO´%àØ
+èuT#ûýwÖÙ ²ö2ºVÈn4p¯¹±3FeZÝ©J×)¥íRAP5W­Û@	8fÌEò:¬7ëáñå¢bäoü£Xjv
+2020-07-29 13:52:10,470 refactor.py[line:63] INFO ('输入缓冲区：', 275)
+2020-07-29 13:52:10,487 refactor.py[line:119] INFO read...
+2020-07-29 13:52:10,499 refactor.py[line:120] INFO ('读取字节数:', 275)
+2020-07-29 13:52:10,517 refactor.py[line:124] INFO ¼/ôc{Ç+ÊK(SÄxy,ìz-=6úþtqÓ§H]ÎÀÜÿ\`1°ÁBdÍ³Þs¸ãglµGND½÷¦Ãð|<¡h&k ó¾®r»çO´%àØ
+èuT#ûýwÖÙ ²ö2ºVÈn4p¯¹±3FeZÝ©J×)¥íRAP5W­Û@	8fÌEò:¬7ëáñå¢bäoü£Xjv
+2020-07-29 13:52:10,534 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:10,557 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 13:52:10,569 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 13:52:10,617 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 13:52:10,629 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:10,642 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 13:52:10,654 refactor.py[line:119] INFO read...
+2020-07-29 13:52:10,661 refactor.py[line:120] INFO ('读取字节数:', 384)
+2020-07-29 13:52:10,692 refactor.py[line:124] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:10,711 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:11,409 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 13:52:11,421 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 13:52:11,439 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 13:52:11,451 refactor.py[line:53] INFO 
+2020-07-29 13:52:11,468 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 13:52:11,492 refactor.py[line:119] INFO read...
+2020-07-29 13:52:11,498 refactor.py[line:120] INFO ('读取字节数:', 1)
+2020-07-29 13:52:11,510 refactor.py[line:124] INFO 
+2020-07-29 13:52:11,522 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:11,546 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 13:52:11,557 refactor.py[line:59] INFO ('总的字节数', 378)
+2020-07-29 13:52:11,604 refactor.py[line:61] INFO ('写入的字节数：', 378)
+2020-07-29 13:52:11,616 refactor.py[line:62] INFO e¬D'T*cû÷?.»Þ ÁpS¢@<{º¥èFØfÿ×No	Âl3ÈKOüø¶mß&½ÃæV¿¡IUq·g6,áêuj2>0J1Äi-ÒaîÕ\ÉÝ(­é¼®z5ÛàòäÑ¨híõ)$ó±ç¯¹¤C
+ GÌÏ]dÅÙÖ¸ÇYµúÎ 7Æ;Í²X¾vôÀ9Znìtâ%/ywLã|Ó£ùMÊbÜ¦ð[ª´³8°Ëö^`ÚrAå§_ÔxÐ!«~=#ës+Pkï©Qý:ñBHER
+2020-07-29 13:52:11,639 refactor.py[line:63] INFO ('输入缓冲区：', 378)
+2020-07-29 13:52:11,662 refactor.py[line:119] INFO read...
+2020-07-29 13:52:11,673 refactor.py[line:120] INFO ('读取字节数:', 378)
+2020-07-29 13:52:11,703 refactor.py[line:124] INFO e¬D'T*cû÷?.»Þ ÁpS¢@<{º¥èFØfÿ×No	Âl3ÈKOüø¶mß&½ÃæV¿¡IUq·g6,áêuj2>0J1Äi-ÒaîÕ\ÉÝ(­é¼®z5ÛàòäÑ¨híõ)$ó±ç¯¹¤C
+ GÌÏ]dÅÙÖ¸ÇYµúÎ 7Æ;Í²X¾vôÀ9Znìtâ%/ywLã|Ó£ùMÊbÜ¦ð[ª´³8°Ëö^`ÚrAå§_ÔxÐ!«~=#ës+Pkï©Qý:ñBHER
+2020-07-29 13:52:11,721 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:11,745 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 13:52:11,752 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 13:52:11,803 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 13:52:11,815 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:11,838 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 13:52:11,850 refactor.py[line:119] INFO read...
+2020-07-29 13:52:11,853 refactor.py[line:120] INFO ('读取字节数:', 384)
+2020-07-29 13:52:11,853 refactor.py[line:124] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:11,866 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:12,630 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 13:52:12,642 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 13:52:12,666 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 13:52:12,678 refactor.py[line:53] INFO 
+2020-07-29 13:52:12,696 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 13:52:12,753 refactor.py[line:119] INFO read...
+2020-07-29 13:52:12,765 refactor.py[line:120] INFO ('读取字节数:', 1)
+2020-07-29 13:52:12,783 refactor.py[line:124] INFO 
+2020-07-29 13:52:12,794 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:12,816 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 13:52:12,827 refactor.py[line:59] INFO ('总的字节数', 114)
+2020-07-29 13:52:12,853 refactor.py[line:61] INFO ('写入的字节数：', 114)
+2020-07-29 13:52:12,864 refactor.py[line:62] INFO -.Üà·Þ[ÆÊ Rt7¬Ða¢ÖU\!îoölTøzhÕÈuÏpñb0`rMn]´*§ùk%1³/{¹SåÉgé "y8â
+2020-07-29 13:52:12,876 refactor.py[line:63] INFO ('输入缓冲区：', 114)
+2020-07-29 13:52:12,898 refactor.py[line:119] INFO read...
+2020-07-29 13:52:12,910 refactor.py[line:120] INFO ('读取字节数:', 114)
+2020-07-29 13:52:12,922 refactor.py[line:124] INFO -.Üà·Þ[ÆÊ Rt7¬Ða¢ÖU\!îoölTøzhÕÈuÏpñb0`rMn]´*§ùk%1³/{¹SåÉgé "y8â
+2020-07-29 13:52:12,934 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 13:52:12,955 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 13:52:12,968 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 13:52:13,016 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 13:52:13,027 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:13,045 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 13:52:13,057 refactor.py[line:119] INFO read...
+2020-07-29 13:52:13,060 refactor.py[line:120] INFO ('读取字节数:', 384)
+2020-07-29 13:52:13,060 refactor.py[line:124] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 13:52:13,062 refactor.py[line:245] INFO 测试Ascii码成功!
+2020-07-29 16:08:53,844 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:08:53,845 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:08:53,846 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:08:53,847 refactor.py[line:53] INFO V
+2020-07-29 16:08:53,848 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:09:51,167 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:09:51,168 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:09:51,168 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:09:51,169 refactor.py[line:53] INFO <
+2020-07-29 16:09:51,170 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:12:23,965 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:12:23,984 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:12:24,002 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:12:24,014 refactor.py[line:53] INFO 
+2020-07-29 16:12:24,030 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:12:24,052 refactor.py[line:116] INFO read...
+2020-07-29 16:12:24,064 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:12:24,081 refactor.py[line:121] INFO 
+2020-07-29 16:12:24,093 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:24,116 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:12:24,128 refactor.py[line:59] INFO ('总的字节数', 5)
+2020-07-29 16:12:24,146 refactor.py[line:61] INFO ('写入的字节数：', 5)
+2020-07-29 16:12:24,157 refactor.py[line:62] INFO Öó
+2020-07-29 16:12:24,174 refactor.py[line:63] INFO ('输入缓冲区：', 5)
+2020-07-29 16:12:24,196 refactor.py[line:116] INFO read...
+2020-07-29 16:12:24,208 refactor.py[line:117] INFO ('读取字节数:', 5)
+2020-07-29 16:12:24,231 refactor.py[line:121] INFO Öó
+2020-07-29 16:12:24,242 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:24,266 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:12:24,278 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:12:24,325 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:12:24,337 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:12:24,363 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:12:24,375 refactor.py[line:116] INFO read...
+2020-07-29 16:12:24,380 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:12:24,416 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:12:24,439 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:44,292 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:12:44,309 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:12:44,326 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:12:44,338 refactor.py[line:53] INFO )
+2020-07-29 16:12:44,355 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:12:44,372 refactor.py[line:116] INFO read...
+2020-07-29 16:12:44,384 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:12:44,401 refactor.py[line:121] INFO )
+2020-07-29 16:12:44,413 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:44,435 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:12:44,446 refactor.py[line:59] INFO ('总的字节数', 295)
+2020-07-29 16:12:44,488 refactor.py[line:61] INFO ('写入的字节数：', 295)
+2020-07-29 16:12:44,499 refactor.py[line:62] INFO ì®7Lã¬×hurJxiÌNü¸VâúÞ@äÙ©Áï³HDÿÀQÆk}öøZt6^[¹Ú¾q_ý2Ç-\"Ã» `8ÜlUÄßjo<c½y3° þð]MP+¡£5WsÉ­Å§¢dÕ!Í>íáRÝ~óñÂ;	å.
+Ô9çª4AËÈewCEOé?·µ%Ó$îê{a¤X¥1Î:ÑôfØ#Ûg¿=/FB¶)²'
+2020-07-29 16:12:44,519 refactor.py[line:63] INFO ('输入缓冲区：', 295)
+2020-07-29 16:12:44,542 refactor.py[line:116] INFO read...
+2020-07-29 16:12:44,560 refactor.py[line:117] INFO ('读取字节数:', 295)
+2020-07-29 16:12:44,572 refactor.py[line:121] INFO ì®7Lã¬×hurJxiÌNü¸VâúÞ@äÙ©Áï³HDÿÀQÆk}öøZt6^[¹Ú¾q_ý2Ç-\"Ã» `8ÜlUÄßjo<c½y3° þð]MP+¡£5WsÉ­Å§¢dÕ!Í>íáRÝ~óñÂ;	å.
+Ô9çª4AËÈewCEOé?·µ%Ó$îê{a¤X¥1Î:ÑôfØ#Ûg¿=/FB¶)²'
+2020-07-29 16:12:44,591 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:44,614 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:12:44,626 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:12:44,677 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:12:44,688 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:12:44,708 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:12:44,714 refactor.py[line:116] INFO read...
+2020-07-29 16:12:44,735 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:12:44,761 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:12:44,783 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:12:45,251 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:12:45,252 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:12:45,254 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:12:45,255 refactor.py[line:53] INFO n
+2020-07-29 16:12:45,256 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:17:27,396 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:17:27,408 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:17:27,426 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:17:27,438 refactor.py[line:53] INFO â
+2020-07-29 16:17:27,456 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:17:27,478 refactor.py[line:116] INFO read...
+2020-07-29 16:17:27,490 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:17:27,507 refactor.py[line:121] INFO â
+2020-07-29 16:17:27,519 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:27,542 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:17:27,554 refactor.py[line:59] INFO ('总的字节数', 86)
+2020-07-29 16:17:27,576 refactor.py[line:61] INFO ('写入的字节数：', 86)
+2020-07-29 16:17:27,588 refactor.py[line:62] INFO 5¸ìâ]¹ÁÐ\þ1*ùÔkyF)îØVÅð®^Éàçv;¢Q´nüä ={¶	
+2020-07-29 16:17:27,594 refactor.py[line:63] INFO ('输入缓冲区：', 86)
+2020-07-29 16:17:27,620 refactor.py[line:116] INFO read...
+2020-07-29 16:17:27,632 refactor.py[line:117] INFO ('读取字节数:', 86)
+2020-07-29 16:17:27,655 refactor.py[line:121] INFO 5¸ìâ]¹ÁÐ\þ1*ùÔkyF)îØVÅð®^Éàçv;¢Q´nüä ={¶	
+2020-07-29 16:17:27,668 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:27,695 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:17:27,707 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:17:27,755 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:17:27,767 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:17:27,795 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:17:27,807 refactor.py[line:116] INFO read...
+2020-07-29 16:17:27,809 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:17:27,811 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:17:27,824 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:28,485 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:17:28,487 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:17:28,489 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:17:28,507 refactor.py[line:53] INFO ÷
+2020-07-29 16:17:28,525 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:17:28,549 refactor.py[line:116] INFO read...
+2020-07-29 16:17:28,561 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:17:28,585 refactor.py[line:121] INFO ÷
+2020-07-29 16:17:28,598 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:28,622 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:17:28,635 refactor.py[line:59] INFO ('总的字节数', 77)
+2020-07-29 16:17:28,659 refactor.py[line:61] INFO ('写入的字节数：', 77)
+2020-07-29 16:17:28,671 refactor.py[line:62] INFO ØÇ'>ÂéÁ!s4_-ÿR ñªç
+½pk&ßrÒB¡¾SÜÅPc2CÝ0§ðt
+2020-07-29 16:17:28,691 refactor.py[line:63] INFO ('输入缓冲区：', 77)
+2020-07-29 16:17:28,715 refactor.py[line:116] INFO read...
+2020-07-29 16:17:28,727 refactor.py[line:117] INFO ('读取字节数:', 77)
+2020-07-29 16:17:28,751 refactor.py[line:121] INFO ØÇ'>ÂéÁ!s4_-ÿR ñªç
+½pk&ßrÒB¡¾SÜÅPc2CÝ0§ðt
+2020-07-29 16:17:28,769 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:28,839 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:17:28,852 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:17:28,901 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:17:28,912 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:17:28,938 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:17:28,950 refactor.py[line:116] INFO read...
+2020-07-29 16:17:28,953 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:17:28,955 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:17:28,974 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 16:17:29,438 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:17:29,439 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:17:29,441 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:17:29,441 refactor.py[line:53] INFO ¨
+2020-07-29 16:17:29,442 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:19:06,695 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:19:06,708 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:19:06,726 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:19:06,732 refactor.py[line:53] INFO 
+2020-07-29 16:19:06,750 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:19:06,774 refactor.py[line:116] INFO read...
+2020-07-29 16:19:06,786 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:19:06,810 refactor.py[line:121] INFO 
+2020-07-29 16:19:06,822 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:19:06,845 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:19:06,855 refactor.py[line:59] INFO ('总的字节数', 78)
+2020-07-29 16:19:06,873 refactor.py[line:61] INFO ('写入的字节数：', 78)
+2020-07-29 16:19:06,884 refactor.py[line:62] INFO ÁÐKWxoY Ô7	î@
+6-(ÂiØËàU\»f«I².}ÇùµÓG·rT­
+2020-07-29 16:19:06,901 refactor.py[line:63] INFO ('输入缓冲区：', 78)
+2020-07-29 16:19:06,918 refactor.py[line:116] INFO read...
+2020-07-29 16:19:06,930 refactor.py[line:117] INFO ('读取字节数:', 78)
+2020-07-29 16:19:06,942 refactor.py[line:121] INFO ÁÐKWxoY Ô7	î@
+6-(ÂiØËàU\»f«I².}ÇùµÓG·rT­
+2020-07-29 16:19:06,960 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:19:06,983 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:19:06,995 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:19:07,042 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:19:07,054 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:19:07,080 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:19:07,092 refactor.py[line:116] INFO read...
+2020-07-29 16:19:07,094 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:19:07,096 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:19:07,116 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:19:07,631 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:19:07,634 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:19:07,664 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:19:07,676 refactor.py[line:53] INFO |
+2020-07-29 16:19:07,688 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:19:07,712 refactor.py[line:116] INFO read...
+2020-07-29 16:19:07,724 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:19:07,748 refactor.py[line:121] INFO |
+2020-07-29 16:19:07,760 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:19:07,784 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:19:07,796 refactor.py[line:59] INFO ('总的字节数', 371)
+2020-07-29 16:19:07,844 refactor.py[line:61] INFO ('写入的字节数：', 371)
+2020-07-29 16:19:07,855 refactor.py[line:62] INFO Ã¸C|u÷çEÖoOy6*Æ{IWµZÇÒ­2ßª¨-èkö~@1àf\4pV9án^[ýc²åõAÁL±«l¼ïî=mXËGQ¢UÑw? ÚºóP©dÄÕ	g§,b së8)+Â¶æeê%ôKúaí5tûÜHÀz0°'"$´ÈvùÌij¥ÔBñ7®#Åé;ð¯ò·M>¬£ÿFÊÛØ×q!üþ_&R:`]ÙT¿¹É¾Y ½ìÞJâ3.¦(<¡N
+³ÓhÍxÏDr»}äSÝ¤Î
+2020-07-29 16:19:07,875 refactor.py[line:63] INFO ('输入缓冲区：', 371)
+2020-07-29 16:19:07,898 refactor.py[line:116] INFO read...
+2020-07-29 16:19:07,910 refactor.py[line:117] INFO ('读取字节数:', 371)
+2020-07-29 16:19:07,940 refactor.py[line:121] INFO Ã¸C|u÷çEÖoOy6*Æ{IWµZÇÒ­2ßª¨-èkö~@1àf\4pV9án^[ýc²åõAÁL±«l¼ïî=mXËGQ¢UÑw? ÚºóP©dÄÕ	g§,b së8)+Â¶æeê%ôKúaí5tûÜHÀz0°'"$´ÈvùÌij¥ÔBñ7®#Åé;ð¯ò·M>¬£ÿFÊÛØ×q!üþ_&R:`]ÙT¿¹É¾Y ½ìÞJâ3.¦(<¡N
+³ÓhÍxÏDr»}äSÝ¤Î
+2020-07-29 16:19:07,959 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:19:07,982 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:19:07,994 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:19:08,043 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:19:08,055 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:19:08,080 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:19:08,092 refactor.py[line:116] INFO read...
+2020-07-29 16:19:08,093 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:19:08,096 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:19:08,097 refactor.py[line:259] INFO 测试Ascii码成功!
+2020-07-29 16:23:04,932 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:23:04,951 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:23:04,969 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:23:04,980 refactor.py[line:53] INFO u
+2020-07-29 16:23:04,998 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:23:05,022 refactor.py[line:116] INFO read...
+2020-07-29 16:23:05,033 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:23:05,062 refactor.py[line:121] INFO u
+2020-07-29 16:23:05,074 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:05,096 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:23:05,108 refactor.py[line:59] INFO ('总的字节数', 249)
+2020-07-29 16:23:05,143 refactor.py[line:61] INFO ('写入的字节数：', 249)
+2020-07-29 16:23:05,155 refactor.py[line:62] INFO òª@2ç&È}¼.ïzO)iJºwäsÄd·¤²k9¸6u4 ^æÐüôV§qý×R*Ö¨>ñyØâ=#agShÅõC¡Ï~öjËÊf(ÙøPú®À'Ü\	;íìáU:b¹`xå, ¾/ó¶«­]î+MéÛÑtcÎ<1ù%Ú!Ynl¯¢$ZÉÁè_73H°N
+2020-07-29 16:23:05,226 refactor.py[line:63] INFO ('输入缓冲区：', 249)
+2020-07-29 16:23:05,249 refactor.py[line:116] INFO read...
+2020-07-29 16:23:05,261 refactor.py[line:117] INFO ('读取字节数:', 249)
+2020-07-29 16:23:05,290 refactor.py[line:121] INFO òª@2ç&È}¼.ïzO)iJºwäsÄd·¤²k9¸6u4 ^æÐüôV§qý×R*Ö¨>ñyØâ=#agShÅõC¡Ï~öjËÊf(ÙøPú®À'Ü\	;íìáU:b¹`xå, ¾/ó¶«­]î+MéÛÑtcÎ<1ù%Ú!Ynl¯¢$ZÉÁè_73H°N
+2020-07-29 16:23:05,305 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:05,325 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:23:05,337 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:23:05,385 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:23:05,397 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:05,418 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:23:05,430 refactor.py[line:116] INFO read...
+2020-07-29 16:23:05,435 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:23:05,473 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:05,493 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:05,965 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:23:05,965 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:23:05,967 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:23:05,981 refactor.py[line:53] INFO )
+2020-07-29 16:23:05,999 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:23:06,028 refactor.py[line:116] INFO read...
+2020-07-29 16:23:06,040 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:23:06,064 refactor.py[line:121] INFO )
+2020-07-29 16:23:06,076 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:06,100 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:23:06,112 refactor.py[line:59] INFO ('总的字节数', 57)
+2020-07-29 16:23:06,141 refactor.py[line:61] INFO ('写入的字节数：', 57)
+2020-07-29 16:23:06,142 refactor.py[line:62] INFO ;ÓÉgD<ãàÕ#"sÂ$XÐ®ß~+Êýä´aÀ«i¤¯=
+2020-07-29 16:23:06,153 refactor.py[line:63] INFO ('输入缓冲区：', 57)
+2020-07-29 16:23:06,174 refactor.py[line:116] INFO read...
+2020-07-29 16:23:06,190 refactor.py[line:117] INFO ('读取字节数:', 57)
+2020-07-29 16:23:06,217 refactor.py[line:121] INFO ;ÓÉgD<ãàÕ#"sÂ$XÐ®ß~+Êýä´aÀ«i¤¯=
+2020-07-29 16:23:06,230 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:06,254 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:23:06,268 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:23:06,318 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:23:06,329 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:06,353 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:23:06,365 refactor.py[line:116] INFO read...
+2020-07-29 16:23:06,366 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:23:06,368 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:06,369 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:06,852 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:23:06,871 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:23:06,895 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:23:06,907 refactor.py[line:53] INFO i
+2020-07-29 16:23:06,924 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:23:06,949 refactor.py[line:116] INFO read...
+2020-07-29 16:23:06,965 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:23:06,989 refactor.py[line:121] INFO i
+2020-07-29 16:23:07,001 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:07,025 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:23:07,037 refactor.py[line:59] INFO ('总的字节数', 161)
+2020-07-29 16:23:07,068 refactor.py[line:61] INFO ('写入的字节数：', 161)
+2020-07-29 16:23:07,080 refactor.py[line:62] INFO ÃÛB[ÞWA@°©MádÑÖñ}L¯¶rýNpÍ÷?ønhÒ¦
+õ6Qçò,cs¬bô|iûÏÌR®O±»>ÉÝG4^D*²m%ÔÅ:=3¹kÓ¡\o´â 7
+2020-07-29 16:23:07,104 refactor.py[line:63] INFO ('输入缓冲区：', 161)
+2020-07-29 16:23:07,128 refactor.py[line:116] INFO read...
+2020-07-29 16:23:07,140 refactor.py[line:117] INFO ('读取字节数:', 161)
+2020-07-29 16:23:07,170 refactor.py[line:121] INFO ÃÛB[ÞWA@°©MádÑÖñ}L¯¶rýNpÍ÷?ønhÒ¦
+õ6Qçò,cs¬bô|iûÏÌR®O±»>ÉÝG4^D*²m%ÔÅ:=3¹kÓ¡\o´â 7
+2020-07-29 16:23:07,182 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:23:07,207 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:23:07,219 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:23:07,267 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:23:07,279 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:07,298 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:23:07,310 refactor.py[line:116] INFO read...
+2020-07-29 16:23:07,312 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:23:07,312 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:23:07,315 refactor.py[line:254] INFO 测试Ascii码成功!
+2020-07-29 16:26:57,741 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:26:57,743 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:26:57,764 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:26:57,775 refactor.py[line:53] INFO ;
+2020-07-29 16:26:57,781 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:26:57,805 refactor.py[line:116] INFO read...
+2020-07-29 16:26:57,816 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:26:57,834 refactor.py[line:121] INFO ;
+2020-07-29 16:26:57,846 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:57,870 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:26:57,881 refactor.py[line:59] INFO ('总的字节数', 314)
+2020-07-29 16:26:57,917 refactor.py[line:61] INFO ('写入的字节数：', 314)
+2020-07-29 16:26:57,929 refactor.py[line:62] INFO ÓÑ¬À1ë~s¢³¾Ptóß4Æe)Ã Hnl¤¸|²ã:­%§ÜZ¿ºðÝjÈw"ÞÉyçû	;ïÇJ¨¹ÖC+`u®Á]7#»=*gÊ°åÔQGr}9æÄùAÏpØ2âSñWfLéT½R3m¼©£@àýÅü´Nx±×IE{
+íD¦chÂá^aþBV?Ì[Xbk8¥-!dz'_6ö>U0Ë/òY,¯Õ÷Í O¡$
+2020-07-29 16:26:57,948 refactor.py[line:63] INFO ('输入缓冲区：', 314)
+2020-07-29 16:26:57,971 refactor.py[line:116] INFO read...
+2020-07-29 16:26:57,983 refactor.py[line:117] INFO ('读取字节数:', 314)
+2020-07-29 16:26:57,993 refactor.py[line:121] INFO ÓÑ¬À1ë~s¢³¾Ptóß4Æe)Ã Hnl¤¸|²ã:­%§ÜZ¿ºðÝjÈw"ÞÉyçû	;ïÇJ¨¹ÖC+`u®Á]7#»=*gÊ°åÔQGr}9æÄùAÏpØ2âSñWfLéT½R3m¼©£@àýÅü´Nx±×IE{
+íD¦chÂá^aþBV?Ì[Xbk8¥-!dz'_6ö>U0Ë/òY,¯Õ÷Í O¡$
+2020-07-29 16:26:58,006 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:58,029 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:26:58,040 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:26:58,087 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:26:58,099 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:26:58,114 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:26:58,128 refactor.py[line:116] INFO read...
+2020-07-29 16:26:58,146 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:26:58,186 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:26:58,214 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:58,766 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:26:58,767 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:26:58,768 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:26:58,768 refactor.py[line:53] INFO 
+2020-07-29 16:26:58,769 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:26:58,783 refactor.py[line:116] INFO read...
+2020-07-29 16:26:58,795 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:26:58,819 refactor.py[line:121] INFO 
+2020-07-29 16:26:58,832 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:58,856 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:26:58,868 refactor.py[line:59] INFO ('总的字节数', 123)
+2020-07-29 16:26:58,893 refactor.py[line:61] INFO ('写入的字节数：', 123)
+2020-07-29 16:26:58,905 refactor.py[line:62] INFO ÞBò/°(|üÝë;~û©¨´KUkÊa2Áðï'\fåêÈF
+qzú#Ôö=Dÿ¦ß¯o³A®Ø£Mí?NxéÓ
+2020-07-29 16:26:58,928 refactor.py[line:63] INFO ('输入缓冲区：', 123)
+2020-07-29 16:26:58,951 refactor.py[line:116] INFO read...
+2020-07-29 16:26:58,963 refactor.py[line:117] INFO ('读取字节数:', 123)
+2020-07-29 16:26:58,993 refactor.py[line:121] INFO ÞBò/°(|üÝë;~û©¨´KUkÊa2Áðï'\fåêÈF
+qzú#Ôö=Dÿ¦ß¯o³A®Ø£Mí?NxéÓ
+2020-07-29 16:26:59,014 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:59,038 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:26:59,050 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:26:59,093 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:26:59,105 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:26:59,131 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:26:59,143 refactor.py[line:116] INFO read...
+2020-07-29 16:26:59,146 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:26:59,147 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:26:59,166 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:59,646 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:26:59,648 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:26:59,648 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:26:59,650 refactor.py[line:53] INFO 
+2020-07-29 16:26:59,651 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:26:59,681 refactor.py[line:116] INFO read...
+2020-07-29 16:26:59,692 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:26:59,722 refactor.py[line:121] INFO 
+2020-07-29 16:26:59,734 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:59,758 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:26:59,774 refactor.py[line:59] INFO ('总的字节数', 216)
+2020-07-29 16:26:59,808 refactor.py[line:61] INFO ('写入的字节数：', 216)
+2020-07-29 16:26:59,820 refactor.py[line:62] INFO \Æ±`B¦Â)¸|'&aÃT¬Ù ²®Ç­³zðAå:s/
+njô[t,7æ_ù¡IJPWÄèyÎ-ÅÀ4Ö¿ªxÚöHêþqÛ6ó<(#GçÐv?û>·bQüíh{Ý×2=°O;VÌ»!k$òÓZR¶Øi£â
+2020-07-29 16:26:59,847 refactor.py[line:63] INFO ('输入缓冲区：', 216)
+2020-07-29 16:26:59,871 refactor.py[line:116] INFO read...
+2020-07-29 16:26:59,883 refactor.py[line:117] INFO ('读取字节数:', 216)
+2020-07-29 16:26:59,913 refactor.py[line:121] INFO \Æ±`B¦Â)¸|'&aÃT¬Ù ²®Ç­³zðAå:s/
+njô[t,7æ_ù¡IJPWÄèyÎ-ÅÀ4Ö¿ªxÚöHêþqÛ6ó<(#GçÐv?û>·bQüíh{Ý×2=°O;VÌ»!k$òÓZR¶Øi£â
+2020-07-29 16:26:59,931 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:26:59,955 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:26:59,967 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:27:00,015 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:27:00,015 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:27:00,041 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:27:00,047 refactor.py[line:116] INFO read...
+2020-07-29 16:27:00,049 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:27:00,050 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:27:00,052 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:54,918 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:47:54,920 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:47:54,934 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:47:54,946 refactor.py[line:53] INFO A
+2020-07-29 16:47:54,964 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:47:54,988 refactor.py[line:116] INFO read...
+2020-07-29 16:47:55,000 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:47:55,019 refactor.py[line:121] INFO A
+2020-07-29 16:47:55,031 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:55,049 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:47:55,061 refactor.py[line:59] INFO ('总的字节数', 203)
+2020-07-29 16:47:55,095 refactor.py[line:61] INFO ('写入的字节数：', 203)
+2020-07-29 16:47:55,107 refactor.py[line:62] INFO á°Ø¼:sÍÙÜPL+øhyÊ<|zSü{ö^º,Y¦pêg}'©£\Fù¡ðÑÔI_Àµ®>ÕÌE¤ÉÛUKÐ¾²oeâ1Å&#/`·biM«÷~H vÖî;tÈ*$0ý[c¸§¿ç8käþ¹?
+2020-07-29 16:47:55,114 refactor.py[line:63] INFO ('输入缓冲区：', 203)
+2020-07-29 16:47:55,134 refactor.py[line:116] INFO read...
+2020-07-29 16:47:55,146 refactor.py[line:117] INFO ('读取字节数:', 203)
+2020-07-29 16:47:55,176 refactor.py[line:121] INFO á°Ø¼:sÍÙÜPL+øhyÊ<|zSü{ö^º,Y¦pêg}'©£\Fù¡ðÑÔI_Àµ®>ÕÌE¤ÉÛUKÐ¾²oeâ1Å&#/`·biM«÷~H vÖî;tÈ*$0ý[c¸§¿ç8käþ¹?
+2020-07-29 16:47:55,188 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:55,213 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:47:55,225 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:47:55,273 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:47:55,289 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:55,307 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:47:55,319 refactor.py[line:116] INFO read...
+2020-07-29 16:47:55,320 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:47:55,322 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:55,341 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:55,842 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:47:55,856 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:47:55,873 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:47:55,885 refactor.py[line:53] INFO Ù
+2020-07-29 16:47:55,896 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:47:55,920 refactor.py[line:116] INFO read...
+2020-07-29 16:47:55,933 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:47:55,963 refactor.py[line:121] INFO Ù
+2020-07-29 16:47:55,975 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:55,993 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:47:56,005 refactor.py[line:59] INFO ('总的字节数', 345)
+2020-07-29 16:47:56,056 refactor.py[line:61] INFO ('写入的字节数：', 345)
+2020-07-29 16:47:56,068 refactor.py[line:62] INFO ðrC"¡¾YÁ :®MâïxPwá9|(é&N~<VÆ[¥?ÛÂËßT]^bºÜÀ°¸ç{L6ãstdÓ×æ©Ôò>Du1\,yîH3Ç=jh³à·ù$­ìaÑ ¿ÅµW%½Ï/J7ñè'`êÃcZóÍOpi;+GöBØü
+ýfÈ«»v¬þë¨¯	5õÿÒªn_ogä4ålÐKÉÚ2øÎ-£FE#Ì§¼kXQÞI}U¦´¢Ä¶ Re8@ÖÕ¹qô
+2020-07-29 16:47:56,093 refactor.py[line:63] INFO ('输入缓冲区：', 345)
+2020-07-29 16:47:56,117 refactor.py[line:116] INFO read...
+2020-07-29 16:47:56,130 refactor.py[line:117] INFO ('读取字节数:', 345)
+2020-07-29 16:47:56,154 refactor.py[line:121] INFO ðrC"¡¾YÁ :®MâïxPwá9|(é&N~<VÆ[¥?ÛÂËßT]^bºÜÀ°¸ç{L6ãstdÓ×æ©Ôò>Du1\,yîH3Ç=jh³à·ù$­ìaÑ ¿ÅµW%½Ï/J7ñè'`êÃcZóÍOpi;+GöBØü
+ýfÈ«»v¬þë¨¯	5õÿÒªn_ogä4ålÐKÉÚ2øÎ-£FE#Ì§¼kXQÞI}U¦´¢Ä¶ Re8@ÖÕ¹qô
+2020-07-29 16:47:56,167 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:56,193 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:47:56,206 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:47:56,256 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:47:56,267 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:56,286 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:47:56,292 refactor.py[line:116] INFO read...
+2020-07-29 16:47:56,295 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:47:56,298 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:56,317 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:56,803 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:47:56,804 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:47:56,804 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:47:56,823 refactor.py[line:53] INFO V
+2020-07-29 16:47:56,841 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:47:56,865 refactor.py[line:116] INFO read...
+2020-07-29 16:47:56,877 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:47:56,907 refactor.py[line:121] INFO V
+2020-07-29 16:47:56,919 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:56,943 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:47:56,955 refactor.py[line:59] INFO ('总的字节数', 252)
+2020-07-29 16:47:56,992 refactor.py[line:61] INFO ('写入的字节数：', 252)
+2020-07-29 16:47:57,004 refactor.py[line:62] INFO Þä¥cêh º×ãLßí`¬Üà¼
+xÉïn3ô»%¶ÚÇçÂéÃ[Í9dBÝ²õEµ­ûfÕ¾§ÅCèF_!	kÆo]ì "a·0?¤ÁáÊM ¿Ïpñ={ðåÀØ'|8æ´ËSXu¡Û¢«b¦AÔÙ,ùÓòâwýø2ëzTó}±R~UH/;£Oî
+2020-07-29 16:47:57,030 refactor.py[line:63] INFO ('输入缓冲区：', 252)
+2020-07-29 16:47:57,054 refactor.py[line:116] INFO read...
+2020-07-29 16:47:57,066 refactor.py[line:117] INFO ('读取字节数:', 252)
+2020-07-29 16:47:57,096 refactor.py[line:121] INFO Þä¥cêh º×ãLßí`¬Üà¼
+xÉïn3ô»%¶ÚÇçÂéÃ[Í9dBÝ²õEµ­ûfÕ¾§ÅCèF_!	kÆo]ì "a·0?¤ÁáÊM ¿Ïpñ={ðåÀØ'|8æ´ËSXu¡Û¢«b¦AÔÙ,ùÓòâwýø2ëzTó}±R~UH/;£Oî
+2020-07-29 16:47:57,115 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:47:57,141 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:47:57,153 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:47:57,201 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:47:57,213 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:57,238 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:47:57,250 refactor.py[line:116] INFO read...
+2020-07-29 16:47:57,253 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:47:57,253 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:47:57,255 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:43,764 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:48:43,775 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:48:43,792 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:48:43,803 refactor.py[line:53] INFO ¦
+2020-07-29 16:48:43,821 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:48:43,838 refactor.py[line:116] INFO read...
+2020-07-29 16:48:43,850 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:48:43,867 refactor.py[line:121] INFO ¦
+2020-07-29 16:48:43,878 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:43,902 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:48:43,914 refactor.py[line:59] INFO ('总的字节数', 39)
+2020-07-29 16:48:43,932 refactor.py[line:61] INFO ('写入的字节数：', 39)
+2020-07-29 16:48:43,943 refactor.py[line:62] INFO ðªÇ2]v$ò÷ZÚ6j#t1³INÁ
+2020-07-29 16:48:43,960 refactor.py[line:63] INFO ('输入缓冲区：', 39)
+2020-07-29 16:48:43,978 refactor.py[line:116] INFO read...
+2020-07-29 16:48:43,989 refactor.py[line:117] INFO ('读取字节数:', 39)
+2020-07-29 16:48:44,006 refactor.py[line:121] INFO ðªÇ2]v$ò÷ZÚ6j#t1³INÁ
+2020-07-29 16:48:44,017 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:44,040 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:48:44,051 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:48:44,099 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:48:44,105 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:44,124 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:48:44,135 refactor.py[line:116] INFO read...
+2020-07-29 16:48:44,139 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:48:44,177 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:44,197 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:44,652 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:48:44,653 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:48:44,680 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:48:44,692 refactor.py[line:53] INFO 
+2020-07-29 16:48:44,710 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:48:44,728 refactor.py[line:116] INFO read...
+2020-07-29 16:48:44,740 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:48:44,764 refactor.py[line:121] INFO 
+2020-07-29 16:48:44,776 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:44,800 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:48:44,812 refactor.py[line:59] INFO ('总的字节数', 218)
+2020-07-29 16:48:44,846 refactor.py[line:61] INFO ('写入的字节数：', 218)
+2020-07-29 16:48:44,858 refactor.py[line:62] INFO *Ý«½'QAÍ¨6ì³<w[	ÉiêÆ+ /ïÊbó:^ Ð²ÃáPsÄ$¯Ø¬môqýlYS`cîÏÈx"V!a]#ÂÜ¦?tæjÅÞEgÀN\ÖøvÔr þ±.º¢ðí¾k2Ú·7®¤U£13e¥èñT;ûJ÷8¼d
+2020-07-29 16:48:44,875 refactor.py[line:63] INFO ('输入缓冲区：', 218)
+2020-07-29 16:48:44,892 refactor.py[line:116] INFO read...
+2020-07-29 16:48:44,904 refactor.py[line:117] INFO ('读取字节数:', 218)
+2020-07-29 16:48:44,927 refactor.py[line:121] INFO *Ý«½'QAÍ¨6ì³<w[	ÉiêÆ+ /ïÊbó:^ Ð²ÃáPsÄ$¯Ø¬môqýlYS`cîÏÈx"V!a]#ÂÜ¦?tæjÅÞEgÀN\ÖøvÔr þ±.º¢ðí¾k2Ú·7®¤U£13e¥èñT;ûJ÷8¼d
+2020-07-29 16:48:44,940 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:44,963 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:48:44,969 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:48:45,023 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:48:45,023 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:45,046 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:48:45,052 refactor.py[line:116] INFO read...
+2020-07-29 16:48:45,070 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:48:45,100 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:45,119 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:45,541 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:48:45,542 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:48:45,543 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:48:45,556 refactor.py[line:53] INFO ¾
+2020-07-29 16:48:45,574 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:48:45,598 refactor.py[line:116] INFO read...
+2020-07-29 16:48:45,611 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:48:45,633 refactor.py[line:121] INFO ¾
+2020-07-29 16:48:45,645 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:45,669 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:48:45,681 refactor.py[line:59] INFO ('总的字节数', 224)
+2020-07-29 16:48:45,715 refactor.py[line:61] INFO ('写入的字节数：', 224)
+2020-07-29 16:48:45,727 refactor.py[line:62] INFO ÀâWGÖ5åQzî#rÝ ¯Vëi0ì³©íûöñý­b¸9x4*°æXÕ/à«HËP$üôÁ@Sò2n'Ï¼_(§²u¢C
+ ?Ú,ÎNk	7Lè<&3y×OÐÂpÆ%Ä¡s^\DcøÓÍ®6¨[È8¦ð:ÌÔeJ£±ï¾t
+2020-07-29 16:48:45,751 refactor.py[line:63] INFO ('输入缓冲区：', 224)
+2020-07-29 16:48:45,769 refactor.py[line:116] INFO read...
+2020-07-29 16:48:45,781 refactor.py[line:117] INFO ('读取字节数:', 224)
+2020-07-29 16:48:45,818 refactor.py[line:121] INFO ÀâWGÖ5åQzî#rÝ ¯Vëi0ì³©íûöñý­b¸9x4*°æXÕ/à«HËP$üôÁ@Sò2n'Ï¼_(§²u¢C
+ ?Ú,ÎNk	7Lè<&3y×OÐÂpÆ%Ä¡s^\DcøÓÍ®6¨[È8¦ð:ÌÔeJ£±ï¾t
+2020-07-29 16:48:45,836 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:48:45,860 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:48:45,872 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:48:45,919 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:48:45,925 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:45,950 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:48:45,962 refactor.py[line:116] INFO read...
+2020-07-29 16:48:45,965 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:48:45,966 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:48:45,967 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:19,302 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:51:19,321 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:51:19,339 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:51:19,351 refactor.py[line:53] INFO 
+2020-07-29 16:51:19,363 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:51:19,440 refactor.py[line:116] INFO read...
+2020-07-29 16:51:19,452 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:51:19,464 refactor.py[line:121] INFO 
+2020-07-29 16:51:19,476 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:19,500 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:51:19,512 refactor.py[line:59] INFO ('总的字节数', 287)
+2020-07-29 16:51:19,556 refactor.py[line:61] INFO ('写入的字节数：', 287)
+2020-07-29 16:51:19,567 refactor.py[line:62] INFO $¨alÂ¬/Éf
+±¤?çsBcj[Ðû8!Ù%JÇ hVDð&¾¥eø×HÒ=¯ïZ»y°,4¸A`S)>oÌKpPº÷u*íÈq§î2zÅ9áM_þF(ö¼ªÜmÁ}¶<ú:\^ÀU3ìõtËÊR{0|òývÞù#rXÎ+;7ÛkTâCgÖWêEi ÄäbÃüß·éÔ	ÿ1à«@]-6¢
+2020-07-29 16:51:19,592 refactor.py[line:63] INFO ('输入缓冲区：', 287)
+2020-07-29 16:51:19,616 refactor.py[line:116] INFO read...
+2020-07-29 16:51:19,628 refactor.py[line:117] INFO ('读取字节数:', 287)
+2020-07-29 16:51:19,658 refactor.py[line:121] INFO $¨alÂ¬/Éf
+±¤?çsBcj[Ðû8!Ù%JÇ hVDð&¾¥eø×HÒ=¯ïZ»y°,4¸A`S)>oÌKpPº÷u*íÈq§î2zÅ9áM_þF(ö¼ªÜmÁ}¶<ú:\^ÀU3ìõtËÊR{0|òývÞù#rXÎ+;7ÛkTâCgÖWêEi ÄäbÃüß·éÔ	ÿ1à«@]-6¢
+2020-07-29 16:51:19,677 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:19,702 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:51:19,715 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:51:19,764 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:51:19,776 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:19,810 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:51:19,822 refactor.py[line:116] INFO read...
+2020-07-29 16:51:19,826 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:51:19,854 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:19,877 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:20,359 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:51:20,361 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:51:20,362 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:51:20,380 refactor.py[line:53] INFO 
+2020-07-29 16:51:20,398 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:51:20,422 refactor.py[line:116] INFO read...
+2020-07-29 16:51:20,434 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:51:20,440 refactor.py[line:121] INFO 
+2020-07-29 16:51:20,442 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:20,461 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:51:20,473 refactor.py[line:59] INFO ('总的字节数', 173)
+2020-07-29 16:51:20,504 refactor.py[line:61] INFO ('写入的字节数：', 173)
+2020-07-29 16:51:20,516 refactor.py[line:62] INFO Í#_?9)ÐO0Ä<=a©èUÙ»JÞSfYúZ­g/ÀD¬FR\MÉs5;Ï°á*¢p|y¡²e½Çõ	Üµ£¿Ø¨.Ò`ªä¦Ì¸mQoébH3êqø!«lT¶Ñæö³,
+2020-07-29 16:51:20,534 refactor.py[line:63] INFO ('输入缓冲区：', 173)
+2020-07-29 16:51:20,558 refactor.py[line:116] INFO read...
+2020-07-29 16:51:20,570 refactor.py[line:117] INFO ('读取字节数:', 173)
+2020-07-29 16:51:20,600 refactor.py[line:121] INFO Í#_?9)ÐO0Ä<=a©èUÙ»JÞSfYúZ­g/ÀD¬FR\MÉs5;Ï°á*¢p|y¡²e½Çõ	Üµ£¿Ø¨.Ò`ªä¦Ì¸mQoébH3êqø!«lT¶Ñæö³,
+2020-07-29 16:51:20,612 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:20,639 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:51:20,651 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:51:20,698 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:51:20,710 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:20,735 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:51:20,747 refactor.py[line:116] INFO read...
+2020-07-29 16:51:20,749 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:51:20,751 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:20,764 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:21,247 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:51:21,266 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:51:21,284 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:51:21,296 refactor.py[line:53] INFO  
+2020-07-29 16:51:21,308 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:51:21,332 refactor.py[line:116] INFO read...
+2020-07-29 16:51:21,344 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:51:21,362 refactor.py[line:121] INFO  
+2020-07-29 16:51:21,374 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:21,398 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:51:21,409 refactor.py[line:59] INFO ('总的字节数', 332)
+2020-07-29 16:51:21,454 refactor.py[line:61] INFO ('写入的字节数：', 332)
+2020-07-29 16:51:21,466 refactor.py[line:62] INFO Ë4
+½{g«öçKR,uÿÁ7@E¼¥tVñWXÀih§r¢ZÎ6:Ú_fmvOØlðîwÞóP&]Ö5ßü+kÕÓYÈL£	ÒúÉ´M(Ï¨pøoæÅd!Ôz²-ëãåª^0H~1|ÄÃ3àìe.Û=³¯ 'A;CsÇ¸}¾ÝBí$8?ûGÌ<QºFDþ¿ÐjS"ô*aùx)Ê`y±2­ÙÑ/án×ä®%Iê÷¤¶NqõUÜèÆ>
+2020-07-29 16:51:21,485 refactor.py[line:63] INFO ('输入缓冲区：', 332)
+2020-07-29 16:51:21,503 refactor.py[line:116] INFO read...
+2020-07-29 16:51:21,515 refactor.py[line:117] INFO ('读取字节数:', 332)
+2020-07-29 16:51:21,539 refactor.py[line:121] INFO Ë4
+½{g«öçKR,uÿÁ7@E¼¥tVñWXÀih§r¢ZÎ6:Ú_fmvOØlðîwÞóP&]Ö5ßü+kÕÓYÈL£	ÒúÉ´M(Ï¨pøoæÅd!Ôz²-ëãåª^0H~1|ÄÃ3àìe.Û=³¯ 'A;CsÇ¸}¾ÝBí$8?ûGÌ<QºFDþ¿ÐjS"ô*aùx)Ê`y±2­ÙÑ/án×ä®%Iê÷¤¶NqõUÜèÆ>
+2020-07-29 16:51:21,557 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:51:21,582 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:51:21,594 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:51:21,648 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:51:21,660 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:21,686 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:51:21,692 refactor.py[line:116] INFO read...
+2020-07-29 16:51:21,695 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:51:21,696 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:51:21,699 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:52:05,986 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:52:06,034 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:52:06,125 basic.py[line:85] INFO 文件不存在...
+2020-07-29 16:52:06,125 basic.py[line:96] INFO file not found
+2020-07-29 16:52:06,127 basic.py[line:85] INFO 文件不存在...
+2020-07-29 16:53:16,966 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:53:16,968 basic.py[line:85] INFO 文件不存在...
+2020-07-29 16:53:16,974 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:01,161 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:01,185 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:01,330 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:55:01,331 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:55:01,332 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:55:01,332 refactor.py[line:53] INFO Ð
+2020-07-29 16:55:01,344 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:55:01,368 refactor.py[line:116] INFO read...
+2020-07-29 16:55:01,380 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:55:01,385 refactor.py[line:121] INFO Ð
+2020-07-29 16:55:01,396 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:01,419 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:55:01,431 refactor.py[line:59] INFO ('总的字节数', 173)
+2020-07-29 16:55:01,462 refactor.py[line:61] INFO ('写入的字节数：', 173)
+2020-07-29 16:55:01,473 refactor.py[line:62] INFO éOþb'Öÿ¸A½æ·l#ý®¶°
+É¨BÞsî:Sú	­¾Wv)R6ÃUâó[^<pÛ91ñÊTäYZgHïVeMí=ÑÌã%ÜÏÙ$Ç§çKÝ}ª²JX _ì@wq`Í
+2020-07-29 16:55:01,497 refactor.py[line:63] INFO ('输入缓冲区：', 173)
+2020-07-29 16:55:01,511 refactor.py[line:116] INFO read...
+2020-07-29 16:55:01,523 refactor.py[line:117] INFO ('读取字节数:', 173)
+2020-07-29 16:55:01,553 refactor.py[line:121] INFO éOþb'Öÿ¸A½æ·l#ý®¶°
+É¨BÞsî:Sú	­¾Wv)R6ÃUâó[^<pÛ91ñÊTäYZgHïVeMí=ÑÌã%ÜÏÙ$Ç§çKÝ}ª²JX _ì@wq`Í
+2020-07-29 16:55:01,577 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:01,603 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:55:01,615 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:55:01,664 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:55:01,676 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:01,700 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:55:01,716 refactor.py[line:116] INFO read...
+2020-07-29 16:55:01,723 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:55:01,724 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:01,726 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:01,839 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:01,840 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:01,921 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:55:01,939 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:55:01,963 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:55:01,975 refactor.py[line:53] INFO 
+2020-07-29 16:55:01,987 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:55:02,011 refactor.py[line:116] INFO read...
+2020-07-29 16:55:02,023 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:55:02,047 refactor.py[line:121] INFO 
+2020-07-29 16:55:02,060 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:02,134 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:55:02,165 refactor.py[line:59] INFO ('总的字节数', 348)
+2020-07-29 16:55:02,212 refactor.py[line:61] INFO ('写入的字节数：', 348)
+2020-07-29 16:55:02,224 refactor.py[line:62] INFO 1óø,24&æ¿kÝÊA$ú8T§b=NÎÏOå¾Å6«Þ3WØmãÉÈô¬Õ ö¶[Ls·
+-r`ð!¦ùÀ+ ¤õn¸Ô²7³ ß:)ÛþÐPtªoñE­±ÿR¢g/d^ÒQî9;í\x¼©aä»IÄàÑcVJp÷"ºÃKý¨°C_Æ#ÓË?ûÖXüÚ}F%Y0vH<fëêÇS	ÂÍzè¥eïl|*£µB(jÜ®¡>½¯@ÙiÁçw'Zy¹Dâ´~
+2020-07-29 16:55:02,242 refactor.py[line:63] INFO ('输入缓冲区：', 348)
+2020-07-29 16:55:02,254 refactor.py[line:116] INFO read...
+2020-07-29 16:55:02,266 refactor.py[line:117] INFO ('读取字节数:', 348)
+2020-07-29 16:55:02,297 refactor.py[line:121] INFO 1óø,24&æ¿kÝÊA$ú8T§b=NÎÏOå¾Å6«Þ3WØmãÉÈô¬Õ ö¶[Ls·
+-r`ð!¦ùÀ+ ¤õn¸Ô²7³ ß:)ÛþÐPtªoñE­±ÿR¢g/d^ÒQî9;í\x¼©aä»IÄàÑcVJp÷"ºÃKý¨°C_Æ#ÓË?ûÖXüÚ}F%Y0vH<fëêÇS	ÂÍzè¥eïl|*£µB(jÜ®¡>½¯@ÙiÁçw'Zy¹Dâ´~
+2020-07-29 16:55:02,317 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:02,342 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:55:02,354 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:55:02,402 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:55:02,414 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:02,440 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:55:02,452 refactor.py[line:116] INFO read...
+2020-07-29 16:55:02,454 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:55:02,456 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:02,458 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:02,563 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:02,604 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:02,697 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:55:02,698 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:55:02,717 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:55:02,729 refactor.py[line:53] INFO s
+2020-07-29 16:55:02,747 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:55:02,771 refactor.py[line:116] INFO read...
+2020-07-29 16:55:02,783 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:55:02,801 refactor.py[line:121] INFO s
+2020-07-29 16:55:02,814 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:02,838 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:55:02,850 refactor.py[line:59] INFO ('总的字节数', 47)
+2020-07-29 16:55:02,868 refactor.py[line:61] INFO ('写入的字节数：', 47)
+2020-07-29 16:55:02,879 refactor.py[line:62] INFO ôaÅc¼*ÛÀTá§ÖÏÐ»|GV<´0Á
+2020-07-29 16:55:02,903 refactor.py[line:63] INFO ('输入缓冲区：', 47)
+2020-07-29 16:55:02,927 refactor.py[line:116] INFO read...
+2020-07-29 16:55:02,939 refactor.py[line:117] INFO ('读取字节数:', 47)
+2020-07-29 16:55:02,984 refactor.py[line:121] INFO ôaÅc¼*ÛÀTá§ÖÏÐ»|GV<´0Á
+2020-07-29 16:55:03,002 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:03,026 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:55:03,038 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:55:03,086 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:55:03,098 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:03,124 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:55:03,136 refactor.py[line:116] INFO read...
+2020-07-29 16:55:03,137 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:55:03,139 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:03,140 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:48,820 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:48,865 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:49,040 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:55:49,040 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:55:49,040 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:55:49,041 refactor.py[line:53] INFO ¾
+2020-07-29 16:55:49,041 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 16:55:49,059 refactor.py[line:116] INFO read...
+2020-07-29 16:55:49,071 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:55:49,101 refactor.py[line:121] INFO ¾
+2020-07-29 16:55:49,113 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:49,137 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:55:49,149 refactor.py[line:59] INFO ('总的字节数', 64)
+2020-07-29 16:55:49,167 refactor.py[line:61] INFO ('写入的字节数：', 64)
+2020-07-29 16:55:49,179 refactor.py[line:62] INFO *ô/®³õ.{oG%üí4¸ ]ëiÉî²÷a§\R°=I,
+2020-07-29 16:55:49,197 refactor.py[line:63] INFO ('输入缓冲区：', 64)
+2020-07-29 16:55:49,220 refactor.py[line:116] INFO read...
+2020-07-29 16:55:49,232 refactor.py[line:117] INFO ('读取字节数:', 64)
+2020-07-29 16:55:49,256 refactor.py[line:121] INFO *ô/®³õ.{oG%üí4¸ ]ëiÉî²÷a§\R°=I,
+2020-07-29 16:55:49,268 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:49,292 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:55:49,304 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:55:49,358 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:55:49,364 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:49,383 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:55:49,395 refactor.py[line:116] INFO read...
+2020-07-29 16:55:49,401 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:55:49,403 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:55:49,404 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:49,508 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:49,534 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:55:49,660 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:55:49,676 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 16:55:49,694 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 16:55:49,706 refactor.py[line:53] INFO 
+2020-07-29 16:55:49,724 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 16:55:49,742 refactor.py[line:116] INFO read...
+2020-07-29 16:55:49,754 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 16:55:49,784 refactor.py[line:121] INFO 
+2020-07-29 16:55:49,796 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:55:49,831 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:55:49,843 refactor.py[line:59] INFO ('总的字节数', 361)
+2020-07-29 16:58:50,023 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:58:50,025 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:59:06,382 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 16:59:06,382 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 16:59:06,383 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 16:59:06,383 refactor.py[line:53] INFO %
+2020-07-29 16:59:06,397 refactor.py[line:54] INFO ('输入缓冲区：', 1)
+2020-07-29 16:59:06,409 refactor.py[line:116] INFO read...
+2020-07-29 16:59:06,421 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 16:59:06,433 refactor.py[line:121] INFO %
+2020-07-29 16:59:06,445 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:59:06,468 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 16:59:06,475 refactor.py[line:59] INFO ('总的字节数', 69)
+2020-07-29 16:59:06,492 refactor.py[line:61] INFO ('写入的字节数：', 69)
+2020-07-29 16:59:06,503 refactor.py[line:62] INFO V®Ì¥»´i^ÀæÅPñW+"#:åëH²¸'wfN,ìÏ[ï3­¹Lý
+2020-07-29 16:59:06,515 refactor.py[line:63] INFO ('输入缓冲区：', 69)
+2020-07-29 16:59:06,532 refactor.py[line:116] INFO read...
+2020-07-29 16:59:06,538 refactor.py[line:117] INFO ('读取字节数:', 69)
+2020-07-29 16:59:06,549 refactor.py[line:121] INFO V®Ì¥»´i^ÀæÅPñW+"#:åëH²¸'wfN,ìÏ[ï3­¹Lý
+2020-07-29 16:59:06,561 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:59:06,584 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 16:59:06,596 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 16:59:06,643 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 16:59:06,654 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:59:06,678 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 16:59:06,689 refactor.py[line:116] INFO read...
+2020-07-29 16:59:06,692 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 16:59:06,694 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 16:59:06,697 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 16:59:06,770 basic.py[line:92] INFO 下载成功...
+2020-07-29 16:59:06,779 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:26,451 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:26,452 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:38,018 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:38,027 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:46,806 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:01:46,883 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:11,620 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:11,664 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:27,975 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 17:02:27,977 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 17:02:27,977 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 17:02:27,977 refactor.py[line:53] INFO ¶
+2020-07-29 17:02:27,978 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 17:02:28,153 refactor.py[line:116] INFO read...
+2020-07-29 17:02:28,165 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 17:02:28,189 refactor.py[line:121] INFO ¶
+2020-07-29 17:02:28,201 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:28,225 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 17:02:28,237 refactor.py[line:59] INFO ('总的字节数', 74)
+2020-07-29 17:02:28,255 refactor.py[line:61] INFO ('写入的字节数：', 74)
+2020-07-29 17:02:28,266 refactor.py[line:62] INFO Óæµ7`C[úåé»rð{ë
+¼Ò¿äÂûX×ºK¾nkdAB¸,È&ÿ
+2020-07-29 17:02:28,290 refactor.py[line:63] INFO ('输入缓冲区：', 74)
+2020-07-29 17:02:28,314 refactor.py[line:116] INFO read...
+2020-07-29 17:02:28,326 refactor.py[line:117] INFO ('读取字节数:', 74)
+2020-07-29 17:02:28,350 refactor.py[line:121] INFO Óæµ7`C[úåé»rð{ë
+¼Ò¿äÂûX×ºK¾nkdAB¸,È&ÿ
+2020-07-29 17:02:28,368 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:28,392 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 17:02:28,404 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 17:02:28,452 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 17:02:28,463 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:02:28,481 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 17:02:28,493 refactor.py[line:116] INFO read...
+2020-07-29 17:02:28,495 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 17:02:28,497 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:02:28,498 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:28,568 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:28,576 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:45,245 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 17:02:45,246 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 17:02:45,272 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 17:02:45,283 refactor.py[line:53] INFO 
+2020-07-29 17:02:45,300 refactor.py[line:54] INFO ('输入缓冲区：', 2)
+2020-07-29 17:02:45,317 refactor.py[line:116] INFO read...
+2020-07-29 17:02:45,329 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 17:02:45,352 refactor.py[line:121] INFO 
+2020-07-29 17:02:45,364 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:45,387 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 17:02:45,399 refactor.py[line:59] INFO ('总的字节数', 195)
+2020-07-29 17:02:45,427 refactor.py[line:61] INFO ('写入的字节数：', 195)
+2020-07-29 17:02:45,439 refactor.py[line:62] INFO yH]ÅZÌ;SÝá1¨?Ú$Äæ²â-!	ÐA5¡zõ®ófvÛ`Òëb¦³P#:cèdÕUÂÑà¢¹{½48¾n£öjü­h0Ê~ÎÍþKlË}m¤ñ\µe|¬Ø&¸X
+qÖJºQ¼ì·©À
+2020-07-29 17:02:45,456 refactor.py[line:63] INFO ('输入缓冲区：', 195)
+2020-07-29 17:02:45,473 refactor.py[line:116] INFO read...
+2020-07-29 17:02:45,478 refactor.py[line:117] INFO ('读取字节数:', 195)
+2020-07-29 17:02:45,490 refactor.py[line:121] INFO yH]ÅZÌ;SÝá1¨?Ú$Äæ²â-!	ÐA5¡zõ®ófvÛ`Òëb¦³P#:cèdÕUÂÑà¢¹{½48¾n£öjü­h0Ê~ÎÍþKlË}m¤ñ\µe|¬Ø&¸X
+qÖJºQ¼ì·©À
+2020-07-29 17:02:45,507 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:45,531 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 17:02:45,542 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 17:02:45,589 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 17:02:45,601 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:02:45,624 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 17:02:45,635 refactor.py[line:116] INFO read...
+2020-07-29 17:02:45,637 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 17:02:45,640 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:02:45,645 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:02:45,708 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:02:45,725 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:03:02,385 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 17:03:02,385 refactor.py[line:50] INFO ('总的字节数', 1)
+2020-07-29 17:03:02,386 refactor.py[line:52] INFO ('写入的字节数：', 1)
+2020-07-29 17:03:02,386 refactor.py[line:53] INFO }
+2020-07-29 17:03:02,386 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 17:03:02,703 refactor.py[line:116] INFO read...
+2020-07-29 17:03:02,715 refactor.py[line:117] INFO ('读取字节数:', 1)
+2020-07-29 17:03:02,739 refactor.py[line:121] INFO }
+2020-07-29 17:03:02,750 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:03:02,773 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 17:03:02,785 refactor.py[line:59] INFO ('总的字节数', 365)
+2020-07-29 17:03:02,833 refactor.py[line:61] INFO ('写入的字节数：', 365)
+2020-07-29 17:03:02,839 refactor.py[line:62] INFO Ü¥Yö8+äD ¶eë#AGU²9¦Ôù¤W´ÓÿÚZ(Ä:yià/·ªáxKvÌÂí4éôºz¿õñ3ßT¸°C®Á»Étòþø^Þ±,Ý2Ûn5X¯awãN£ØkE1ê`Ð0sÅ7ú¨ì*Ç¢Öæ I?l h_ÎÏ@	èHrP&ËBûgM.îf<{¾L¹ÀpbÃ­!
+Í=6}×üq¬Vj³åÒÕÊ')Ro"S$¡\]ï;ó[§mÈ©ÆFu¼d-%µcç÷>ý
+2020-07-29 17:03:02,944 refactor.py[line:63] INFO ('输入缓冲区：', 365)
+2020-07-29 17:03:02,968 refactor.py[line:116] INFO read...
+2020-07-29 17:03:02,980 refactor.py[line:117] INFO ('读取字节数:', 365)
+2020-07-29 17:03:03,004 refactor.py[line:121] INFO Ü¥Yö8+äD ¶eë#AGU²9¦Ôù¤W´ÓÿÚZ(Ä:yià/·ªáxKvÌÂí4éôºz¿õñ3ßT¸°C®Á»Étòþø^Þ±,Ý2Ûn5X¯awãN£ØkE1ê`Ð0sÅ7ú¨ì*Ç¢Öæ I?l h_ÎÏ@	èHrP&ËBûgM.îf<{¾L¹ÀpbÃ­!
+Í=6}×üq¬Vj³åÒÕÊ')Ro"S$¡\]ï;ó[§mÈ©ÆFu¼d-%µcç÷>ý
+2020-07-29 17:03:03,116 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:03:03,140 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 17:03:03,152 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 17:03:03,200 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 17:03:03,212 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:03:03,231 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 17:03:03,243 refactor.py[line:116] INFO read...
+2020-07-29 17:03:03,243 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 17:03:03,243 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:03:03,244 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:04:50,607 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:04:50,612 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:05:08,418 refactor.py[line:48] INFO 测试单个ascii码
+2020-07-29 17:05:08,419 refactor.py[line:50] INFO ('总的字节数', 2)
+2020-07-29 17:05:08,420 refactor.py[line:52] INFO ('写入的字节数：', 2)
+2020-07-29 17:05:08,420 refactor.py[line:53] INFO ô
+2020-07-29 17:05:08,421 refactor.py[line:54] INFO ('输入缓冲区：', 0)
+2020-07-29 17:05:08,647 refactor.py[line:116] INFO read...
+2020-07-29 17:05:08,659 refactor.py[line:117] INFO ('读取字节数:', 2)
+2020-07-29 17:05:08,682 refactor.py[line:121] INFO ô
+2020-07-29 17:05:08,694 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:05:08,718 refactor.py[line:57] INFO 测试多个ascii码
+2020-07-29 17:05:08,730 refactor.py[line:59] INFO ('总的字节数', 286)
+2020-07-29 17:05:08,769 refactor.py[line:61] INFO ('写入的字节数：', 286)
+2020-07-29 17:05:08,781 refactor.py[line:62] INFO Å\f
+@9bDR¶»W´ÿÛß¨­ô÷¡ä^ÚÓTÙøq/éQJl4L¦Æ?Â6nªº¢]¤ê¥á<-2·íþ:y8ÑëE¯ÏUPË1§ÍBçìóVIYà~¬ÔOûèNrãoz0ÐæÕCÞakðFeÀù ÌÉ¿.³â M'¾gÖ%×ò£w"cp½=Ç®öx{!_µÃu«±`hÊî
+2020-07-29 17:05:08,807 refactor.py[line:63] INFO ('输入缓冲区：', 286)
+2020-07-29 17:05:08,831 refactor.py[line:116] INFO read...
+2020-07-29 17:05:08,842 refactor.py[line:117] INFO ('读取字节数:', 286)
+2020-07-29 17:05:08,865 refactor.py[line:121] INFO Å\f
+@9bDR¶»W´ÿÛß¨­ô÷¡ä^ÚÓTÙøq/éQJl4L¦Æ?Â6nªº¢]¤ê¥á<-2·íþ:y8ÑëE¯ÏUPË1§ÍBçìóVIYà~¬ÔOûèNrãoz0ÐæÕCÞakðFeÀù ÌÉ¿.³â M'¾gÖ%×ò£w"cp½=Ç®öx{!_µÃu«±`hÊî
+2020-07-29 17:05:08,883 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:05:08,907 refactor.py[line:66] INFO 测试全部ascii码
+2020-07-29 17:05:08,919 refactor.py[line:68] INFO ('总的字节数', 384)
+2020-07-29 17:05:08,967 refactor.py[line:73] INFO ('写入的字节数：', 384)
+2020-07-29 17:05:08,980 refactor.py[line:74] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:05:09,005 refactor.py[line:75] INFO ('输入缓冲区：', 384)
+2020-07-29 17:05:09,011 refactor.py[line:116] INFO read...
+2020-07-29 17:05:09,014 refactor.py[line:117] INFO ('读取字节数:', 384)
+2020-07-29 17:05:09,018 refactor.py[line:121] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:05:09,020 refactor.py[line:252] INFO 测试Ascii码成功!
+2020-07-29 17:05:09,098 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:05:09,109 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:09:46,671 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:09:46,703 basic.py[line:92] INFO 下载成功...
+2020-07-29 17:13:32,894 refactor.py[line:50] INFO 测试单个ascii码
+2020-07-29 17:13:32,895 refactor.py[line:52] INFO ('总的字节数', 2)
+2020-07-29 17:13:32,896 refactor.py[line:54] INFO ('写入的字节数：', 2)
+2020-07-29 17:13:32,912 refactor.py[line:55] INFO å
+2020-07-29 17:13:32,932 refactor.py[line:56] INFO ('输入缓冲区：', 2)
+2020-07-29 17:13:32,955 refactor.py[line:120] INFO read...
+2020-07-29 17:13:32,967 refactor.py[line:121] INFO ('读取字节数:', 2)
+2020-07-29 17:13:32,984 refactor.py[line:125] INFO å
+2020-07-29 17:13:32,995 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:13:33,018 refactor.py[line:59] INFO 测试多个ascii码
+2020-07-29 17:13:33,030 refactor.py[line:61] INFO ('总的字节数', 121)
+2020-07-29 17:13:33,056 refactor.py[line:63] INFO ('写入的字节数：', 121)
+2020-07-29 17:13:33,067 refactor.py[line:64] INFO ¥Ôé¤Ú¬âN_!æ'nEÉoAª1Uýç¹Öðºïó ØsÈ½l%)vqÛ¯iÂò	I^m3ÞO`TÎ#CÏX¶VPx¿
+2020-07-29 17:13:33,073 refactor.py[line:65] INFO ('输入缓冲区：', 121)
+2020-07-29 17:13:33,097 refactor.py[line:120] INFO read...
+2020-07-29 17:13:33,109 refactor.py[line:121] INFO ('读取字节数:', 121)
+2020-07-29 17:13:33,120 refactor.py[line:125] INFO ¥Ôé¤Ú¬âN_!æ'nEÉoAª1Uýç¹Öðºïó ØsÈ½l%)vqÛ¯iÂò	I^m3ÞO`TÎ#CÏX¶VPx¿
+2020-07-29 17:13:33,132 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:13:33,155 refactor.py[line:68] INFO 测试全部ascii码
+2020-07-29 17:13:33,167 refactor.py[line:70] INFO ('总的字节数', 384)
+2020-07-29 17:13:33,215 refactor.py[line:75] INFO ('写入的字节数：', 384)
+2020-07-29 17:13:33,227 refactor.py[line:76] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:13:33,250 refactor.py[line:77] INFO ('输入缓冲区：', 384)
+2020-07-29 17:13:33,262 refactor.py[line:120] INFO read...
+2020-07-29 17:13:33,265 refactor.py[line:121] INFO ('读取字节数:', 384)
+2020-07-29 17:13:33,272 refactor.py[line:125] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:13:33,291 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:13:40,156 refactor.py[line:50] INFO 测试单个ascii码
+2020-07-29 17:13:40,157 refactor.py[line:52] INFO ('总的字节数', 2)
+2020-07-29 17:13:40,162 refactor.py[line:54] INFO ('写入的字节数：', 2)
+2020-07-29 17:13:40,180 refactor.py[line:55] INFO 
+2020-07-29 17:13:40,191 refactor.py[line:56] INFO ('输入缓冲区：', 2)
+2020-07-29 17:13:40,208 refactor.py[line:120] INFO read...
+2020-07-29 17:13:40,219 refactor.py[line:121] INFO ('读取字节数:', 2)
+2020-07-29 17:13:40,236 refactor.py[line:125] INFO 
+2020-07-29 17:13:40,242 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:13:40,266 refactor.py[line:59] INFO 测试多个ascii码
+2020-07-29 17:13:40,277 refactor.py[line:61] INFO ('总的字节数', 294)
+2020-07-29 17:13:40,312 refactor.py[line:63] INFO ('写入的字节数：', 294)
+2020-07-29 17:13:40,323 refactor.py[line:64] INFO ï5³!¸¼ª8eºµÉ²ÅÙÜ¨¯ê>EÎ å?{jí¤äv_©c=$ÛLìñ¬«¾@ØlÈö1×ÔPëú&ÌMÝIaÐûÚÊõO
+NqnÕâþ	CADÀB,°Yÿ|7<dó#´V¿Jð+ß¶»ZÏ£ç/Áî(KWÓ¥RwÆËàÃi§Sf.:Çzy]¢Òý[® 93¹éæèoÂø^4
+2020-07-29 17:13:40,347 refactor.py[line:65] INFO ('输入缓冲区：', 294)
+2020-07-29 17:13:40,370 refactor.py[line:120] INFO read...
+2020-07-29 17:13:40,382 refactor.py[line:121] INFO ('读取字节数:', 294)
+2020-07-29 17:13:40,412 refactor.py[line:125] INFO ï5³!¸¼ª8eºµÉ²ÅÙÜ¨¯ê>EÎ å?{jí¤äv_©c=$ÛLìñ¬«¾@ØlÈö1×ÔPëú&ÌMÝIaÐûÚÊõO
+NqnÕâþ	CADÀB,°Yÿ|7<dó#´V¿Jð+ß¶»ZÏ£ç/Áî(KWÓ¥RwÆËàÃi§Sf.:Çzy]¢Òý[® 93¹éæèoÂø^4
+2020-07-29 17:13:40,429 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:13:40,496 refactor.py[line:68] INFO 测试全部ascii码
+2020-07-29 17:13:40,508 refactor.py[line:70] INFO ('总的字节数', 384)
+2020-07-29 17:13:40,556 refactor.py[line:75] INFO ('写入的字节数：', 384)
+2020-07-29 17:13:40,568 refactor.py[line:76] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:13:40,594 refactor.py[line:77] INFO ('输入缓冲区：', 384)
+2020-07-29 17:13:40,606 refactor.py[line:120] INFO read...
+2020-07-29 17:13:40,611 refactor.py[line:121] INFO ('读取字节数:', 384)
+2020-07-29 17:13:40,611 refactor.py[line:125] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:13:40,621 refactor.py[line:258] INFO 测试Ascii码成功!
+2020-07-29 17:20:46,204 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:20:46,205 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:20:46,209 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:20:46,226 refactor.py[line:65] INFO Æ
+2020-07-29 17:20:46,243 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:20:46,260 refactor.py[line:130] INFO read...
+2020-07-29 17:20:46,272 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:20:46,283 refactor.py[line:135] INFO Æ
+2020-07-29 17:20:46,295 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:20:46,317 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:20:46,329 refactor.py[line:71] INFO ('总的字节数', 305)
+2020-07-29 17:20:46,371 refactor.py[line:73] INFO ('写入的字节数：', 305)
+2020-07-29 17:20:46,383 refactor.py[line:74] INFO ZRäKÌà¥ÂNÚ[3ó|´C:° ÄgweÞòp]
+.yÒ©!I·j¬Îq/ÃÅ§,8á$£ýÆ²lñnr¹kQÀO`EëèUcV=d¦5ü1¼±asçM0"×¸»Ô'ºö%<ÛGßÉÊ¤ÓØJÜæ)}W;ù>bF¿@ALåÑÿôu(&¶Ý*mzSo í«h P7ú³û~6{ÇføÍ¢T+Y¨-÷ÕDµ
+2020-07-29 17:20:46,405 refactor.py[line:75] INFO ('输入缓冲区：', 305)
+2020-07-29 17:20:46,429 refactor.py[line:130] INFO read...
+2020-07-29 17:20:46,440 refactor.py[line:131] INFO ('读取字节数:', 305)
+2020-07-29 17:20:46,464 refactor.py[line:135] INFO ZRäKÌà¥ÂNÚ[3ó|´C:° ÄgweÞòp]
+.yÒ©!I·j¬Îq/ÃÅ§,8á$£ýÆ²lñnr¹kQÀO`EëèUcV=d¦5ü1¼±asçM0"×¸»Ô'ºö%<ÛGßÉÊ¤ÓØJÜæ)}W;ù>bF¿@ALåÑÿôu(&¶Ý*mzSo í«h P7ú³û~6{ÇføÍ¢T+Y¨-÷ÕDµ
+2020-07-29 17:20:46,482 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:20:46,507 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:20:46,519 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:20:46,566 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:20:46,578 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:20:46,607 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:20:46,619 refactor.py[line:130] INFO read...
+2020-07-29 17:20:46,632 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:20:46,662 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:20:46,685 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:20:53,274 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:20:53,275 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:20:53,278 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:20:53,290 refactor.py[line:65] INFO 
+2020-07-29 17:20:53,301 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:20:53,318 refactor.py[line:130] INFO read...
+2020-07-29 17:20:53,329 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:20:53,351 refactor.py[line:135] INFO 
+2020-07-29 17:20:53,363 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:20:53,380 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:20:53,392 refactor.py[line:71] INFO ('总的字节数', 236)
+2020-07-29 17:20:53,428 refactor.py[line:73] INFO ('写入的字节数：', 236)
+2020-07-29 17:20:53,440 refactor.py[line:74] INFO O¸©93ðDÅ^ê¢?Ùr{¯alÖxï2¦öbåmGÉzI/äØV]£8#d¥~n óÚoPRsÀÿ+<ã§è}UÍâ'w®gWòÜ¼³¡0`B¬´þ¶jî-FÇv×µTZ>t¾Îº½S7y»JY1æÛXqÐÔE÷H,Â|¨;
+2020-07-29 17:20:53,464 refactor.py[line:75] INFO ('输入缓冲区：', 236)
+2020-07-29 17:20:53,482 refactor.py[line:130] INFO read...
+2020-07-29 17:20:53,494 refactor.py[line:131] INFO ('读取字节数:', 236)
+2020-07-29 17:20:53,518 refactor.py[line:135] INFO O¸©93ðDÅ^ê¢?Ùr{¯alÖxï2¦öbåmGÉzI/äØV]£8#d¥~n óÚoPRsÀÿ+<ã§è}UÍâ'w®gWòÜ¼³¡0`B¬´þ¶jî-FÇv×µTZ>t¾Îº½S7y»JY1æÛXqÐÔE÷H,Â|¨;
+2020-07-29 17:20:53,535 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:20:53,560 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:20:53,572 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:20:53,617 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:20:53,629 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:20:53,654 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:20:53,666 refactor.py[line:130] INFO read...
+2020-07-29 17:20:53,669 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:20:53,671 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:20:53,691 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:21:00,623 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:21:00,637 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:21:00,653 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:21:00,665 refactor.py[line:65] INFO ä
+2020-07-29 17:21:00,677 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:21:00,700 refactor.py[line:130] INFO read...
+2020-07-29 17:21:00,711 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:21:00,729 refactor.py[line:135] INFO ä
+2020-07-29 17:21:00,740 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:21:00,763 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:21:00,774 refactor.py[line:71] INFO ('总的字节数', 114)
+2020-07-29 17:21:00,799 refactor.py[line:73] INFO ('写入的字节数：', 114)
+2020-07-29 17:21:00,810 refactor.py[line:74] INFO ¢öôÂúò¼÷¯DÑ?×({$57åaÒÙF[´Ç¾°@± 	ÿ¬Û#P³3ÔÊÐÍï¤äÕf¶;cíà9»
+2020-07-29 17:21:00,821 refactor.py[line:75] INFO ('输入缓冲区：', 114)
+2020-07-29 17:21:00,844 refactor.py[line:130] INFO read...
+2020-07-29 17:21:00,856 refactor.py[line:131] INFO ('读取字节数:', 114)
+2020-07-29 17:21:00,868 refactor.py[line:135] INFO ¢öôÂúò¼÷¯DÑ?×({$57åaÒÙF[´Ç¾°@± 	ÿ¬Û#P³3ÔÊÐÍï¤äÕf¶;cíà9»
+2020-07-29 17:21:00,880 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:21:00,898 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:21:00,909 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:21:00,957 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:21:00,969 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:21:00,994 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:21:01,006 refactor.py[line:130] INFO read...
+2020-07-29 17:21:01,019 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:21:01,043 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:21:01,061 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:23:16,542 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:23:16,548 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:23:16,564 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:23:16,575 refactor.py[line:65] INFO 
+2020-07-29 17:23:16,586 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:23:16,609 refactor.py[line:130] INFO read...
+2020-07-29 17:23:16,620 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:23:16,631 refactor.py[line:135] INFO 
+2020-07-29 17:23:16,643 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:23:16,666 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:23:16,677 refactor.py[line:71] INFO ('总的字节数', 175)
+2020-07-29 17:23:16,708 refactor.py[line:73] INFO ('写入的字节数：', 175)
+2020-07-29 17:23:16,719 refactor.py[line:74] INFO UÐû8~jÈ×¼âòë©¥(=½0$v;ÿÓèæ:^i¡Á»ÒY|-?x1Ôü<]Â&'ñ[ _243GäNêXLKJ` %hîoÄgmø¹T³HÙØÍy#¾6Eùåb/
+2020-07-29 17:23:16,737 refactor.py[line:75] INFO ('输入缓冲区：', 175)
+2020-07-29 17:23:16,760 refactor.py[line:130] INFO read...
+2020-07-29 17:23:16,771 refactor.py[line:131] INFO ('读取字节数:', 175)
+2020-07-29 17:23:16,788 refactor.py[line:135] INFO UÐû8~jÈ×¼âòë©¥(=½0$v;ÿÓèæ:^i¡Á»ÒY|-?x1Ôü<]Â&'ñ[ _243GäNêXLKJ` %hîoÄgmø¹T³HÙØÍy#¾6Eùåb/
+2020-07-29 17:23:16,806 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:23:16,829 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:23:16,840 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:23:16,886 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:23:16,896 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:23:16,914 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:23:16,927 refactor.py[line:130] INFO read...
+2020-07-29 17:23:16,946 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:23:16,972 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:23:16,996 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:07,651 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:25:07,658 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:25:07,675 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:25:07,687 refactor.py[line:65] INFO Û
+2020-07-29 17:25:07,704 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:25:07,721 refactor.py[line:130] INFO read...
+2020-07-29 17:25:07,733 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:25:07,744 refactor.py[line:135] INFO Û
+2020-07-29 17:25:07,756 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:07,779 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:25:07,790 refactor.py[line:71] INFO ('总的字节数', 330)
+2020-07-29 17:25:07,836 refactor.py[line:73] INFO ('写入的字节数：', 330)
+2020-07-29 17:25:07,847 refactor.py[line:74] INFO nªUøæC%Týµ`|«Oqáui{ÏÓ§±#g1é¨zÒE:Â8×Ê£Ã¤è0û(]Ö7y¡<@!lâ½jåõË3GÞ¦¼v¬Fã°.Ð5³ß²_k·H¶9Bm^dÅ;ñÆ ÄÝ+W~f¾ÀÇMwÎù/´>sÉÔü¥Ûäx?êÑÜRúp YL*t\òI$¹÷,Ø'}-® ©rïÕöcÚS6­=ì["aD&o¿A	î¸ô2¯bÌ
+2020-07-29 17:25:07,872 refactor.py[line:75] INFO ('输入缓冲区：', 330)
+2020-07-29 17:25:07,896 refactor.py[line:130] INFO read...
+2020-07-29 17:25:07,907 refactor.py[line:131] INFO ('读取字节数:', 330)
+2020-07-29 17:25:07,931 refactor.py[line:135] INFO nªUøæC%Týµ`|«Oqáui{ÏÓ§±#g1é¨zÒE:Â8×Ê£Ã¤è0û(]Ö7y¡<@!lâ½jåõË3GÞ¦¼v¬Fã°.Ð5³ß²_k·H¶9Bm^dÅ;ñÆ ÄÝ+W~f¾ÀÇMwÎù/´>sÉÔü¥Ûäx?êÑÜRúp YL*t\òI$¹÷,Ø'}-® ©rïÕöcÚS6­=ì["aD&o¿A	î¸ô2¯bÌ
+2020-07-29 17:25:07,949 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:07,973 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:25:07,985 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:25:08,032 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:25:08,044 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:25:08,069 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:25:08,081 refactor.py[line:130] INFO read...
+2020-07-29 17:25:08,083 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:25:08,084 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:25:08,103 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:15,024 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:25:15,036 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:25:15,048 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:25:15,059 refactor.py[line:65] INFO w
+2020-07-29 17:25:15,071 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:25:15,095 refactor.py[line:130] INFO read...
+2020-07-29 17:25:15,107 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:25:15,124 refactor.py[line:135] INFO w
+2020-07-29 17:25:15,136 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:15,160 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:25:15,172 refactor.py[line:71] INFO ('总的字节数', 258)
+2020-07-29 17:25:15,211 refactor.py[line:73] INFO ('写入的字节数：', 258)
+2020-07-29 17:25:15,223 refactor.py[line:74] INFO *HmK^ºî¥µyÖh¯¾Piã ýIþÓCà[@}Ú=YÇf~ ´È/D$#(ü	ÅísûÂ¿Êè.BlÙ¬Ò;+%«4»p8:ex' ÜÑ
+ArRÆ"uØXnjF®Ôd¨¦k|°5-ÝùtZ_ëSêÁ7Jg!³ñéÕEÎ©÷zÌ¸Ãò±æ½M2bo&²<1L
+2020-07-29 17:25:15,242 refactor.py[line:75] INFO ('输入缓冲区：', 258)
+2020-07-29 17:25:15,266 refactor.py[line:130] INFO read...
+2020-07-29 17:25:15,278 refactor.py[line:131] INFO ('读取字节数:', 258)
+2020-07-29 17:25:15,300 refactor.py[line:135] INFO *HmK^ºî¥µyÖh¯¾Piã ýIþÓCà[@}Ú=YÇf~ ´È/D$#(ü	ÅísûÂ¿Êè.BlÙ¬Ò;+%«4»p8:ex' ÜÑ
+ArRÆ"uØXnjF®Ôd¨¦k|°5-ÝùtZ_ëSêÁ7Jg!³ñéÕEÎ©÷zÌ¸Ãò±æ½M2bo&²<1L
+2020-07-29 17:25:15,318 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:25:15,341 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:25:15,353 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:25:15,403 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:25:15,415 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:25:15,440 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:25:15,452 refactor.py[line:130] INFO read...
+2020-07-29 17:25:15,453 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:25:15,456 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:25:15,457 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:28:17,970 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:17,971 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:28:17,983 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:28:17,996 refactor.py[line:66] INFO º
+2020-07-29 17:28:18,012 refactor.py[line:67] INFO ('输入缓冲区：', 2)
+2020-07-29 17:28:18,035 refactor.py[line:131] INFO read...
+2020-07-29 17:28:18,046 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:28:18,074 refactor.py[line:136] INFO º
+2020-07-29 17:28:18,086 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:18,109 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:18,121 refactor.py[line:72] INFO ('总的字节数', 330)
+2020-07-29 17:28:18,165 refactor.py[line:74] INFO ('写入的字节数：', 330)
+2020-07-29 17:28:18,177 refactor.py[line:75] INFO N=6<3>2¸×çºGæÐtòÌOi$+#¼¹¤,~S³·§þ
+ªH¨T@ '&Z?®Ýe{R;DsÚ:"ÿdgåQÃ½°Ø±ËÀ¶ÒêÇ¬õì÷ Ñã)(£û5¯ÛöjIX«ÞÓEhUÄvP|ßéÅ^àKè4ä0w©níøp\²cBâaï´Á.óÂYy¥	J¡xVÔA-ÆÉ%!Ö`ðr]*¾8mîúñµëo9}f¦Õ
+2020-07-29 17:28:18,191 refactor.py[line:76] INFO ('输入缓冲区：', 330)
+2020-07-29 17:28:18,215 refactor.py[line:131] INFO read...
+2020-07-29 17:28:18,228 refactor.py[line:132] INFO ('读取字节数:', 330)
+2020-07-29 17:28:18,253 refactor.py[line:136] INFO N=6<3>2¸×çºGæÐtòÌOi$+#¼¹¤,~S³·§þ
+ªH¨T@ '&Z?®Ýe{R;DsÚ:"ÿdgåQÃ½°Ø±ËÀ¶ÒêÇ¬õì÷ Ñã)(£û5¯ÛöjIX«ÞÓEhUÄvP|ßéÅ^àKè4ä0w©níøp\²cBâaï´Á.óÂYy¥	J¡xVÔA-ÆÉ%!Ö`ðr]*¾8mîúñµëo9}f¦Õ
+2020-07-29 17:28:18,274 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:18,298 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:28:18,310 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:28:18,357 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:28:18,369 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:18,383 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:28:18,396 refactor.py[line:131] INFO read...
+2020-07-29 17:28:18,416 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:28:18,447 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:18,466 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:25,420 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:25,421 refactor.py[line:63] INFO ('总的字节数', 1)
+2020-07-29 17:28:25,423 refactor.py[line:65] INFO ('写入的字节数：', 1)
+2020-07-29 17:28:25,435 refactor.py[line:66] INFO .
+2020-07-29 17:28:25,447 refactor.py[line:67] INFO ('输入缓冲区：', 1)
+2020-07-29 17:28:25,470 refactor.py[line:131] INFO read...
+2020-07-29 17:28:25,482 refactor.py[line:132] INFO ('读取字节数:', 1)
+2020-07-29 17:28:25,505 refactor.py[line:136] INFO .
+2020-07-29 17:28:25,517 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:25,539 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:25,550 refactor.py[line:72] INFO ('总的字节数', 353)
+2020-07-29 17:28:25,597 refactor.py[line:74] INFO ('写入的字节数：', 353)
+2020-07-29 17:28:25,609 refactor.py[line:75] INFO ;×|ÖpA/9Ñ ýÄ[¥5j,]´}®göq°>tñ'cô¦ì©Pz_ïoú@Ú<ÁÐÈKdÒ#YîÇéÀlnV0¬¶7Dâû-»Gi³¼+¯wófç­6ÙðÞ¡F¸m"ÌÊS)¾¨N*Ø·k?~Â¹ÔäæòHùåCø ãÓ(%!BüZ²UhTÛá§ÿxàõ«\
+=$b.LíµÍWs:êR&u£År½E1eI{þÉJ8ÃÝXÜ4ÎvÏ±ßO3a^QË¿
+2020-07-29 17:28:25,627 refactor.py[line:76] INFO ('输入缓冲区：', 353)
+2020-07-29 17:28:25,650 refactor.py[line:131] INFO read...
+2020-07-29 17:28:25,662 refactor.py[line:132] INFO ('读取字节数:', 353)
+2020-07-29 17:28:25,674 refactor.py[line:136] INFO ;×|ÖpA/9Ñ ýÄ[¥5j,]´}®göq°>tñ'cô¦ì©Pz_ïoú@Ú<ÁÐÈKdÒ#YîÇéÀlnV0¬¶7Dâû-»Gi³¼+¯wófç­6ÙðÞ¡F¸m"ÌÊS)¾¨N*Ø·k?~Â¹ÔäæòHùåCø ãÓ(%!BüZ²UhTÛá§ÿxàõ«\
+=$b.LíµÍWs:êR&u£År½E1eI{þÉJ8ÃÝXÜ4ÎvÏ±ßO3a^QË¿
+2020-07-29 17:28:25,693 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:25,716 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:28:25,728 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:28:25,776 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:28:25,782 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:25,800 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:28:25,812 refactor.py[line:131] INFO read...
+2020-07-29 17:28:25,818 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:28:25,819 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:25,838 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:32,688 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:32,689 refactor.py[line:63] INFO ('总的字节数', 1)
+2020-07-29 17:28:32,709 refactor.py[line:65] INFO ('写入的字节数：', 1)
+2020-07-29 17:28:32,720 refactor.py[line:66] INFO .
+2020-07-29 17:28:32,732 refactor.py[line:67] INFO ('输入缓冲区：', 1)
+2020-07-29 17:28:32,748 refactor.py[line:131] INFO read...
+2020-07-29 17:28:32,759 refactor.py[line:132] INFO ('读取字节数:', 1)
+2020-07-29 17:28:32,777 refactor.py[line:136] INFO .
+2020-07-29 17:28:32,789 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:32,812 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:32,823 refactor.py[line:72] INFO ('总的字节数', 192)
+2020-07-29 17:28:32,855 refactor.py[line:74] INFO ('写入的字节数：', 192)
+2020-07-29 17:28:32,867 refactor.py[line:75] INFO #T÷0§Ú1Xa¬BR¸ÅäþÕCfâ°}5½:j;¡YØì9Î%8¾	öQ£pDÇ7H ­ß|(éúK*ZÁðvzmqSuÂn@J&¯+ÏÀ!e»w'ãtó$¤r`Ùcø6êW«ëûF±Æ\·
+2020-07-29 17:28:32,884 refactor.py[line:76] INFO ('输入缓冲区：', 192)
+2020-07-29 17:28:32,902 refactor.py[line:131] INFO read...
+2020-07-29 17:28:32,914 refactor.py[line:132] INFO ('读取字节数:', 192)
+2020-07-29 17:28:32,926 refactor.py[line:136] INFO #T÷0§Ú1Xa¬BR¸ÅäþÕCfâ°}5½:j;¡YØì9Î%8¾	öQ£pDÇ7H ­ß|(éúK*ZÁðvzmqSuÂn@J&¯+ÏÀ!e»w'ãtó$¤r`Ùcø6êW«ëûF±Æ\·
+2020-07-29 17:28:32,938 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:32,961 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:28:32,973 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:28:33,020 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:28:33,032 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:33,056 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:28:33,068 refactor.py[line:131] INFO read...
+2020-07-29 17:28:33,087 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:28:33,109 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:33,127 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:45,425 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:45,426 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:28:45,430 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:28:45,447 refactor.py[line:66] INFO Â
+2020-07-29 17:28:45,459 refactor.py[line:67] INFO ('输入缓冲区：', 2)
+2020-07-29 17:28:45,476 refactor.py[line:131] INFO read...
+2020-07-29 17:28:45,488 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:28:45,500 refactor.py[line:136] INFO Â
+2020-07-29 17:28:45,510 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:45,533 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:45,544 refactor.py[line:72] INFO ('总的字节数', 113)
+2020-07-29 17:28:45,570 refactor.py[line:74] INFO ('写入的字节数：', 113)
+2020-07-29 17:28:45,581 refactor.py[line:75] INFO ]FWÌ)z¿÷9å¼PÿÓªyEòìM¢ü'_5|øÊè1r>8C§áu«Ô°ôA*$<¡Û OÃtDaB;¥
+2020-07-29 17:28:45,593 refactor.py[line:76] INFO ('输入缓冲区：', 113)
+2020-07-29 17:28:45,611 refactor.py[line:131] INFO read...
+2020-07-29 17:28:45,623 refactor.py[line:132] INFO ('读取字节数:', 113)
+2020-07-29 17:28:45,647 refactor.py[line:136] INFO ]FWÌ)z¿÷9å¼PÿÓªyEòìM¢ü'_5|øÊè1r>8C§áu«Ô°ôA*$<¡Û OÃtDaB;¥
+2020-07-29 17:28:45,658 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:45,682 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:28:45,694 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:28:45,742 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:28:45,754 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:45,778 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:28:45,789 refactor.py[line:131] INFO read...
+2020-07-29 17:28:45,791 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:28:45,792 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:45,811 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:52,668 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:52,685 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:28:52,696 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:28:52,708 refactor.py[line:66] INFO Á
+2020-07-29 17:28:52,720 refactor.py[line:67] INFO ('输入缓冲区：', 2)
+2020-07-29 17:28:52,743 refactor.py[line:131] INFO read...
+2020-07-29 17:28:52,755 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:28:52,767 refactor.py[line:136] INFO Á
+2020-07-29 17:28:52,778 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:52,801 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:52,812 refactor.py[line:72] INFO ('总的字节数', 152)
+2020-07-29 17:28:52,838 refactor.py[line:74] INFO ('写入的字节数：', 152)
+2020-07-29 17:28:52,850 refactor.py[line:75] INFO õ w>´47à12ôFÇV$ÂJØ8öW`¿¹Î½/Ä[Ábø±£|­ù+Æ(ÒOÝL{Tzf	m\u÷Aê<Ë:®ÊZ¾Hç¯I·cSÅtU
+2020-07-29 17:28:52,867 refactor.py[line:76] INFO ('输入缓冲区：', 152)
+2020-07-29 17:28:52,885 refactor.py[line:131] INFO read...
+2020-07-29 17:28:52,896 refactor.py[line:132] INFO ('读取字节数:', 152)
+2020-07-29 17:28:52,908 refactor.py[line:136] INFO õ w>´47à12ôFÇV$ÂJØ8öW`¿¹Î½/Ä[Ábø±£|­ù+Æ(ÒOÝL{Tzf	m\u÷Aê<Ë:®ÊZ¾Hç¯I·cSÅtU
+2020-07-29 17:28:52,919 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:52,941 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:28:52,952 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:28:52,994 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:28:53,005 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:53,029 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:28:53,041 refactor.py[line:131] INFO read...
+2020-07-29 17:28:53,043 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:28:53,044 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:28:53,063 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:59,822 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:28:59,836 refactor.py[line:63] INFO ('总的字节数', 1)
+2020-07-29 17:28:59,853 refactor.py[line:65] INFO ('写入的字节数：', 1)
+2020-07-29 17:28:59,865 refactor.py[line:66] INFO @
+2020-07-29 17:28:59,876 refactor.py[line:67] INFO ('输入缓冲区：', 1)
+2020-07-29 17:28:59,892 refactor.py[line:131] INFO read...
+2020-07-29 17:28:59,898 refactor.py[line:132] INFO ('读取字节数:', 1)
+2020-07-29 17:28:59,904 refactor.py[line:136] INFO @
+2020-07-29 17:28:59,916 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:28:59,938 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:28:59,949 refactor.py[line:72] INFO ('总的字节数', 41)
+2020-07-29 17:28:59,964 refactor.py[line:74] INFO ('写入的字节数：', 41)
+2020-07-29 17:28:59,975 refactor.py[line:75] INFO h¦,`ñ0e«þ<ãnT^Ã¹g!/O>¿-
+2020-07-29 17:28:59,992 refactor.py[line:76] INFO ('输入缓冲区：', 41)
+2020-07-29 17:29:00,015 refactor.py[line:131] INFO read...
+2020-07-29 17:29:00,027 refactor.py[line:132] INFO ('读取字节数:', 41)
+2020-07-29 17:29:00,039 refactor.py[line:136] INFO h¦,`ñ0e«þ<ãnT^Ã¹g!/O>¿-
+2020-07-29 17:29:00,044 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:00,067 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:29:00,078 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:29:00,126 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:29:00,137 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:00,156 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:29:00,168 refactor.py[line:131] INFO read...
+2020-07-29 17:29:00,187 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:29:00,210 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:00,233 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:13,296 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:29:13,314 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:29:13,331 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:29:13,342 refactor.py[line:66] INFO 
+2020-07-29 17:29:13,360 refactor.py[line:67] INFO ('输入缓冲区：', 2)
+2020-07-29 17:29:13,383 refactor.py[line:131] INFO read...
+2020-07-29 17:29:13,396 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:29:13,420 refactor.py[line:136] INFO 
+2020-07-29 17:29:13,432 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:13,457 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:29:13,469 refactor.py[line:72] INFO ('总的字节数', 232)
+2020-07-29 17:29:13,506 refactor.py[line:74] INFO ('写入的字节数：', 232)
+2020-07-29 17:29:13,518 refactor.py[line:75] INFO ·H4yí)¥A3Î¹ûzI 6{ÍÏ( Êv>t»Fbà±Åeº.|8'l	ì´ö¯ÓR=ò;²QÂÆÒó½£?O/$nÕ#µU5ü¶SîÖÄ¸Mâ70Ñ¼1}*"¤ïmÐ! ~«ÿ¨
+ñÃØêË@V]Gwôj&sçÉÇùkäáXªCaÀèÞ¡úT¾
+2020-07-29 17:29:13,530 refactor.py[line:76] INFO ('输入缓冲区：', 232)
+2020-07-29 17:29:13,555 refactor.py[line:131] INFO read...
+2020-07-29 17:29:13,567 refactor.py[line:132] INFO ('读取字节数:', 232)
+2020-07-29 17:29:13,591 refactor.py[line:136] INFO ·H4yí)¥A3Î¹ûzI 6{ÍÏ( Êv>t»Fbà±Åeº.|8'l	ì´ö¯ÓR=ò;²QÂÆÒó½£?O/$nÕ#µU5ü¶SîÖÄ¸Mâ70Ñ¼1}*"¤ïmÐ! ~«ÿ¨
+ñÃØêË@V]Gwôj&sçÉÇùkäáXªCaÀèÞ¡úT¾
+2020-07-29 17:29:13,609 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:13,633 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:29:13,645 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:29:13,693 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:29:13,705 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:13,730 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:29:13,741 refactor.py[line:131] INFO read...
+2020-07-29 17:29:13,743 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:29:13,744 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:13,763 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:20,903 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:29:20,903 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:29:20,904 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:29:20,904 refactor.py[line:66] INFO µ
+2020-07-29 17:29:20,905 refactor.py[line:67] INFO ('输入缓冲区：', 0)
+2020-07-29 17:29:20,934 refactor.py[line:131] INFO read...
+2020-07-29 17:29:20,940 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:29:20,958 refactor.py[line:136] INFO µ
+2020-07-29 17:29:20,970 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:20,994 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:29:21,005 refactor.py[line:72] INFO ('总的字节数', 203)
+2020-07-29 17:29:21,039 refactor.py[line:74] INFO ('写入的字节数：', 203)
+2020-07-29 17:29:21,051 refactor.py[line:75] INFO ÿMùö8ì¨[Ôý*K{ªkßFÀ°hÊD<Nðû#È®¬dE¦²Á\¶ÕWØ§¼«t(?n¾6amÇ0£:áãlÜ2w¡ÐZSäº@µyøÓ±)©ó;=Òþ_­´gÄ}½B¥õb×Î^CÉÝÚôêu5ë¿è
+2020-07-29 17:29:21,078 refactor.py[line:76] INFO ('输入缓冲区：', 203)
+2020-07-29 17:29:21,097 refactor.py[line:131] INFO read...
+2020-07-29 17:29:21,108 refactor.py[line:132] INFO ('读取字节数:', 203)
+2020-07-29 17:29:21,132 refactor.py[line:136] INFO ÿMùö8ì¨[Ôý*K{ªkßFÀ°hÊD<Nðû#È®¬dE¦²Á\¶ÕWØ§¼«t(?n¾6amÇ0£:áãlÜ2w¡ÐZSäº@µyøÓ±)©ó;=Òþ_­´gÄ}½B¥õb×Î^CÉÝÚôêu5ë¿è
+2020-07-29 17:29:21,151 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:21,175 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:29:21,187 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:29:21,235 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:29:21,247 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:21,276 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:29:21,288 refactor.py[line:131] INFO read...
+2020-07-29 17:29:21,288 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:29:21,289 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:21,290 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:28,114 refactor.py[line:61] INFO 测试单个ascii码
+2020-07-29 17:29:28,115 refactor.py[line:63] INFO ('总的字节数', 2)
+2020-07-29 17:29:28,115 refactor.py[line:65] INFO ('写入的字节数：', 2)
+2020-07-29 17:29:28,115 refactor.py[line:66] INFO Ö
+2020-07-29 17:29:28,132 refactor.py[line:67] INFO ('输入缓冲区：', 2)
+2020-07-29 17:29:28,150 refactor.py[line:131] INFO read...
+2020-07-29 17:29:28,161 refactor.py[line:132] INFO ('读取字节数:', 2)
+2020-07-29 17:29:28,185 refactor.py[line:136] INFO Ö
+2020-07-29 17:29:28,197 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:28,220 refactor.py[line:70] INFO 测试多个ascii码
+2020-07-29 17:29:28,231 refactor.py[line:72] INFO ('总的字节数', 351)
+2020-07-29 17:29:28,277 refactor.py[line:74] INFO ('写入的字节数：', 351)
+2020-07-29 17:29:28,289 refactor.py[line:75] INFO ú&
+KxñA:ÿò°Ëv´Êö5ãþ+åóc8mê#2Ïo· =ÙÄwÔÝ¸ðd¢YBilºqëh©Ö±O@FÅõµ"?¾t4H§r]Â`ÐR²%E×Ó0ç¶ '£¡T9^É¥V½_ÑÚ1¿üLÁÈ¯ªJ/æ	¬eNÛDfâí«IQèô3»ùCÆu¦\[ø®ßÎXbgzyWîkj>ÍàïÕ÷GûÇ¨*!é(|,¼ØU{6$ä7ÀZì PÜn)Ò~S
+2020-07-29 17:29:28,314 refactor.py[line:76] INFO ('输入缓冲区：', 351)
+2020-07-29 17:29:28,339 refactor.py[line:131] INFO read...
+2020-07-29 17:29:28,351 refactor.py[line:132] INFO ('读取字节数:', 351)
+2020-07-29 17:29:28,376 refactor.py[line:136] INFO ú&
+KxñA:ÿò°Ëv´Êö5ãþ+åóc8mê#2Ïo· =ÙÄwÔÝ¸ðd¢YBilºqëh©Ö±O@FÅõµ"?¾t4H§r]Â`ÐR²%E×Ó0ç¶ '£¡T9^É¥V½_ÑÚ1¿üLÁÈ¯ªJ/æ	¬eNÛDfâí«IQèô3»ùCÆu¦\[ø®ßÎXbgzyWîkj>ÍàïÕ÷GûÇ¨*!é(|,¼ØU{6$ä7ÀZì PÜn)Ò~S
+2020-07-29 17:29:28,399 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:29:28,423 refactor.py[line:79] INFO 测试全部ascii码
+2020-07-29 17:29:28,434 refactor.py[line:81] INFO ('总的字节数', 384)
+2020-07-29 17:29:28,484 refactor.py[line:86] INFO ('写入的字节数：', 384)
+2020-07-29 17:29:28,496 refactor.py[line:87] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:28,521 refactor.py[line:88] INFO ('输入缓冲区：', 384)
+2020-07-29 17:29:28,533 refactor.py[line:131] INFO read...
+2020-07-29 17:29:28,546 refactor.py[line:132] INFO ('读取字节数:', 384)
+2020-07-29 17:29:28,570 refactor.py[line:136] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:29:28,588 refactor.py[line:269] INFO 测试Ascii码成功!
+2020-07-29 17:31:44,349 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:31:44,367 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:31:44,385 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:31:44,396 refactor.py[line:65] INFO h
+2020-07-29 17:31:44,408 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:31:44,425 refactor.py[line:130] INFO read...
+2020-07-29 17:31:44,437 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:31:44,449 refactor.py[line:135] INFO h
+2020-07-29 17:31:44,461 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:44,478 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:31:44,489 refactor.py[line:71] INFO ('总的字节数', 234)
+2020-07-29 17:31:44,525 refactor.py[line:73] INFO ('写入的字节数：', 234)
+2020-07-29 17:31:44,537 refactor.py[line:74] INFO U¡åTéXÿN©èÖ¦ê¤}ÒÐu±Õ	kVöØ¨&d`4÷8ø¼¢|qóÓþ¯ )ò§!:~xbÑÏ­õCãl6¬ÀH'ô
+ÉoÎÚ¿Ýí üB(ý7ÜûÅZ/w^S«>¥[fºj2äçp5·ñIh0ÍAú+áªrÁJG@ ðaÌ
+2020-07-29 17:31:44,560 refactor.py[line:75] INFO ('输入缓冲区：', 234)
+2020-07-29 17:31:44,584 refactor.py[line:130] INFO read...
+2020-07-29 17:31:44,596 refactor.py[line:131] INFO ('读取字节数:', 234)
+2020-07-29 17:31:44,619 refactor.py[line:135] INFO U¡åTéXÿN©èÖ¦ê¤}ÒÐu±Õ	kVöØ¨&d`4÷8ø¼¢|qóÓþ¯ )ò§!:~xbÑÏ­õCãl6¬ÀH'ô
+ÉoÎÚ¿Ýí üB(ý7ÜûÅZ/w^S«>¥[fºj2äçp5·ñIh0ÍAú+áªrÁJG@ ðaÌ
+2020-07-29 17:31:44,637 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:44,661 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:31:44,673 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:31:44,721 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:31:44,727 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:44,740 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:31:44,752 refactor.py[line:130] INFO read...
+2020-07-29 17:31:44,758 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:31:44,759 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:44,778 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:51,632 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:31:51,651 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:31:51,669 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:31:51,681 refactor.py[line:65] INFO 
+2020-07-29 17:31:51,692 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:31:51,715 refactor.py[line:130] INFO read...
+2020-07-29 17:31:51,726 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:31:51,743 refactor.py[line:135] INFO 
+2020-07-29 17:31:51,754 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:51,776 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:31:51,787 refactor.py[line:71] INFO ('总的字节数', 267)
+2020-07-29 17:31:51,821 refactor.py[line:73] INFO ('写入的字节数：', 267)
+2020-07-29 17:31:51,832 refactor.py[line:74] INFO [µF)ýJ%TÞí^lfwSALqÇ"Õ,{hI;_H·o|ÖÛõ8¦OX¨Í®ëm3}#K¡?Z¶¢¤¿euå¼7êºÎ î9\Pgþ«ç'ÂDÝãÙCÚË`ûÔªð©	d@ÃRpQN z§Ê=Gb£t1ïè5¹²iVkÀüÏ+rn*xñÒ6âBÆ±´­sé¾áó]M¯(¥
+2020-07-29 17:31:51,854 refactor.py[line:75] INFO ('输入缓冲区：', 267)
+2020-07-29 17:31:51,878 refactor.py[line:130] INFO read...
+2020-07-29 17:31:51,889 refactor.py[line:131] INFO ('读取字节数:', 267)
+2020-07-29 17:31:51,901 refactor.py[line:135] INFO [µF)ýJ%TÞí^lfwSALqÇ"Õ,{hI;_H·o|ÖÛõ8¦OX¨Í®ëm3}#K¡?Z¶¢¤¿euå¼7êºÎ î9\Pgþ«ç'ÂDÝãÙCÚË`ûÔªð©	d@ÃRpQN z§Ê=Gb£t1ïè5¹²iVkÀüÏ+rn*xñÒ6âBÆ±´­sé¾áó]M¯(¥
+2020-07-29 17:31:51,918 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:51,941 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:31:51,953 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:31:52,000 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:31:52,011 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:52,032 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:31:52,044 refactor.py[line:130] INFO read...
+2020-07-29 17:31:52,046 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:31:52,073 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:52,092 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:58,962 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:31:58,963 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:31:58,987 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:31:58,998 refactor.py[line:65] INFO 
+2020-07-29 17:31:59,015 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:31:59,032 refactor.py[line:130] INFO read...
+2020-07-29 17:31:59,043 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:31:59,067 refactor.py[line:135] INFO 
+2020-07-29 17:31:59,073 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:59,095 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:31:59,106 refactor.py[line:71] INFO ('总的字节数', 71)
+2020-07-29 17:31:59,128 refactor.py[line:73] INFO ('写入的字节数：', 71)
+2020-07-29 17:31:59,139 refactor.py[line:74] INFO 3/>q¬'ØeLøéÐÚÔ$X6)	o×r¿Ç³P+üUC·ñvÑDiÍÃ?«â.{
+2020-07-29 17:31:59,151 refactor.py[line:75] INFO ('输入缓冲区：', 71)
+2020-07-29 17:31:59,173 refactor.py[line:130] INFO read...
+2020-07-29 17:31:59,185 refactor.py[line:131] INFO ('读取字节数:', 71)
+2020-07-29 17:31:59,196 refactor.py[line:135] INFO 3/>q¬'ØeLøéÐÚÔ$X6)	o×r¿Ç³P+üUC·ñvÑDiÍÃ?«â.{
+2020-07-29 17:31:59,208 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:31:59,231 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:31:59,243 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:31:59,291 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:31:59,297 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:59,322 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:31:59,334 refactor.py[line:130] INFO read...
+2020-07-29 17:31:59,348 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:31:59,372 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:31:59,393 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:24,626 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:32:24,628 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:32:24,628 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:32:24,642 refactor.py[line:65] INFO á
+2020-07-29 17:32:24,655 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:32:24,678 refactor.py[line:130] INFO read...
+2020-07-29 17:32:24,744 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:32:24,797 refactor.py[line:135] INFO á
+2020-07-29 17:32:24,812 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:24,841 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:32:24,856 refactor.py[line:71] INFO ('总的字节数', 103)
+2020-07-29 17:32:24,887 refactor.py[line:73] INFO ('写入的字节数：', 103)
+2020-07-29 17:32:24,896 refactor.py[line:74] INFO Ý7¾ôÏXªòìõ)µLYß\üÓo1[ÀzP8-öè|~ ÑþÂlºí ðEy+Mñæ>¤F3gD
+2020-07-29 17:32:24,916 refactor.py[line:75] INFO ('输入缓冲区：', 103)
+2020-07-29 17:32:24,955 refactor.py[line:130] INFO read...
+2020-07-29 17:32:24,985 refactor.py[line:131] INFO ('读取字节数:', 103)
+2020-07-29 17:32:25,016 refactor.py[line:135] INFO Ý7¾ôÏXªòìõ)µLYß\üÓo1[ÀzP8-öè|~ ÑþÂlºí ðEy+Mñæ>¤F3gD
+2020-07-29 17:32:25,025 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:25,073 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:32:25,152 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:32:25,206 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:32:25,231 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:25,278 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:32:25,292 refactor.py[line:130] INFO read...
+2020-07-29 17:32:25,295 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:32:25,370 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:25,392 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:33,098 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:32:33,098 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:32:33,099 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:32:33,099 refactor.py[line:65] INFO 
+2020-07-29 17:32:33,099 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:32:33,112 refactor.py[line:130] INFO read...
+2020-07-29 17:32:33,124 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:32:33,154 refactor.py[line:135] INFO 
+2020-07-29 17:32:33,166 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:33,189 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:32:33,201 refactor.py[line:71] INFO ('总的字节数', 127)
+2020-07-29 17:32:33,227 refactor.py[line:73] INFO ('写入的字节数：', 127)
+2020-07-29 17:32:33,239 refactor.py[line:74] INFO ¾M´U©{²¿T,ÊÏä&Í.±×Û§Ñ\ûÕ]¡És'À°WÅ>o«h¹£ì*Iâ÷pØY<)Ü"r[ïuèH~^4
+2020-07-29 17:32:33,262 refactor.py[line:75] INFO ('输入缓冲区：', 127)
+2020-07-29 17:32:33,286 refactor.py[line:130] INFO read...
+2020-07-29 17:32:33,302 refactor.py[line:131] INFO ('读取字节数:', 127)
+2020-07-29 17:32:33,319 refactor.py[line:135] INFO ¾M´U©{²¿T,ÊÏä&Í.±×Û§Ñ\ûÕ]¡És'À°WÅ>o«h¹£ì*Iâ÷pØY<)Ü"r[ïuèH~^4
+2020-07-29 17:32:33,336 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:33,359 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:32:33,371 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:32:33,418 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:32:33,429 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:33,453 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:32:33,465 refactor.py[line:130] INFO read...
+2020-07-29 17:32:33,466 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:32:33,467 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:33,492 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:40,502 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:32:40,502 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:32:40,503 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:32:40,503 refactor.py[line:65] INFO h
+2020-07-29 17:32:40,503 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:32:40,560 refactor.py[line:130] INFO read...
+2020-07-29 17:32:40,571 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:32:40,583 refactor.py[line:135] INFO h
+2020-07-29 17:32:40,593 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:40,615 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:32:40,626 refactor.py[line:71] INFO ('总的字节数', 353)
+2020-07-29 17:32:40,673 refactor.py[line:73] INFO ('写入的字节数：', 353)
+2020-07-29 17:32:40,684 refactor.py[line:74] INFO Å¯<Ýâal9~ db=o6÷c+­ãy4´ÌùT²Ô¼xän!Æv¢t© ÀÙî¸K¾8Ã;ëô[¬	ê5°O?:Dá(}E'C¥Û0¶ÎUMÚ¤%É/#éJ£ÑL",ú3gsNåÁ×¨ËèhjXÕ*õPñ1|Ò&F³ýrZøÇ`)fò¿-7]m2½¡ûÜÐïS«º§Hµ±BwÄ¦»eWk@ÞÿÈ_upìæßÍiØ$AüçðQí
+G®V>à IÖÊ^ª
+2020-07-29 17:32:40,708 refactor.py[line:75] INFO ('输入缓冲区：', 353)
+2020-07-29 17:32:40,731 refactor.py[line:130] INFO read...
+2020-07-29 17:32:40,743 refactor.py[line:131] INFO ('读取字节数:', 353)
+2020-07-29 17:32:40,781 refactor.py[line:135] INFO Å¯<Ýâal9~ db=o6÷c+­ãy4´ÌùT²Ô¼xän!Æv¢t© ÀÙî¸K¾8Ã;ëô[¬	ê5°O?:Dá(}E'C¥Û0¶ÎUMÚ¤%É/#éJ£ÑL",ú3gsNåÁ×¨ËèhjXÕ*õPñ1|Ò&F³ýrZøÇ`)fò¿-7]m2½¡ûÜÐïS«º§Hµ±BwÄ¦»eWk@ÞÿÈ_upìæßÍiØ$AüçðQí
+G®V>à IÖÊ^ª
+2020-07-29 17:32:40,801 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:40,830 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:32:40,845 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:32:40,893 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:32:40,906 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:40,920 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:32:40,933 refactor.py[line:130] INFO read...
+2020-07-29 17:32:40,936 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:32:40,972 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:40,994 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:47,935 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:32:47,935 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:32:47,936 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:32:47,936 refactor.py[line:65] INFO  
+2020-07-29 17:32:47,936 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:32:47,958 refactor.py[line:130] INFO read...
+2020-07-29 17:32:47,970 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:32:47,982 refactor.py[line:135] INFO  
+2020-07-29 17:32:47,994 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:48,017 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:32:48,028 refactor.py[line:71] INFO ('总的字节数', 93)
+2020-07-29 17:32:48,050 refactor.py[line:73] INFO ('写入的字节数：', 93)
+2020-07-29 17:32:48,062 refactor.py[line:74] INFO xeÐ­¶«>jáo0'm6ó_Äßr½=Í,|³gªòÌÛ3\¼aù²8K
+úÏcB?ö;JÇ
+2020-07-29 17:32:48,078 refactor.py[line:75] INFO ('输入缓冲区：', 93)
+2020-07-29 17:32:48,095 refactor.py[line:130] INFO read...
+2020-07-29 17:32:48,107 refactor.py[line:131] INFO ('读取字节数:', 93)
+2020-07-29 17:32:48,125 refactor.py[line:135] INFO xeÐ­¶«>jáo0'm6ó_Äßr½=Í,|³gªòÌÛ3\¼aù²8K
+úÏcB?ö;JÇ
+2020-07-29 17:32:48,142 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:48,165 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:32:48,177 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:32:48,224 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:32:48,236 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:48,254 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:32:48,260 refactor.py[line:130] INFO read...
+2020-07-29 17:32:48,261 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:32:48,262 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:48,288 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:55,292 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:32:55,293 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:32:55,293 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:32:55,294 refactor.py[line:65] INFO 
+2020-07-29 17:32:55,294 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:32:55,318 refactor.py[line:130] INFO read...
+2020-07-29 17:32:55,330 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:32:55,342 refactor.py[line:135] INFO 
+2020-07-29 17:32:55,353 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:55,376 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:32:55,387 refactor.py[line:71] INFO ('总的字节数', 152)
+2020-07-29 17:32:55,416 refactor.py[line:73] INFO ('写入的字节数：', 152)
+2020-07-29 17:32:55,427 refactor.py[line:74] INFO 7Íªpá;êKÆ¼:ÌÜ£1X×>Ù¯?<»í@ìW³akyè-½¾û!P%ú~jÇð)Fqà¥Ýo0À¸G|[ëÖÿÑ.· \2ñ_ZS¬é=6
+2020-07-29 17:32:55,450 refactor.py[line:75] INFO ('输入缓冲区：', 152)
+2020-07-29 17:32:55,468 refactor.py[line:130] INFO read...
+2020-07-29 17:32:55,479 refactor.py[line:131] INFO ('读取字节数:', 152)
+2020-07-29 17:32:55,496 refactor.py[line:135] INFO 7Íªpá;êKÆ¼:ÌÜ£1X×>Ù¯?<»í@ìW³akyè-½¾û!P%ú~jÇð)Fqà¥Ýo0À¸G|[ëÖÿÑ.· \2ñ_ZS¬é=6
+2020-07-29 17:32:55,514 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:32:55,536 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:32:55,547 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:32:55,593 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:32:55,605 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:55,629 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:32:55,641 refactor.py[line:130] INFO read...
+2020-07-29 17:32:55,642 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:32:55,643 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:32:55,662 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:02,684 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:33:02,684 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:33:02,684 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:33:02,685 refactor.py[line:65] INFO 5
+2020-07-29 17:33:02,685 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:33:02,691 refactor.py[line:130] INFO read...
+2020-07-29 17:33:02,697 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:33:02,721 refactor.py[line:135] INFO 5
+2020-07-29 17:33:02,733 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:02,757 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:33:02,769 refactor.py[line:71] INFO ('总的字节数', 172)
+2020-07-29 17:33:02,801 refactor.py[line:73] INFO ('写入的字节数：', 172)
+2020-07-29 17:33:02,813 refactor.py[line:74] INFO vâ&SA¶Á:=,g¾ê;àòµ«pnðÂ3·Ø¨¡ö\Ýj|¥èÌfæë~%@ûÓYùNtGJÙ.Ã®°ÍUP(2ñÅr§ÿT	Ü/}<VZéIÀiç´×y >5]¢¬
+2020-07-29 17:33:02,834 refactor.py[line:75] INFO ('输入缓冲区：', 172)
+2020-07-29 17:33:02,858 refactor.py[line:130] INFO read...
+2020-07-29 17:33:02,870 refactor.py[line:131] INFO ('读取字节数:', 172)
+2020-07-29 17:33:02,901 refactor.py[line:135] INFO vâ&SA¶Á:=,g¾ê;àòµ«pnðÂ3·Ø¨¡ö\Ýj|¥èÌfæë~%@ûÓYùNtGJÙ.Ã®°ÍUP(2ñÅr§ÿT	Ü/}<VZéIÀiç´×y >5]¢¬
+2020-07-29 17:33:02,919 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:02,944 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:33:02,960 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:33:03,007 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:33:03,019 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:03,045 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:33:03,057 refactor.py[line:130] INFO read...
+2020-07-29 17:33:03,057 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:33:03,057 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:03,059 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:10,045 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:33:10,045 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:33:10,045 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:33:10,046 refactor.py[line:65] INFO 1
+2020-07-29 17:33:10,046 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:33:10,052 refactor.py[line:130] INFO read...
+2020-07-29 17:33:10,058 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:33:10,069 refactor.py[line:135] INFO 1
+2020-07-29 17:33:10,081 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:10,104 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:33:10,116 refactor.py[line:71] INFO ('总的字节数', 26)
+2020-07-29 17:33:10,133 refactor.py[line:73] INFO ('写入的字节数：', 26)
+2020-07-29 17:33:10,144 refactor.py[line:74] INFO 1`5É|³Ìß»õ+ëù
+2020-07-29 17:33:10,160 refactor.py[line:75] INFO ('输入缓冲区：', 26)
+2020-07-29 17:33:10,184 refactor.py[line:130] INFO read...
+2020-07-29 17:33:10,190 refactor.py[line:131] INFO ('读取字节数:', 26)
+2020-07-29 17:33:10,201 refactor.py[line:135] INFO 1`5É|³Ìß»õ+ëù
+2020-07-29 17:33:10,213 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:10,235 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:33:10,247 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:33:10,293 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:33:10,304 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:10,322 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:33:10,334 refactor.py[line:130] INFO read...
+2020-07-29 17:33:10,335 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:33:10,335 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:10,338 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:17,283 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:33:17,283 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:33:17,284 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:33:17,284 refactor.py[line:65] INFO 
+2020-07-29 17:33:17,284 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:33:17,292 refactor.py[line:130] INFO read...
+2020-07-29 17:33:17,304 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:33:17,320 refactor.py[line:135] INFO 
+2020-07-29 17:33:17,332 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:17,355 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:33:17,361 refactor.py[line:71] INFO ('总的字节数', 224)
+2020-07-29 17:33:17,395 refactor.py[line:73] INFO ('写入的字节数：', 224)
+2020-07-29 17:33:17,406 refactor.py[line:74] INFO È3ê78þ±üéÚNø^æ#BÅ@óÖàay«EùÃÏôQ²ÌòïÒ¶"áå=+|z®Yº¡{;¥Ë2ÜV.quÿ?¦ sÐ1oRõ0µPãFäßèI	·»U¨Ê÷Õ¤lhkñ-ÍiÄ¯ÉxjDW©ÛûâÀc
+2020-07-29 17:33:17,428 refactor.py[line:75] INFO ('输入缓冲区：', 224)
+2020-07-29 17:33:17,445 refactor.py[line:130] INFO read...
+2020-07-29 17:33:17,457 refactor.py[line:131] INFO ('读取字节数:', 224)
+2020-07-29 17:33:17,485 refactor.py[line:135] INFO È3ê78þ±üéÚNø^æ#BÅ@óÖàay«EùÃÏôQ²ÌòïÒ¶"áå=+|z®Yº¡{;¥Ë2ÜV.quÿ?¦ sÐ1oRõ0µPãFäßèI	·»U¨Ê÷Õ¤lhkñ-ÍiÄ¯ÉxjDW©ÛûâÀc
+2020-07-29 17:33:17,503 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:17,525 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:33:17,537 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:33:17,583 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:33:17,589 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:17,605 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:33:17,617 refactor.py[line:130] INFO read...
+2020-07-29 17:33:17,617 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:33:17,618 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:17,619 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:24,846 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:33:24,846 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:33:24,847 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:33:24,847 refactor.py[line:65] INFO }
+2020-07-29 17:33:24,853 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:33:24,870 refactor.py[line:130] INFO read...
+2020-07-29 17:33:24,882 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:33:24,893 refactor.py[line:135] INFO }
+2020-07-29 17:33:24,905 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:24,927 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:33:24,938 refactor.py[line:71] INFO ('总的字节数', 198)
+2020-07-29 17:33:24,972 refactor.py[line:73] INFO ('写入的字节数：', 198)
+2020-07-29 17:33:24,984 refactor.py[line:74] INFO «fs>ëí`¨Z2¸u~E¢mA35
+qò´àB¿(ñH×ýFRå&G Sc+ÍÊzné¯¤ßÒãW²û$§y»K0ö­<jw¾ÄËCÙ{üUÃØP?x}¥[ÏÎ67Ìÿ±k, £ìÞ]Û/.#¶
+2020-07-29 17:33:25,007 refactor.py[line:75] INFO ('输入缓冲区：', 198)
+2020-07-29 17:33:25,031 refactor.py[line:130] INFO read...
+2020-07-29 17:33:25,043 refactor.py[line:131] INFO ('读取字节数:', 198)
+2020-07-29 17:33:25,060 refactor.py[line:135] INFO «fs>ëí`¨Z2¸u~E¢mA35
+qò´àB¿(ñH×ýFRå&G Sc+ÍÊzné¯¤ßÒãW²û$§y»K0ö­<jw¾ÄËCÙ{üUÃØP?x}¥[ÏÎ67Ìÿ±k, £ìÞ]Û/.#¶
+2020-07-29 17:33:25,078 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:25,101 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:33:25,112 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:33:25,160 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:33:25,172 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:25,197 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:33:25,209 refactor.py[line:130] INFO read...
+2020-07-29 17:33:25,209 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:33:25,209 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:25,211 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:32,116 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:33:32,116 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:33:32,117 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:33:32,117 refactor.py[line:65] INFO 
+2020-07-29 17:33:32,117 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:33:32,141 refactor.py[line:130] INFO read...
+2020-07-29 17:33:32,152 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:33:32,170 refactor.py[line:135] INFO 
+2020-07-29 17:33:32,188 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:32,210 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:33:32,222 refactor.py[line:71] INFO ('总的字节数', 177)
+2020-07-29 17:33:32,253 refactor.py[line:73] INFO ('写入的字节数：', 177)
+2020-07-29 17:33:32,265 refactor.py[line:74] INFO ÏÕÅÒ9^@6ZÔ÷c»ÃÉ©ý4S¢ðBÝã¸`F¦ <7¥Ù¹ù>ËÖA"Î¾yÆ¨ôEndRé¤t±C	VTÌ:À, fÛÂ¶ªi&ü5}qì*·ê1½'k­´O~«
+2020-07-29 17:33:32,282 refactor.py[line:75] INFO ('输入缓冲区：', 177)
+2020-07-29 17:33:32,306 refactor.py[line:130] INFO read...
+2020-07-29 17:33:32,319 refactor.py[line:131] INFO ('读取字节数:', 177)
+2020-07-29 17:33:32,331 refactor.py[line:135] INFO ÏÕÅÒ9^@6ZÔ÷c»ÃÉ©ý4S¢ðBÝã¸`F¦ <7¥Ù¹ù>ËÖA"Î¾yÆ¨ôEndRé¤t±C	VTÌ:À, fÛÂ¶ªi&ü5}qì*·ê1½'k­´O~«
+2020-07-29 17:33:32,343 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:33:32,365 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:33:32,377 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:33:32,425 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:33:32,437 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:32,456 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:33:32,470 refactor.py[line:130] INFO read...
+2020-07-29 17:33:32,482 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:33:32,506 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:33:32,524 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:36:35,073 refactor.py[line:35] INFO 发生超时错误...
+2020-07-29 17:37:04,265 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:04,406 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:04,525 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:04,713 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:04,719 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:37:04,719 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:37:04,720 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:37:04,720 refactor.py[line:65] INFO 
+2020-07-29 17:37:04,721 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:37:04,732 refactor.py[line:130] INFO read...
+2020-07-29 17:37:04,743 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:37:04,767 refactor.py[line:135] INFO 
+2020-07-29 17:37:04,779 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:04,803 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:37:04,815 refactor.py[line:71] INFO ('总的字节数', 297)
+2020-07-29 17:37:04,858 refactor.py[line:73] INFO ('写入的字节数：', 297)
+2020-07-29 17:37:04,869 refactor.py[line:74] INFO 2u[_fK ¢Na¬#3&ÉÅÄàÔÐåiÏÛ1î)Àxèpöùë PwñÌ?v¥Ç d{>¡*ªüyz³j²¨È<ç|X«£"9+¯}µUøðCÎS¼ºË7BâáÃ¸]r¿¾íÆ·õ`IãÜ:±	JÂ~E©.G-Õ¹§LýkÞÊlnb»ß­VTô68%ÁMóÝÓ$!oÿD=m\e^þ,5/¦gH½Í
+2020-07-29 17:37:04,889 refactor.py[line:75] INFO ('输入缓冲区：', 297)
+2020-07-29 17:37:04,911 refactor.py[line:130] INFO read...
+2020-07-29 17:37:04,923 refactor.py[line:131] INFO ('读取字节数:', 297)
+2020-07-29 17:37:04,943 refactor.py[line:135] INFO 2u[_fK ¢Na¬#3&ÉÅÄàÔÐåiÏÛ1î)Àxèpöùë PwñÌ?v¥Ç d{>¡*ªüyz³j²¨È<ç|X«£"9+¯}µUøðCÎS¼ºË7BâáÃ¸]r¿¾íÆ·õ`IãÜ:±	JÂ~E©.G-Õ¹§LýkÞÊlnb»ß­VTô68%ÁMóÝÓ$!oÿD=m\e^þ,5/¦gH½Í
+2020-07-29 17:37:04,975 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:05,000 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:37:05,012 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:37:05,060 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:37:05,079 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:37:05,109 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:37:05,122 refactor.py[line:130] INFO read...
+2020-07-29 17:37:05,124 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:37:05,125 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:37:05,126 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:12,009 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:12,154 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:12,221 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:12,475 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:12,477 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:37:12,477 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:37:12,478 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:37:12,478 refactor.py[line:65] INFO |
+2020-07-29 17:37:12,478 refactor.py[line:66] INFO ('输入缓冲区：', 0)
+2020-07-29 17:37:12,537 refactor.py[line:130] INFO read...
+2020-07-29 17:37:12,548 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:37:12,560 refactor.py[line:135] INFO |
+2020-07-29 17:37:12,571 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:12,594 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:37:12,606 refactor.py[line:71] INFO ('总的字节数', 349)
+2020-07-29 17:37:12,652 refactor.py[line:73] INFO ('写入的字节数：', 349)
+2020-07-29 17:37:12,664 refactor.py[line:74] INFO FEÈÄw®@îÎ¦üi:pÒC4Ð0²°vIºrô¹6t`Éc{¨SnìGþ!b3ö8'¥ õ£Ô«ã¿D§U)éÕP~½MYmú³¬of+käÅÍZÖÚï27ø[ýWRñT
+LN]l^ÑÏyçOê»ÛëgªÓ·zÀµÂ-ÿó|ÞKXÊhB Ãæ­â<à9*\Áèù}AíÌqVáßÙû_#QòHË	j=¤Ü&ÝJ.±1©uØ5¢(Çðd;ae å/Æs
+2020-07-29 17:37:12,682 refactor.py[line:75] INFO ('输入缓冲区：', 349)
+2020-07-29 17:37:12,700 refactor.py[line:130] INFO read...
+2020-07-29 17:37:12,712 refactor.py[line:131] INFO ('读取字节数:', 349)
+2020-07-29 17:37:12,735 refactor.py[line:135] INFO FEÈÄw®@îÎ¦üi:pÒC4Ð0²°vIºrô¹6t`Éc{¨SnìGþ!b3ö8'¥ õ£Ô«ã¿D§U)éÕP~½MYmú³¬of+käÅÍZÖÚï27ø[ýWRñT
+LN]l^ÑÏyçOê»ÛëgªÓ·zÀµÂ-ÿó|ÞKXÊhB Ãæ­â<à9*\Áèù}AíÌqVáßÙû_#QòHË	j=¤Ü&ÝJ.±1©uØ5¢(Çðd;ae å/Æs
+2020-07-29 17:37:12,752 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:12,775 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:37:12,788 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:37:12,840 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:37:12,852 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:37:12,878 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:37:12,890 refactor.py[line:130] INFO read...
+2020-07-29 17:37:12,911 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:37:12,952 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:37:12,990 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:37:59,806 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:37:59,949 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:00,106 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:00,236 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:00,241 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:38:00,243 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:38:00,243 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:38:00,262 refactor.py[line:65] INFO Ì
+2020-07-29 17:38:00,280 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:38:00,304 refactor.py[line:130] INFO read...
+2020-07-29 17:38:00,316 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:38:00,333 refactor.py[line:135] INFO Ì
+2020-07-29 17:38:00,345 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:38:00,369 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:38:00,381 refactor.py[line:71] INFO ('总的字节数', 120)
+2020-07-29 17:38:00,407 refactor.py[line:73] INFO ('写入的字节数：', 120)
+2020-07-29 17:38:00,418 refactor.py[line:74] INFO =dÀ&Iðv¦hÿïyîæ©.¬qpXÑÚÄÐAô´û(åtþö5¡\ºÞZ@¾D÷Î®à'­Faâ<äÊÜ
+2020-07-29 17:38:00,430 refactor.py[line:75] INFO ('输入缓冲区：', 120)
+2020-07-29 17:38:00,447 refactor.py[line:130] INFO read...
+2020-07-29 17:38:00,458 refactor.py[line:131] INFO ('读取字节数:', 120)
+2020-07-29 17:38:00,474 refactor.py[line:135] INFO =dÀ&Iðv¦hÿïyîæ©.¬qpXÑÚÄÐAô´û(åtþö5¡\ºÞZ@¾D÷Î®à'­Faâ<äÊÜ
+2020-07-29 17:38:00,480 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:38:00,502 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:38:00,513 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:38:00,556 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:38:00,568 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:38:00,589 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:38:00,601 refactor.py[line:130] INFO read...
+2020-07-29 17:38:00,608 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:38:00,609 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:38:00,629 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:38:07,821 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:07,886 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:07,971 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:08,168 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:38:08,172 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:38:08,185 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:38:08,202 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:38:08,214 refactor.py[line:65] INFO !
+2020-07-29 17:38:08,220 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:38:08,243 refactor.py[line:130] INFO read...
+2020-07-29 17:38:08,255 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:38:08,279 refactor.py[line:135] INFO !
+2020-07-29 17:38:08,291 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:38:08,315 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:38:08,327 refactor.py[line:71] INFO ('总的字节数', 129)
+2020-07-29 17:38:08,356 refactor.py[line:73] INFO ('写入的字节数：', 129)
+2020-07-29 17:38:08,368 refactor.py[line:74] INFO ­2SAn)=Ê	%óGáÐé<¿À¼¬lþ ÑQ?;û.¶d8PtJ45hHÈiÓ£èbãCàÌ°Ï×IÅ¦crgÙ²ÃÆñ
+2020-07-29 17:38:08,394 refactor.py[line:75] INFO ('输入缓冲区：', 129)
+2020-07-29 17:38:08,418 refactor.py[line:130] INFO read...
+2020-07-29 17:38:08,430 refactor.py[line:131] INFO ('读取字节数:', 129)
+2020-07-29 17:38:08,466 refactor.py[line:135] INFO ­2SAn)=Ê	%óGáÐé<¿À¼¬lþ ÑQ?;û.¶d8PtJ45hHÈiÓ£èbãCàÌ°Ï×IÅ¦crgÙ²ÃÆñ
+2020-07-29 17:38:08,484 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:38:08,509 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:38:08,521 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:38:08,569 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:38:08,580 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:38:08,605 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:38:08,617 refactor.py[line:130] INFO read...
+2020-07-29 17:38:08,631 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:38:08,661 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:38:08,679 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:00,244 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:00,330 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:00,415 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:00,508 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:00,512 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:46:00,513 refactor.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:46:00,531 refactor.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:46:00,543 refactor.py[line:65] INFO z
+2020-07-29 17:46:00,555 refactor.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:46:00,579 refactor.py[line:130] INFO read...
+2020-07-29 17:46:00,591 refactor.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:46:00,621 refactor.py[line:135] INFO z
+2020-07-29 17:46:00,633 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:00,651 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:46:00,657 refactor.py[line:71] INFO ('总的字节数', 117)
+2020-07-29 17:46:00,684 refactor.py[line:73] INFO ('写入的字节数：', 117)
+2020-07-29 17:46:00,696 refactor.py[line:74] INFO 6ðÎILáçõ 5x­/ñ´¬À£&3?°Ún$dÅ¨»Ð2¤ÃæÜâ'ò²ÖB#fµÝ¶PeÊ_y¼ú>
+2020-07-29 17:46:00,703 refactor.py[line:75] INFO ('输入缓冲区：', 117)
+2020-07-29 17:46:00,731 refactor.py[line:130] INFO read...
+2020-07-29 17:46:00,743 refactor.py[line:131] INFO ('读取字节数:', 117)
+2020-07-29 17:46:00,768 refactor.py[line:135] INFO 6ðÎILáçõ 5x­/ñ´¬À£&3?°Ún$dÅ¨»Ð2¤ÃæÜâ'ò²ÖB#fµÝ¶PeÊ_y¼ú>
+2020-07-29 17:46:00,780 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:00,804 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:46:00,816 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:46:00,864 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:46:00,876 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:46:00,904 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:46:00,916 refactor.py[line:130] INFO read...
+2020-07-29 17:46:00,918 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:46:00,920 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:46:00,938 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:07,474 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:07,602 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:07,710 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:07,768 refactor.py[line:47] INFO 文件传输完成...
+2020-07-29 17:46:07,770 refactor.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:46:07,771 refactor.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:46:07,771 refactor.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:46:07,789 refactor.py[line:65] INFO 
+2020-07-29 17:46:07,801 refactor.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:46:07,824 refactor.py[line:130] INFO read...
+2020-07-29 17:46:07,836 refactor.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:46:07,847 refactor.py[line:135] INFO 
+2020-07-29 17:46:07,853 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:07,871 refactor.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:46:07,882 refactor.py[line:71] INFO ('总的字节数', 271)
+2020-07-29 17:46:07,920 refactor.py[line:73] INFO ('写入的字节数：', 271)
+2020-07-29 17:46:07,931 refactor.py[line:74] INFO Ä'©Ý[â¸lt2%dî¤½oõ,íß·!êéëXM#9Æ¦ÀÕ|>¼ïG×hú0fZÞ°}ù`ªWÍè¿UyRÉ¶SÜpÅB]ØIA K*8\zäk-
+ÏjFÁ	¥æÎÐVÙçr5C áÓgÊÿx{üE¬ý1Û±ñ¹µ(b."iöOPLº´cQJðwÚa;ø+Ç=: ®^Ì
+2020-07-29 17:46:07,954 refactor.py[line:75] INFO ('输入缓冲区：', 271)
+2020-07-29 17:46:07,971 refactor.py[line:130] INFO read...
+2020-07-29 17:46:07,976 refactor.py[line:131] INFO ('读取字节数:', 271)
+2020-07-29 17:46:07,994 refactor.py[line:135] INFO Ä'©Ý[â¸lt2%dî¤½oõ,íß·!êéëXM#9Æ¦ÀÕ|>¼ïG×hú0fZÞ°}ù`ªWÍè¿UyRÉ¶SÜpÅB]ØIA K*8\zäk-
+ÏjFÁ	¥æÎÐVÙçr5C áÓgÊÿx{üE¬ý1Û±ñ¹µ(b."iöOPLº´cQJðwÚa;ø+Ç=: ®^Ì
+2020-07-29 17:46:08,011 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:46:08,033 refactor.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:46:08,044 refactor.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:46:08,092 refactor.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:46:08,103 refactor.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:46:08,126 refactor.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:46:08,137 refactor.py[line:130] INFO read...
+2020-07-29 17:46:08,150 refactor.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:46:08,180 refactor.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:46:08,198 refactor.py[line:268] INFO 测试Ascii码成功!

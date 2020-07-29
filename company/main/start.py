@@ -13,7 +13,7 @@ def start():
     parser.add_argument("-c", "--times",type=int,default=10, help="test_times:number")
     parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")
     parser.add_argument("-b", default="115200", help="baudrates:eg.115200,9600...")
-    parser.add_argument("-p",default="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3455238864,153902017&fm=26&gp=0.jpg",help="path:Local address eg./home/kylin/a.jpg or network address eg.https://www.baidu.com/.../xxx.jpg")
+    parser.add_argument("-p",default="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596023159431&di=3f7647e07996527f0d5ecd12dbaf9aac&imgtype=0&src=http%3A%2F%2Fimg.ewebweb.com%2Fuploads%2F20190506%2F13%2F1557121349-oATrxwXZgC.jpg",help="path:Local address eg./home/kylin/a.jpg or network address eg.https://www.baidu.com/.../xxx.jpg")
     parser.add_argument("-t", action='store_true', default=False, help="main-up txserver:listening transmit data")
     parser.add_argument("-r", action='store_true', default=False, help="main-up rxserver:listening receive data")
     parser.add_argument("-tr", action='store_true', default=False, help="main-up run:listening transmit and receive data on this machine")

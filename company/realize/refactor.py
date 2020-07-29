@@ -1,7 +1,9 @@
+import os
 import time
 import random
 from threading import Thread
-from realize.basic import TRSerial,logging
+import serial
+from basic.trbasic import TRSerial,logging
 
 
 class Refactor(TRSerial):
@@ -10,11 +12,12 @@ class Refactor(TRSerial):
         super().__init__(ser,lock,args)
         #Ascii码测试下标
         self.count = 1
-        #接受速率是否可控
-        self.receive_speed_zero = False
+        #队列传输文件,准备状态
+        self.nextfile = True
 
-    def writeFiles(self,url):
-        self.getInitUrl(url)
+    def writeFiles(self):
+        #发送文件
+        self.start_sendfile_time = time.time()
         while True:
             if self.status == "write":
                 self.lock.acquire()
@@ -22,7 +25,16 @@ class Refactor(TRSerial):
                     print("开始写入...")
                     data = self.srcfile.read(2048)
                     if data:
-                        self.bytes_number = self.ser.write(data)
+                        try:
+                            self.bytes_number = self.ser.write(data)
+                        except serial.serialutil.SerialTimeoutException as e:
+                            self.fileenable = False
+                            self.srcfile.close()
+                            self.ser.reset_input_buffer()
+                            self.status = "read"
+                            logging.info("发生超时错误...")
+                            self.lock.release()
+                            break
                         print("写入字节数",self.bytes_number)
                         self.status = "read"
                         print("切换read成功...")
@@ -32,13 +44,14 @@ class Refactor(TRSerial):
                             self.srcfile.close()
                             self.lock.release()
                             self.status = "read"
-                            print("文件传输完成...")
+                            logging.info("文件传输完成...")
                             break
                         else:
                             self.status = "read"
                 self.lock.release()
 
     def writeAscii(self):
+        #发送Ascii码
         while True:
             if self.status == "write":
                 print("进入成功...")
@@ -85,8 +98,10 @@ class Refactor(TRSerial):
 
 
     def readFiles(self):
+        #接收文件
         while True:
             if self.status == "read":
+                self.nextfile = False
                 self.lock.acquire()
                 if self.ser.in_waiting:
                     print("缓冲区有数据...")
@@ -99,16 +114,15 @@ class Refactor(TRSerial):
                 else:
                     print("关闭接收文件...")
                     self.dstfile.close()
-                    # 验证md5
-                    if self.getFileMd5(self.srcpath) == self.getFileMd5(self.dstpath):
-                        self.md5_success += 1
-                        print("success...")
+                    self.end_receive_time = time.time()
                     self.status = "write"
+                    self.nextfile = True
                     self.lock.release()
                     break
                 self.lock.release()
 
     def readAscii(self):
+        #接收Ascii码
         while True:
             if self.status == "read":
                 self.lock.acquire()
@@ -132,6 +146,7 @@ class Refactor(TRSerial):
         print("结束readAscii码...")
 
     def getWriteSpeed(self):
+        #测试发送速率
         times = self.times
         while times:
             if self.status == "write":
@@ -144,9 +159,9 @@ class Refactor(TRSerial):
                 self.status = "read"
                 times -= 1
                 self.lock.release()
-        return "发送速率%.2fKB/s"%(self.transmit_speed/self.times)
 
     def getReadSpeed(self):
+        #吃接收速率
         times = self.times
         while times:
             if self.ser.in_waiting:
@@ -164,7 +179,6 @@ class Refactor(TRSerial):
                     self.status = "write"
                     times -= 1
                     self.lock.release()
-        return "接收速率%.2fKB/s"%(self.receive_speed/self.times)
 
     def write(self):
         # 发送数据
@@ -175,8 +189,13 @@ class Refactor(TRSerial):
             print("write执行第"+str(times)+"次测试")
             if self.args.f:
                 for url in self.urls:
+                    while True:
+                        #判断文件是否接收完成
+                        if self.nextfile == True:
+                            self.getInitUrl(url)
+                            break
                     print("发送文件...")
-                    self.writeFiles(url)
+                    self.writeFiles()
             if self.args.a:
                 print("测试Ascii码...")
                 self.writeAscii()
@@ -197,8 +216,21 @@ class Refactor(TRSerial):
             print("read执行第"+str(times)+"次测试")
             if self.args.f:
                 for url in self.urls:
+                    self.getInitUrl(url)
                     print("接收文件...")
                     self.readFiles()
+                    if times==1:
+                        if url.startswith("http"):
+                            self.files_nature[self.srcpath] = {"size":os.path.getsize(self.srcpath),"time":self.end_receive_time - self.start_sendfile_time,"success":0}
+                        else:
+                            self.files_nature[url] = {"size":os.path.getsize(self.srcpath),"time":self.end_receive_time - self.start_sendfile_time,"success":0}
+                    # 验证md5
+                    if self.getFileMd5(self.srcpath) == self.getFileMd5(self.dstpath):
+                        if url.startswith("http"):
+                            self.files_nature[self.srcpath]["success"] += 1
+                        else:
+                            self.files_nature[url]["success"] += 1
+
             if self.args.a:
                 print("读取asciii码")
                 for result in self.readAscii():
@@ -234,12 +266,7 @@ class Refactor(TRSerial):
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
                 logging.info("测试Ascii码成功!")
-
-    def report(self):
-        if self.receive_speed_zero:
-            receive_speed = 0
-        else:
-            receive_speed = (self.receive_speed / self.times)
+        self.report()
 
 if __name__ == '__main__':
     pass
