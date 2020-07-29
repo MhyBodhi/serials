@@ -37,6 +37,10 @@ def start():
         pass
     baudrates = []
     args = parser.parse_args()
+    if True not in [args.a,args.s,args.f,args.A]:
+        print("请输入测试项...")
+        parser.print_help()
+        sys.exit()
     if (args.tr and args.r) or (args.tr and args.t):
         print("参数输入有误")
         parser.print_help()
