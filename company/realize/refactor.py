@@ -3,10 +3,10 @@ import time
 import random
 from threading import Thread
 import serial
-from basic.trbasic import TRSerial,logging
+from basic.trbasic import TRBasic,logging
 
 
-class Refactor(TRSerial):
+class Refactor(TRBasic):
 
     def __init__(self,ser,lock,args):
         super().__init__(ser,lock,args)

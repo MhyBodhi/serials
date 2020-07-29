@@ -11,7 +11,7 @@ import requests
 logging.config.fileConfig("../log/trlog.conf")
 logging = logging.getLogger()
 
-class TRSerial():
+class TRBasic():
     def __init__(self,ser,lock,args,status="write"):
         self.status = status
         self.ser = ser
