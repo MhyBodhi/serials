@@ -28,7 +28,6 @@ class TRSerial(TRBasic):
                     if data:
                         try:
                             self.bytes_number = self.ser.write(data)
-                            print("发送", self.bytes_number)
                         except serial.serialutil.SerialTimeoutException as e:
                             self.fileenable = False
                             self.srcfile.close()
@@ -93,7 +92,6 @@ class TRSerial(TRBasic):
                 self.lock.acquire()
                 if self.ser.in_waiting:
                     if self.fileenable:
-                        print("接收---", self.ser.in_waiting)
                         recstr = self.ser.read(self.ser.in_waiting)  # self.bytes_number
                         self.dstfile.write(recstr)
                         self.status = "write"
