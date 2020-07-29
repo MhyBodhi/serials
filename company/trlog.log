@@ -5227,3 +5227,69 @@ G®V>à IÖÊ^ª
 2020-07-29 17:46:08,180 refactor.py[line:135] INFO  	
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
 2020-07-29 17:46:08,198 refactor.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:52:54,253 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:52:54,446 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:52:54,538 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:52:54,625 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:52:54,631 trserial.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:52:54,632 trserial.py[line:62] INFO ('总的字节数', 2)
+2020-07-29 17:52:54,646 trserial.py[line:64] INFO ('写入的字节数：', 2)
+2020-07-29 17:52:54,659 trserial.py[line:65] INFO 
+2020-07-29 17:52:54,671 trserial.py[line:66] INFO ('输入缓冲区：', 2)
+2020-07-29 17:52:54,707 trserial.py[line:130] INFO read...
+2020-07-29 17:52:54,728 trserial.py[line:131] INFO ('读取字节数:', 2)
+2020-07-29 17:52:54,758 trserial.py[line:135] INFO 
+2020-07-29 17:52:54,770 trserial.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:52:54,794 trserial.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:52:54,806 trserial.py[line:71] INFO ('总的字节数', 103)
+2020-07-29 17:52:54,831 trserial.py[line:73] INFO ('写入的字节数：', 103)
+2020-07-29 17:52:54,843 trserial.py[line:74] INFO 0×¿1í³Lnû®äù;{ÂÊgvf?DóUkÁOëúÎJ.\¼»ÙÒwqV¯-éNãº5ü@2îyr<
+2020-07-29 17:52:54,861 trserial.py[line:75] INFO ('输入缓冲区：', 103)
+2020-07-29 17:52:54,884 trserial.py[line:130] INFO read...
+2020-07-29 17:52:54,896 trserial.py[line:131] INFO ('读取字节数:', 103)
+2020-07-29 17:52:54,920 trserial.py[line:135] INFO 0×¿1í³Lnû®äù;{ÂÊgvf?DóUkÁOëúÎJ.\¼»ÙÒwqV¯-éNãº5ü@2îyr<
+2020-07-29 17:52:54,932 trserial.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:52:54,956 trserial.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:52:54,968 trserial.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:52:55,016 trserial.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:52:55,028 trserial.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:52:55,052 trserial.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:52:55,064 trserial.py[line:130] INFO read...
+2020-07-29 17:52:55,067 trserial.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:52:55,068 trserial.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:52:55,082 trserial.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:53:02,839 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:53:02,944 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:53:03,045 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:53:03,168 trserial.py[line:47] INFO 文件传输完成...
+2020-07-29 17:53:03,173 trserial.py[line:60] INFO 测试单个ascii码
+2020-07-29 17:53:03,192 trserial.py[line:62] INFO ('总的字节数', 1)
+2020-07-29 17:53:03,216 trserial.py[line:64] INFO ('写入的字节数：', 1)
+2020-07-29 17:53:03,228 trserial.py[line:65] INFO 1
+2020-07-29 17:53:03,246 trserial.py[line:66] INFO ('输入缓冲区：', 1)
+2020-07-29 17:53:03,270 trserial.py[line:130] INFO read...
+2020-07-29 17:53:03,281 trserial.py[line:131] INFO ('读取字节数:', 1)
+2020-07-29 17:53:03,305 trserial.py[line:135] INFO 1
+2020-07-29 17:53:03,317 trserial.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:53:03,341 trserial.py[line:69] INFO 测试多个ascii码
+2020-07-29 17:53:03,353 trserial.py[line:71] INFO ('总的字节数', 33)
+2020-07-29 17:53:03,371 trserial.py[line:73] INFO ('写入的字节数：', 33)
+2020-07-29 17:53:03,383 trserial.py[line:74] INFO Ê­sCÕ²±P#>¯H!Ab^{»
+2020-07-29 17:53:03,395 trserial.py[line:75] INFO ('输入缓冲区：', 33)
+2020-07-29 17:53:03,414 trserial.py[line:130] INFO read...
+2020-07-29 17:53:03,427 trserial.py[line:131] INFO ('读取字节数:', 33)
+2020-07-29 17:53:03,451 trserial.py[line:135] INFO Ê­sCÕ²±P#>¯H!Ab^{»
+2020-07-29 17:53:03,471 trserial.py[line:268] INFO 测试Ascii码成功!
+2020-07-29 17:53:03,499 trserial.py[line:78] INFO 测试全部ascii码
+2020-07-29 17:53:03,511 trserial.py[line:80] INFO ('总的字节数', 384)
+2020-07-29 17:53:03,559 trserial.py[line:85] INFO ('写入的字节数：', 384)
+2020-07-29 17:53:03,573 trserial.py[line:86] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:53:03,594 trserial.py[line:87] INFO ('输入缓冲区：', 384)
+2020-07-29 17:53:03,606 trserial.py[line:130] INFO read...
+2020-07-29 17:53:03,628 trserial.py[line:131] INFO ('读取字节数:', 384)
+2020-07-29 17:53:03,663 trserial.py[line:135] INFO  	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+2020-07-29 17:53:03,683 trserial.py[line:268] INFO 测试Ascii码成功!
