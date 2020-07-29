@@ -18,6 +18,7 @@ class TRSerial(TRBasic):
     def writeFiles(self):
         #发送文件
         logging.info("测试发送文件...")
+        logging.info("发送文件大小(字节):%s"%os.path.getsize(self.srcpath))
         self.start_sendfile_time = time.time()
         while True:
             if self.status == "write":
@@ -27,12 +28,10 @@ class TRSerial(TRBasic):
                     if data:
                         try:
                             self.bytes_number = self.ser.write(data)
+                            print("发送", self.bytes_number)
                         except serial.serialutil.SerialTimeoutException as e:
                             self.fileenable = False
                             self.srcfile.close()
-                            #不为影响下一次测试，清空缓冲区
-                            self.ser.reset_input_buffer()
-                            self.ser.reset_output_buffer()
                             self.status = "read"
                             logging.info("发生超时错误...")
                             self.lock.release()
@@ -94,6 +93,7 @@ class TRSerial(TRBasic):
                 self.lock.acquire()
                 if self.ser.in_waiting:
                     if self.fileenable:
+                        print("接收---", self.ser.in_waiting)
                         recstr = self.ser.read(self.ser.in_waiting)  # self.bytes_number
                         self.dstfile.write(recstr)
                         self.status = "write"
@@ -101,8 +101,10 @@ class TRSerial(TRBasic):
                     logging.info("接收文件完成...")
                     self.dstfile.close()
                     self.end_receive_time = time.time()
+                    logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
+                    # 清理缓冲区内容
+                    self.ser.reset_input_buffer()
                     self.status = "write"
-                    self.nextfile = True
                     self.lock.release()
                     break
                 self.lock.release()
@@ -124,6 +126,8 @@ class TRSerial(TRBasic):
                     yield self.startcontent == self.endcontent
                     if len(self.startcontent) == 256:
                         self.lock.release()
+                        #清理缓冲区内容
+                        self.ser.reset_input_buffer()
                         self.status = "write"
                         break
                     self.status = "write"
@@ -166,6 +170,8 @@ class TRSerial(TRBasic):
                     self.status = "write"
                     times -= 1
                     self.lock.release()
+        # 清理缓冲区内容
+        self.ser.reset_input_buffer()
         logging.info("测试接收速率完成")
 
     def write(self):
@@ -175,8 +181,8 @@ class TRSerial(TRBasic):
         while True:
             if times > self.times:
                 break
-            logging.info("write执行第"+str(times)+"次测试")
-            if self.args.f:
+            logging.info("write测试第"+str(times)+"次")
+            if self.args.f or self.args.A:
                 logging.info("write测试文件md5...")
                 for url in self.urls:
                     while True:
@@ -186,15 +192,15 @@ class TRSerial(TRBasic):
                             break
                     self.writeFiles()
                 logging.info("write测试文件md5完成")
-            if self.args.a:
+            if self.args.a or self.args.A:
                 logging.info("write测试Ascii码...")
                 self.writeAscii()
                 logging.info("write测试Ascii码完成")
-            logging.info("write执行第"+str(times)+"次完成...")
+            logging.info("write测试第"+str(times)+"次完成")
             times += 1
 
         #测试发送速率
-        if self.args.s:
+        if self.args.s or self.args.A:
             logging.info("write测试发送速率...")
             self.getWriteSpeed()
             logging.info("write测试发送速率完成")
@@ -207,11 +213,10 @@ class TRSerial(TRBasic):
         while True:
             if times > self.times:
                 break
-            logging.info("read执行第"+str(times)+"次测试")
-            if self.args.f:
+            logging.info("read测试第"+str(times)+"次")
+            if self.args.f or self.args.A:
                 logging.info("read测试文件md5...")
                 for url in self.urls:
-                    self.getInitUrl(url)
                     self.readFiles()
                     if times==1:
                         if url.startswith("http"):
@@ -224,16 +229,18 @@ class TRSerial(TRBasic):
                             self.files_nature[self.srcpath]["success"] += 1
                         else:
                             self.files_nature[url]["success"] += 1
+                    #执行初始化下次测试
+                    self.nextfile = True
                 logging.info("read测试文件md5完成")
-            if self.args.a:
+            if self.args.a or self.args.A:
                 logging.info("read测试Ascii码...")
                 for result in self.readAscii():
                     yield result
                 logging.info("read测试Ascii码完成")
-            logging.info("read执行第"+str(times)+"次完成...")
+            logging.info("read测试第"+str(times)+"次完成")
             times += 1
         #测试接收速率
-        if self.args.s:
+        if self.args.s or self.args.A:
             logging.info("read测试接收速率...")
             self.getReadSpeed()
             logging.info("read测试接收速率完成")

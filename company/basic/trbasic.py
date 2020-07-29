@@ -54,7 +54,7 @@ class TRBasic():
         self.receive_speed_zero = False
         # 保存对应文件传输时间
         self.files_nature = {}
-        print(self.urls)
+
     def getInitUrl(self,url):
         self.fileenable = True
         self.dstpath = "../resources/" + self.fileprefix + "dst." + url.split(".")[-1][0:3]
@@ -110,7 +110,7 @@ class TRBasic():
         headers = ["测试项", "次数", "传输文件名","大小(单位:字节B)","成功次数", "失败次数", "成功率","速率（KB/s）","单次传输所花时间（单位:秒s）"]
         report_dicts = []
         #统计Ascii码
-        if self.args.a:
+        if self.args.a or self.args.A:
             sc_percent = self.sc_success / self.times * 100
             mc_percent = self.mc_success / self.times * 100
             ac_percent = self.ac_success / self.times * 100
@@ -123,7 +123,7 @@ class TRBasic():
                  "大小(单位:字节B)": "/", "成功次数": self.mc_success, "失败次数": self.mc_fail,
                  "成功率": "%.2f%%" % (mc_percent), "速率（KB/s）": "/", "单次传输所花时间（单位:秒s）": "/",
                  },
-                {"测试项": "全部个ascii码", "次数": self.times, "传输文件名": "/",
+                {"测试项": "全部ascii码", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": self.ac_success, "失败次数": self.ac_fail,
                  "成功率": "%.2f%%" % (ac_percent), "速率（KB/s）": "/", "单次传输所花时间（单位:秒s）": "/",
                  },
@@ -131,7 +131,7 @@ class TRBasic():
             report_dicts.extend(ascii_rows)
 
         #统计传输文件成功率
-        if self.args.f:
+        if self.args.f or self.args.A:
             for file in self.files_nature:
                 success = self.files_nature[file]["success"]
                 files_rows = [
@@ -142,22 +142,22 @@ class TRBasic():
                 ]
                 report_dicts.extend(files_rows)
         #统计传输速率（发送、接收速率）
-        if self.args.s:
+        if self.args.s or self.args.A:
             #发送速率
             send_speed = self.transmit_speed / self.times
-            #接收速率
+            #接收速率(为零表示超出统计范围,有时接收速率太快让统计时间为零，致使无法统计)
             if self.receive_speed_zero:
-                receive_speed = 0
+                receive_speed = "0(速率太快，无法统计)"
             else:
-                receive_speed = (self.receive_speed / self.times)
+                receive_speed = "%.2f"%(self.receive_speed / self.times)
             speed_rows = [
                 {"测试项": "发送速率", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)":"/", "成功次数":"/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": "%.2f"%(self.transmit_speed/self.times), "单次传输所花时间（单位:秒s）":"/",
+                 "成功率": "/", "速率（KB/s）": "%.2f"%send_speed, "单次传输所花时间（单位:秒s）":"/",
                  },
                 {"测试项": "接收速率", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": "/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": "%.2f"%receive_speed, "单次传输所花时间（单位:秒s）": "/",
+                 "成功率": "/", "速率（KB/s）": receive_speed, "单次传输所花时间（单位:秒s）": "/",
                  },
                 ]
             report_dicts.extend(speed_rows)

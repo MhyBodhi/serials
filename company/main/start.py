@@ -23,7 +23,7 @@ def start():
     parser.add_argument("-f",action='store_true', default=False, help="add Test file transfer")
     #测试传输速率选项
     parser.add_argument("-s",action='store_true', default=False, help="add Test transmission rate")
-    #传输所有项
+    #测试所有项
     parser.add_argument("-A",action='store_true', default=False, help="add Test All")
     #清理生成的子报告
     try:
