@@ -161,7 +161,7 @@ class TRSerial(TRBasic):
                     self.receive_end = time.time()
                     # 接收数据速率
                     if self.receive_end - self.receive_start:
-                        self.receive_speed += self.bytes_number / (self.receive_end - self.receive_start) / 1024
+                        self.receive_speeds += self.bytes_number / (self.receive_end - self.receive_start) / 1024
                     else:
                         self.receive_speed_zero = True
                     self.status = "write"

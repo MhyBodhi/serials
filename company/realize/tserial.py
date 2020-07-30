@@ -43,6 +43,7 @@ class TSerial(Basic):
     def getInitUrl(self, url):
         self.fileenable = True
         self.dstpath = "../resources/" + self.fileprefix + "dst." + url.split(".")[-1][0:3]
+        self.redis.hset(self.tname,"filetype",url.split(".")[-1][0:3])
         if url.startswith("http"):
             try:
                 self.srcpath = "../resources/" + self.fileprefix + "src." + url.split(".")[-1][0:3]
@@ -93,7 +94,8 @@ class TSerial(Basic):
         #发送文件
         logging.info("测试发送文件...")
         logging.info("发送文件大小(字节):%s"%os.path.getsize(self.srcpath))
-        self.start_sendfile_time = time.time()
+        self.redis.hset(self.tname,"srcfilesize",os.path.getsize(self.srcpath))
+        self.redis.hset(self.tname,"srcfiletime",time.time())
         while True:
             self.trstatus = self.redis.hget(self.tname, "trstatus")
             if self.trstatus == "write":
@@ -106,20 +108,16 @@ class TSerial(Basic):
                             self.redis.hset(self.tname, "bytes_number", self.bytes_number)
                             self.redis.hset(self.tname, "trstatus", "read")
                         except serial.serialutil.SerialTimeoutException as e:
-                            self.bytes_number = 0
-                            self.redis.hset(self.tname, "bytes_number", self.bytes_number)
                             self.redis.hset(self.tname, "fileenable", 0)
-                            self.redis.hset(self.tname, "trstatus", "write")
                             self.srcfile.close()
-                            self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath), "srcfile": 0})
+                            self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath)})
+                            self.redis.hset(self.tname, "trstatus", "read")
                             break
                     else:
-                        self.bytes_number = 0
-                        self.redis.hset(self.tname, "bytes_number", self.bytes_number)
                         self.redis.hset(self.tname, "fileenable", 0)
-                        self.redis.hset(self.tname, "trstatus", "write")
                         self.srcfile.close()
-                        self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath), "srcfile": 0})
+                        self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath)})
+                        self.redis.hset(self.tname, "trstatus", "read")
                         break
         logging.info("测试发送文件完成")
 
@@ -197,11 +195,10 @@ class TSerial(Basic):
                         self.writeAscii()
                     times += 1
                 break
-
         if self.args.s:
             self.getWriteSpeed()
-
-        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read","transmitspeed":self.transmit_speeds/10})
+            self.redis.hset(self.tname,"transmitspeed",self.transmit_speeds/10)
+        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read"})
         time.sleep(0.5)
 
     def run(self):

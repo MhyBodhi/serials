@@ -33,7 +33,7 @@ class TRBasic():
         #发送数据速率
         self.transmit_speeds = 0
         #接受数据速率
-        self.receive_speed = 0
+        self.receive_speeds = 0
         #接受数据起始、结束时间
         self.receive_start = 0
         self.receive_end = 0
@@ -150,7 +150,7 @@ class TRBasic():
             if self.receive_speed_zero:
                 receive_speed = "0(速率太快，无法统计)"
             else:
-                receive_speed = "%.2f"%(self.receive_speed / 10)
+                receive_speed = "%.2f"%(self.receive_speeds / 10)
             speed_rows = [
                 {"测试项": "发送速率", "次数": "/", "传输文件名": "/",
                  "大小(单位:字节B)":"/", "成功次数":"/", "失败次数": "/",

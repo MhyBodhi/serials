@@ -11,7 +11,7 @@ logging = logging.getLogger()
 class RSerial(Basic):
     def __init__(self,ser,args):
         super().__init__(ser,args)
-        self.dstpath = "../resources/"+self.fileprefix+"dst."
+        self.dstpath = None
 
     def ininConnect(self):
         #建立连接...
@@ -24,7 +24,6 @@ class RSerial(Basic):
                     logging.info(("包含设备名称数据：", device_data))
                 except Exception as e:
                     print("错误1:", e)
-                    pass
                 try:
                     self.device_name = [device for device in self.devices if device in device_data][0]
                     logging.info(("设备名称:", self.device_name))
@@ -32,8 +31,7 @@ class RSerial(Basic):
                     print("错误2:", e)
                 if self.device_name:
                     self.tstatus = self.device_name + "status"
-                    self.redis.hmset(self.tstatus, {"read": 1})
-                    self.redis.hmset(self.tstatus, {"end": 0})
+                    self.redis.hmset(self.tstatus, {"read": 1,"end": 0})
                     logging.info("正在建立连接...")
                     break
                 else:
@@ -53,6 +51,8 @@ class RSerial(Basic):
     def readFiles(self):
         #接收文件
         logging.info("测试接收文件...")
+        self.dstpath = "../resources/"+self.fileprefix+"dst." + self.redis.hget(self.tstatus,"filetype")
+        self.dstfile = self.dstfile = open(self.dstpath, "wb")
         while True:
             self.trstatus = self.redis.hget(self.tstatus, "trstatus")
             self.bytes_number = int(self.redis.hget(self.tstatus,"bytes_number"))
@@ -71,13 +71,63 @@ class RSerial(Basic):
                 else:
                     logging.info("接收文件完成")
                     self.dstfile.close()
+                    #统计起始时间
                     self.end_receive_time = time.time()
+                    self.start_sendfile_time = int(self.redis.hget(self.tstatus, "sendfiletime"))
+
                     logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
                     # 清理缓冲区内容
                     self.ser.reset_input_buffer()
                     self.redis.hset(self.tstatus, "trstatus", "write")
                     break
         logging.info("测试接收文件完成")
+
+    def readAscii(self):
+        #接收Ascii码
+        logging.info("测试读取Ascii码...")
+        while True:
+            self.trstatus = self.redis.hget(self.tstatus, "trstatus")
+            if self.trstatus == "read":
+                self.bytes_number = self.redis.hget(self.tstatus, "bytes_number")
+                self.startcontent = self.redis.hget(self.tstatus, "ascii")
+                if self.ser.in_waiting:
+                    logging.info("read...")
+                    try:
+                        text = self.ser.read(self.bytes_number).decode("utf-8")
+                        self.endcontent = text
+                    except:
+                        self.endcontent = None
+                    yield self.startcontent == self.endcontent
+                    if len(self.startcontent) == 256:
+                        #清理缓冲区内容
+                        self.ser.reset_input_buffer()
+                        self.redis.hset(self.tstatus, "trstatus","write")
+                        break
+                    self.redis.hset(self.tstatus, "trstatus", "write")
+        logging.info("测试读取Ascii码完成")
+
+    def getReadSpeed(self):
+        #测试接收速率
+        times = 10
+        logging.info("测试" + str(self.times) + "次接收速率...")
+        while times:
+            self.trstatus = self.redis.hget(self.tstatus, "trstatus")
+            self.bytes_number = self.redis.hget(self.tstatus, "bytes_number")
+            if self.trstatus == "read":
+                if self.ser.in_waiting:
+                    self.receive_start = time.time()
+                    receivestr = self.ser.read(self.bytes_number).decode("utf-8")
+                    self.receive_end = time.time()
+                    # 接收数据速率
+                    if self.receive_end - self.receive_start:
+                        self.receive_speeds += self.bytes_number / (self.receive_end - self.receive_start) / 1024
+                    else:
+                        self.receive_speed_zero = True
+                    self.redis.hset(self.tstatus,"trstatus","write")
+                    times -= 1
+        # 清理缓冲区内容
+        self.ser.reset_input_buffer()
+        logging.info("测试接收速率完成")
 
     def read(self):
         times = 1
@@ -88,21 +138,20 @@ class RSerial(Basic):
         self.times = int(self.redis.hget(self.tstatus, "reporttimes"))
         self.redis.hset(self.tstatus, "transmit", 1)
         logging.info("准备接收数据...")
-
+        logging.info("start test receive ...")
         while True:
-            if times>3*self.times:
+            if times>self.times:
                 break
             args_f = int(self.redis.hget(self.tstatus,"f"))
             args_a = int(self.redis.hget(self.tstatus,"a"))
             args_s = int(self.redis.hget(self.tstatus,"s"))
             args_A = int(self.redis.hget(self.tstatus,"A"))
-            self.start_sendfile_time = int(self.redis.hget(self.tstatus,"sendfiletime"))
-            if args_f:
+            if args_f or args_A:
                 self.files = json.loads(self.redis.hget(self.tstatus,"files"))
                 for url in self.files:
                     self.readFiles()
                     if times == 1:
-                        self.files_nature[url] = {"size": os.path.getsize(self.dstpath),"time": self.end_receive_time - self.start_sendfile_time ,"success": 0}
+                        self.files_nature[url] = {"size": self.redis.hget(self.tstatus,"srcfilesize"),"time": self.end_receive_time - self.start_sendfile_time ,"success": 0}
                     # 验证md5
                     if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
                         self.files_nature[url]["success"] += 1
@@ -110,24 +159,23 @@ class RSerial(Basic):
                     self.redis.hset(self.tstatus, "fileenable", 1)
                     # 执行初始化下次测试
                     self.redis.hset(self.tstatus,"nextfile",1)
-            if args_a:
-                pass
-
-
-            self.startcontent = self.redis.hget(self.tstatus,"ascii")
-
-            logging.info(("接收到的字节大小：",len(rdata.encode("utf-8"))))
-            yield rdata == self.startcontent
-            if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
-                self.redis.hset(self.tstatus,"fileenable",1)
-                self.dstfile = open(self.dstpath+self.filetype, "wb")
-            filestatus = 0
+            if args_a or args_A:
+                logging.info("read测试Ascii码...")
+                for result in self.readAscii():
+                    yield result
+                logging.info("read测试Ascii码完成")
+            logging.info("read测试第"+str(times)+"次完成")
             times += 1
+            # 测试接收速率
+            if self.args.s or self.args.A:
+                logging.info("read测试接收速率...")
+                self.getReadSpeed()
+                logging.info("read测试接收速率完成")
 
             if self.redis.hget(self.tstatus, "write") == "0":
                 self.redis.hmset(self.tstatus, {"end": 1, "read": 0})
                 break
-            self.redis.hset(self.tstatus, "trstatus", "write")
+            logging.info("receive over")
 
     def run(self):
         logging.info("main receive...")
@@ -141,7 +189,7 @@ class RSerial(Basic):
                     self.mc_fail += 1
                 elif len(self.startcontent) == 256:
                     self.ac_fail += 1
-                logging.info("测试失败!")
+                logging.info("测试Ascii码失败!")
             elif result == True:
                 if (len(self.startcontent)) == 1:
                     self.sc_success += 1
@@ -149,11 +197,5 @@ class RSerial(Basic):
                     self.mc_success += 1
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
-                    #接收数据速率
-                    if self.receive_end - self.receive_start:
-                        self.receive_speed += self.bytes_number/(self.receive_end - self.receive_start) /1024
-                    else:
-                        self.receive_speed_zero = True
-                logging.info("测试通过!")
-        self.transmit_speed = float(self.redis.hget(self.tstatus,"transmitspeed"))
+                logging.info("测试Ascii码成功!")
         self.report()
