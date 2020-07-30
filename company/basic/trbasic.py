@@ -75,7 +75,8 @@ class TRBasic():
                 self.srcfile = open(self.srcpath, "rb")
                 self.dstfile = open(self.dstpath, "wb")
         else:
-            self.srcpath = url
+            self.srcpath = url.strip()
+
             if os.path.exists(self.srcpath):
                 self.srcfile = open(r"%s"%self.srcpath, "rb")
                 self.dstfile = open(self.dstpath, "wb")
