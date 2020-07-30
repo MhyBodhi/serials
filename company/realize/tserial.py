@@ -17,10 +17,17 @@ class TSerial(Basic):
     def __init__(self,ser,args):
         super().__init__(ser,args)
 
-        self.redis.hmset(self.tname,{"write": 0, "end": 1, "read": 0, "times": self.times,
-                                     "reporttimes": self.times, "ok": 0,"transmit": 0, "srcmd5": 0,
-                                     "trstatus": "write", "fileenable": 1,"nextfile":1,
-                                     "files":json.dumps(self.urls)})
+        self.redis.hmset(self.tname,{"write": 0, "end": 1, "read": 0,
+                 "times": self.times,
+                 "reporttimes": self.times, "ok": 0,"transmit": 0, "srcmd5": 0,
+                 "trstatus": "write", "fileenable": 1,"nextfile":1,
+                 "files":json.dumps(self.urls)})
+        #储存测试项
+        if self.args.A:self.redis.hmset(self.tname, {"f":1,"a":1,"s":1,"A":1})
+        if self.args.f:self.redis.hset(self.tname,"f",1)
+        if self.args.a:self.redis.hset(self.tname,"a",1)
+        if self.args.s:self.redis.hset(self.tname,"s",1)
+
         if self.ser.name.endswith("0"):
             self.redis.hset("devices", "device0", self.ser.name)
         elif self.ser.name.endswith("1"):
@@ -181,7 +188,7 @@ class TSerial(Basic):
                 while True:
                     if times > self.times:
                         break
-                    if self.args.f:
+                    if self.args.f or self.args.A:
                         for url in self.urls:
                             while True:
                                 # 判断文件是否接收完成
@@ -191,11 +198,11 @@ class TSerial(Basic):
                                     break
                             self.redis.hset(self.tstatus,"currentfile",url)
                             self.writeFiles()
-                    if self.args.a:
+                    if self.args.a or self.args.A:
                         self.writeAscii()
                     times += 1
                 break
-        if self.args.s:
+        if self.args.s or self.args.A:
             self.getWriteSpeed()
             self.redis.hset(self.tname,"transmitspeed",self.transmit_speeds/10)
         self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read"})

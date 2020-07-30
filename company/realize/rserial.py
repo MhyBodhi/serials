@@ -133,19 +133,17 @@ class RSerial(Basic):
         times = 1
         #与tserver建立连接初始化...
         self.ininConnect()
-
         self.files = self.redis.hget(self.tstatus,"files")
         self.times = int(self.redis.hget(self.tstatus, "reporttimes"))
         self.redis.hset(self.tstatus, "transmit", 1)
-        logging.info("准备接收数据...")
+        args_f = int(self.redis.hget(self.tstatus, "f"))
+        args_a = int(self.redis.hget(self.tstatus, "a"))
+        args_s = int(self.redis.hget(self.tstatus, "s"))
+        args_A = int(self.redis.hget(self.tstatus, "A"))
         logging.info("start test receive ...")
         while True:
             if times>self.times:
                 break
-            args_f = int(self.redis.hget(self.tstatus,"f"))
-            args_a = int(self.redis.hget(self.tstatus,"a"))
-            args_s = int(self.redis.hget(self.tstatus,"s"))
-            args_A = int(self.redis.hget(self.tstatus,"A"))
             if args_f or args_A:
                 self.files = json.loads(self.redis.hget(self.tstatus,"files"))
                 for url in self.files:
@@ -155,7 +153,7 @@ class RSerial(Basic):
                     # 验证md5
                     if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
                         self.files_nature[url]["success"] += 1
-
+                    #启动接收文件功能
                     self.redis.hset(self.tstatus, "fileenable", 1)
                     # 执行初始化下次测试
                     self.redis.hset(self.tstatus,"nextfile",1)
@@ -167,7 +165,7 @@ class RSerial(Basic):
             logging.info("read测试第"+str(times)+"次完成")
             times += 1
             # 测试接收速率
-            if self.args.s or self.args.A:
+            if args_s or args_A:
                 logging.info("read测试接收速率...")
                 self.getReadSpeed()
                 logging.info("read测试接收速率完成")
