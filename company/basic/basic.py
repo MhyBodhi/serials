@@ -12,6 +12,7 @@ class Basic():
         self.fileprefix = "".join(self.ser.name.split("/"))
         self.url = args.p.strip()
 
+        self.args = args
         # redis实例
         pool = redis.ConnectionPool(host='192.168.1.113', port=6379, decode_responses=True)
         self.redis = redis.Redis(connection_pool=pool,db=0)
@@ -54,7 +55,7 @@ class Basic():
         self.ac_fail = 0
         self.ac_success = 0
         # 发送数据速率
-        self.transmit_speed = 0
+        self.transmit_speeds = 0
         # 接受数据速率
         self.receive_speed = 0
         # 接受数据起始、结束时间
@@ -62,9 +63,15 @@ class Basic():
         self.receive_end = 0
         # 接收不耗时
         self.receive_speed_zero = False
+        # 传入url路径集合
+        self.urls = args.p.split(',')
+        # Ascii码测试下标
+        self.count = 1
+        # 队列传输文件,准备状态
+        self.nextfile = 1
 
-    def getFile(self):
-        res = requests.get(self.url).content
+    def getFile(self,url):
+        res = requests.get(url).content
         with open("../resources/"+self.fileprefix+"src."+self.url.split(".")[-1][0:3],"wb") as f:
             f.write(res)
 

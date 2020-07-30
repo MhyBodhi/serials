@@ -41,8 +41,8 @@ def main(baudrate,args,server):
         i.start()
     for j in plist:
         j.join()
-    if server == "r" or server == "tr":
-        report()
+    # if server == "r" or server == "tr":
+    #     report()
 
 def getTime():
     now = time.strftime("%Y-%m-%d_%H_%M_%S")

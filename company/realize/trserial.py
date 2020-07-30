@@ -67,10 +67,7 @@ class TRSerial(TRBasic):
                 elif self.count==3:
                     logging.info("测试全部ascii码")
                     sendstr = self.ascii
-                    start = time.time()
                     self.bytes_number = self.ser.write(sendstr.encode("utf-8"))
-                    end = time.time()
-                    self.transmit_speed += self.bytes_number / (end - start) / 1024
                     self.count = 1
 
                     self.startcontent = sendstr
@@ -136,7 +133,7 @@ class TRSerial(TRBasic):
 
     def getWriteSpeed(self):
         #测试发送速率
-        times = self.times
+        times = 10
         logging.info("测试"+str(self.times)+"次发送速率...")
         while times:
             if self.status == "write":
@@ -145,15 +142,15 @@ class TRSerial(TRBasic):
                 start = time.time()
                 self.bytes_number = self.ser.write(sendstr)
                 end = time.time()
-                self.transmit_speed += self.bytes_number/(end-start)/1024
+                self.transmit_speeds+= self.bytes_number/(end-start)/1024
                 self.status = "read"
                 times -= 1
                 self.lock.release()
         logging.info("测试发送速率完成")
 
     def getReadSpeed(self):
-        #吃接收速率
-        times = self.times
+        #测试接收速率
+        times = 10
         logging.info("测试" + str(self.times) + "次接收速率...")
         while times:
             if self.ser.in_waiting:
@@ -273,6 +270,7 @@ class TRSerial(TRBasic):
                 elif len(self.startcontent) == 256:
                     self.ac_success += 1
                 logging.info("测试Ascii码成功!")
+        print("生成测试报告...")
         self.report()
 
 if __name__ == '__main__':

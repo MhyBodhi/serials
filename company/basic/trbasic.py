@@ -31,7 +31,7 @@ class TRBasic():
         self.ac_fail = 0
         self.ac_success = 0
         #发送数据速率
-        self.transmit_speed = 0
+        self.transmit_speeds = 0
         #接受数据速率
         self.receive_speed = 0
         #接受数据起始、结束时间
@@ -48,7 +48,7 @@ class TRBasic():
         self.fileprefix = "".join(self.ser.name.split("/"))
         #ascii码
         self.ascii = reduce(lambda x,y:x+y,map(lambda x:chr(x),range(256)))
-        #下载jpg的url路径
+        #传入url路径集合
         self.urls = args.p.split(',')
         # 接受速率是否可控
         self.receive_speed_zero = False
@@ -145,18 +145,18 @@ class TRBasic():
         #统计传输速率（发送、接收速率）
         if self.args.s or self.args.A:
             #发送速率
-            send_speed = self.transmit_speed / self.times
+            send_speed = self.transmit_speeds / 10
             #接收速率(为零表示超出统计范围,有时接收速率太快让统计时间为零，致使无法统计)
             if self.receive_speed_zero:
                 receive_speed = "0(速率太快，无法统计)"
             else:
-                receive_speed = "%.2f"%(self.receive_speed / self.times)
+                receive_speed = "%.2f"%(self.receive_speed / 10)
             speed_rows = [
-                {"测试项": "发送速率", "次数": self.times, "传输文件名": "/",
+                {"测试项": "发送速率", "次数": "/", "传输文件名": "/",
                  "大小(单位:字节B)":"/", "成功次数":"/", "失败次数": "/",
                  "成功率": "/", "速率（KB/s）": "%.2f"%send_speed, "单次传输所花时间（单位:秒s）":"/",
                  },
-                {"测试项": "接收速率", "次数": self.times, "传输文件名": "/",
+                {"测试项": "接收速率", "次数": "/", "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": "/", "失败次数": "/",
                  "成功率": "/", "速率（KB/s）": receive_speed, "单次传输所花时间（单位:秒s）": "/",
                  },

@@ -12,24 +12,23 @@ class RSerial(Basic):
         super().__init__(ser,args)
         self.dstpath = "../resources/"+self.fileprefix+"dst."
 
-    def read(self):
-        times = 1
-        filestatus = 0
+    def ininConnect(self):
+        #建立连接...
         while True:
             self.devices = self.redis.hvals("devices")
             if self.ser.in_waiting:
                 device_data = ""
                 try:
                     device_data = self.ser.read(20).decode("utf-8")
-                    logging.info(("包含设备名称数据：",device_data))
+                    logging.info(("包含设备名称数据：", device_data))
                 except Exception as e:
                     print("错误1:", e)
                     pass
                 try:
-                    self.device_name =  [device  for device in self.devices if device in device_data][0]
-                    logging.info(("设备名称:",self.device_name))
+                    self.device_name = [device for device in self.devices if device in device_data][0]
+                    logging.info(("设备名称:", self.device_name))
                 except Exception as e:
-                    print("错误2:",e)
+                    print("错误2:", e)
                 if self.device_name:
                     self.tstatus = self.device_name + "status"
                     self.redis.hmset(self.tstatus, {"read": 1})
@@ -44,16 +43,55 @@ class RSerial(Basic):
                 logging.info("与tserver未建立连接...")
                 time.sleep(3)
 
-        #清理input缓冲区
+        # 清理input缓冲区
         while True:
-            if self.redis.hget(self.tstatus,"ok")=="1":
+            if self.redis.hget(self.tstatus, "ok") == "1":
                 self.ser.reset_input_buffer()
                 break
-        self.filetype = self.redis.hget(self.tstatus,"filetype")
+
+    def readFiles(self):
+        #接收文件
+        logging.info("测试接收文件...")
+        while True:
+            self.trstatus = self.redis.hget(self.tstatus, "trstatus")
+            self.bytes_number = int(self.redis.hget(self.tstatus,"bytes_number"))
+            if self.trstatus == "read":
+                #改变nextfile状态
+                self.redis.hset(self.tstatus,"nextfile",0)
+                self.fileenable = int(self.redis.hget(self.tstatus, "fileenable"))
+                if self.fileenable:
+                    if self.ser.in_waiting:
+                        recstr = self.ser.read(self.bytes_number)  # self.bytes_number
+                        self.dstfile.write(recstr)
+                        self.redis.hset(self.tstatus,"trstatus","write")
+                    # else:
+                    #     logging.info("等待缓冲区出现数据...")
+                    #     time.sleep(0.1)
+                else:
+                    logging.info("接收文件完成")
+                    self.dstfile.close()
+                    self.end_receive_time = time.time()
+                    logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
+                    # 清理缓冲区内容
+                    self.ser.reset_input_buffer()
+                    self.redis.hset(self.tstatus, "trstatus", "write")
+                    break
+
+        logging.info("测试接收文件完成")
+
+    def read(self):
+        times = 1
+        filestatus = 0
+        #与tserver建立连接初始化...
+        self.ininConnect()
+
+
+        self.filetype = self.redis.hget(self.tstatus,"files")
         self.times = int(self.redis.hget(self.tstatus, "reporttimes"))
         self.redis.hset(self.tstatus, "transmit", 1)
         self.dstfile = open(self.dstpath+self.filetype, "wb")
         logging.info("准备接收数据...")
+
         while True:
             if times>3*self.times:
                 break
