@@ -35,17 +35,16 @@ class TRSerial(TRBasic):
                             logging.info("发生超时错误...")
                             self.lock.release()
                             break
-                        self.status = "read"
-                    else:
-                        if not self.ser.in_waiting:
-                            self.fileenable = False
-                            self.srcfile.close()
-                            self.lock.release()
-                            self.status = "read"
-                            logging.info("文件传输完成...")
-                            break
                         else:
                             self.status = "read"
+                    else:
+                        self.srcfile.close()
+                        self.fileenable = False
+                        self.status = "read"
+                        self.lock.release()
+                        logging.info("文件传输完成")
+                        break
+
                 self.lock.release()
         logging.info("测试发送文件完成")
 
@@ -90,13 +89,13 @@ class TRSerial(TRBasic):
             if self.status == "read":
                 self.nextfile = False
                 self.lock.acquire()
-                if self.ser.in_waiting:
-                    if self.fileenable:
-                        recstr = self.ser.read(self.ser.in_waiting)  # self.bytes_number
+                if self.fileenable:
+                    if self.ser.in_waiting:
+                        recstr = self.ser.read(self.bytes_number)  # self.bytes_number
                         self.dstfile.write(recstr)
                         self.status = "write"
                 else:
-                    logging.info("接收文件完成...")
+                    logging.info("接收文件完成")
                     self.dstfile.close()
                     self.end_receive_time = time.time()
                     logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
@@ -215,6 +214,7 @@ class TRSerial(TRBasic):
             if self.args.f or self.args.A:
                 logging.info("read测试文件md5...")
                 for url in self.urls:
+                    print(1111111111111111111111111111111111111111111)
                     self.readFiles()
                     if times==1:
                         if url.startswith("http"):
@@ -227,8 +227,11 @@ class TRSerial(TRBasic):
                             self.files_nature[self.srcpath]["success"] += 1
                         else:
                             self.files_nature[url]["success"] += 1
-                    #执行初始化下次测试
+
+                    self.fileenable = True
+                    # 执行初始化下次测试
                     self.nextfile = True
+
                 logging.info("read测试文件md5完成")
             if self.args.a or self.args.A:
                 logging.info("read测试Ascii码...")
