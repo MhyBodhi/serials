@@ -94,6 +94,9 @@ class TRSerial(TRBasic):
                         recstr = self.ser.read(self.bytes_number)  # self.bytes_number
                         self.dstfile.write(recstr)
                         self.status = "write"
+                    # else:
+                    #     logging.info("等待缓冲区出现数据...")
+                    #     time.sleep(0.1)
                 else:
                     logging.info("接收文件完成")
                     self.dstfile.close()
@@ -214,7 +217,6 @@ class TRSerial(TRBasic):
             if self.args.f or self.args.A:
                 logging.info("read测试文件md5...")
                 for url in self.urls:
-                    print(1111111111111111111111111111111111111111111)
                     self.readFiles()
                     if times==1:
                         if url.startswith("http"):
