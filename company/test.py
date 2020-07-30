@@ -1,10 +1,7 @@
-import time
-import serial
-ser = serial.Serial("com7",115200)
-def write(ser):
-    while True:
-        ser.write("data".encode("utf-8"))
-        time.sleep(1)
+import json
+import redis
 
-if __name__ == '__main__':
-    write(ser)
+pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True)
+r = redis.Redis(connection_pool=pool)
+r.hset("status","name",json.dumps([1,2,3,4,5]))
+print(type(json.loads(r.hget("status","name"))))

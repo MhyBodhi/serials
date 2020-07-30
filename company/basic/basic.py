@@ -69,6 +69,10 @@ class Basic():
         self.count = 1
         # 队列传输文件,准备状态
         self.nextfile = 1
+        #传输文件
+        self.files = None
+        #文件测试记录
+        self.files_nature = {}
 
     def getFile(self,url):
         res = requests.get(url).content

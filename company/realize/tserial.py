@@ -2,6 +2,7 @@ import os
 import sys
 import time
 import random
+import json
 import logging.config
 import requests
 import serial
@@ -18,7 +19,8 @@ class TSerial(Basic):
 
         self.redis.hmset(self.tname,{"write": 0, "end": 1, "read": 0, "times": self.times,
                                      "reporttimes": self.times, "ok": 0,"transmit": 0, "srcmd5": 0,
-                                     "trstatus": "write", "fileenable": 1,"nextfile":1})
+                                     "trstatus": "write", "fileenable": 1,"nextfile":1,
+                                     "files":json.dumps(self.urls)})
         if self.ser.name.endswith("0"):
             self.redis.hset("devices", "device0", self.ser.name)
         elif self.ser.name.endswith("1"):
@@ -189,11 +191,13 @@ class TSerial(Basic):
                                 if self.nextfile == 1:
                                     self.getInitUrl(url)
                                     break
-                        self.writeFiles()
+                            self.redis.hset(self.tstatus,"currentfile",url)
+                            self.writeFiles()
                     if self.args.a:
                         self.writeAscii()
                     times += 1
                 break
+
         if self.args.s:
             self.getWriteSpeed()
 

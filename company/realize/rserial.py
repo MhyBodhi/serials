@@ -1,3 +1,4 @@
+import json
 import time
 import os
 import logging.config
@@ -76,61 +77,57 @@ class RSerial(Basic):
                     self.ser.reset_input_buffer()
                     self.redis.hset(self.tstatus, "trstatus", "write")
                     break
-
         logging.info("测试接收文件完成")
 
     def read(self):
         times = 1
-        filestatus = 0
         #与tserver建立连接初始化...
         self.ininConnect()
 
-
-        self.filetype = self.redis.hget(self.tstatus,"files")
+        self.files = self.redis.hget(self.tstatus,"files")
         self.times = int(self.redis.hget(self.tstatus, "reporttimes"))
         self.redis.hset(self.tstatus, "transmit", 1)
-        self.dstfile = open(self.dstpath+self.filetype, "wb")
         logging.info("准备接收数据...")
 
         while True:
             if times>3*self.times:
                 break
-            self.trstatus = self.redis.hget(self.tstatus,"trstatus")
+            args_f = int(self.redis.hget(self.tstatus,"f"))
+            args_a = int(self.redis.hget(self.tstatus,"a"))
+            args_s = int(self.redis.hget(self.tstatus,"s"))
+            args_A = int(self.redis.hget(self.tstatus,"A"))
+            self.start_sendfile_time = int(self.redis.hget(self.tstatus,"sendfiletime"))
+            if args_f:
+                self.files = json.loads(self.redis.hget(self.tstatus,"files"))
+                for url in self.files:
+                    self.readFiles()
+                    if times == 1:
+                        self.files_nature[url] = {"size": os.path.getsize(self.dstpath),"time": self.end_receive_time - self.start_sendfile_time ,"success": 0}
+                    # 验证md5
+                    if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
+                        self.files_nature[url]["success"] += 1
 
-            if self.trstatus=="read":
-                rdata = ""
-                self.bytes_number = int(self.redis.hget(self.tstatus, "bytes_number"))
-                self.fileenable = int(self.redis.hget(self.tstatus, "fileenable"))
-                if self.ser.in_waiting:
-                    if self.fileenable:
-                        rdata = self.ser.read(self.bytes_number)
-                        self.dstfile.write(rdata)
-                        filestatus = 1
-                    else:
-                        if filestatus:
-                            self.dstfile.close()
-                            logging.info(("接收生成文件大小",os.path.getsize(self.dstpath+self.filetype)))
-                            if self.getFileMd5(self.dstpath+self.filetype)==self.redis.hget(self.tstatus,"srcmd5"):
-                                self.md5_success += 1
-                        try:
-                            self.receive_start = time.time()
-                            rdata = self.ser.read(self.bytes_number).decode("utf-8")
-                            self.receive_end = time.time()
-                        except:
-                            pass
-                        self.startcontent = self.redis.hget(self.tstatus,"ascii")
-                        logging.info(("接收到的字节大小：",len(rdata.encode("utf-8"))))
-                        yield rdata == self.startcontent
-                        if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
-                            self.redis.hset(self.tstatus,"fileenable",1)
-                            self.dstfile = open(self.dstpath+self.filetype, "wb")
-                        filestatus = 0
-                        times += 1
+                    self.redis.hset(self.tstatus, "fileenable", 1)
+                    # 执行初始化下次测试
+                    self.redis.hset(self.tstatus,"nextfile",1)
+            if args_a:
+                pass
 
-                if self.redis.hget(self.tstatus, "write") == "0":
-                    self.redis.hmset(self.tstatus, {"end": 1, "read": 0})
-                    break
-                self.redis.hset(self.tstatus, "trstatus", "write")
+
+            self.startcontent = self.redis.hget(self.tstatus,"ascii")
+
+            logging.info(("接收到的字节大小：",len(rdata.encode("utf-8"))))
+            yield rdata == self.startcontent
+            if int(self.redis.hget(self.tstatus,"srcfile")) and times < 3 * self.times:
+                self.redis.hset(self.tstatus,"fileenable",1)
+                self.dstfile = open(self.dstpath+self.filetype, "wb")
+            filestatus = 0
+            times += 1
+
+            if self.redis.hget(self.tstatus, "write") == "0":
+                self.redis.hmset(self.tstatus, {"end": 1, "read": 0})
+                break
+            self.redis.hset(self.tstatus, "trstatus", "write")
 
     def run(self):
         logging.info("main receive...")
