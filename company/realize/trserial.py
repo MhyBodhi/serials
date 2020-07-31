@@ -5,7 +5,6 @@ from threading import Thread
 import serial
 from basic.trbasic import TRBasic,logging
 
-
 class TRSerial(TRBasic):
 
     def __init__(self,ser,lock,args):

@@ -4,6 +4,7 @@ import time
 import random
 import json
 import logging.config
+import logging
 import requests
 import serial
 from basic.basic import Basic

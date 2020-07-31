@@ -2,11 +2,11 @@ import json
 import time
 import os
 import logging.config
+import logging
 from basic.basic import Basic
 
 logging.config.fileConfig("../log/rlog.conf")
 logging = logging.getLogger()
-
 
 class RSerial(Basic):
     def __init__(self,ser,args):
@@ -175,6 +175,8 @@ class RSerial(Basic):
                     # 验证md5
                     if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
                         self.files_nature[url]["success"] += 1
+                    else:
+                        logging.info(("文件%s"%url,"第"+str(times)+"次md5失败"))
                     #启动接收文件功能
                     self.redis.hset(self.tstatus, "fileenable", 1)
                     # 执行初始化下次测试
