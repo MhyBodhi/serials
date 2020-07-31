@@ -73,7 +73,7 @@ class RSerial(Basic):
                     self.dstfile.close()
                     #统计起始时间
                     self.end_receive_time = time.time()
-                    self.start_sendfile_time = int(self.redis.hget(self.tstatus, "sendfiletime"))
+                    self.start_sendfile_time = float(self.redis.hget(self.tstatus, "srcfiletime"))
 
                     logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
                     # 清理缓冲区内容
@@ -164,16 +164,16 @@ class RSerial(Basic):
                 logging.info("read测试Ascii码完成")
             logging.info("read测试第"+str(times)+"次完成")
             times += 1
-            # 测试接收速率
-            if args_s or args_A:
-                logging.info("read测试接收速率...")
-                self.getReadSpeed()
-                logging.info("read测试接收速率完成")
+        # 测试接收速率
+        if args_s or args_A:
+            logging.info("read测试接收速率...")
+            self.getReadSpeed()
+            logging.info("read测试接收速率完成")
 
-            if self.redis.hget(self.tstatus, "write") == "0":
-                self.redis.hmset(self.tstatus, {"end": 1, "read": 0})
-                break
-            logging.info("receive over")
+        if self.redis.hget(self.tstatus, "write") == "0":
+            print("完成。。。")
+            self.redis.hmset(self.tstatus, {"end": 1, "read": 0,"trstatus":"write"})
+        logging.info("receive over")
 
     def run(self):
         logging.info("main receive...")

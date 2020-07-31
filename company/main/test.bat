@@ -1,3 +1,3 @@
 @echo off
-python start.py -tr -n com3 -c 10 -p a.txt,b.txt,c.txt
+python start.py -r -n com7 -f
 pause

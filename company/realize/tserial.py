@@ -21,7 +21,7 @@ class TSerial(Basic):
                  "times": self.times,
                  "reporttimes": self.times, "ok": 0,"transmit": 0, "srcmd5": 0,
                  "trstatus": "write", "fileenable": 1,"nextfile":1,
-                 "files":json.dumps(self.urls)})
+                 "files":json.dumps(self.urls),"f":0,"a":0,"s":0,"A":0})
         #储存测试项
         if self.args.A:self.redis.hmset(self.tname, {"f":1,"a":1,"s":1,"A":1})
         if self.args.f:self.redis.hset(self.tname,"f",1)
@@ -88,7 +88,6 @@ class TSerial(Basic):
                     logging.info(("发送本机设备名称...", self.ser.name))
                     self.ser.write(self.ser.name.encode("utf-8"))
                     if self.redis.hget(self.tname, "read") == "1" and self.redis.hget(self.tname, "end") == "0":
-                        self.redis.hset(self.tname, "files", self.srcpath.split(".")[-1][0:3])
                         self.redis.hset(self.tname, "ok", 1)
                         logging.info("rserver准备就绪...")
                         break
@@ -182,6 +181,7 @@ class TSerial(Basic):
         #连接rserver
         self.initConnect()
         #传输内容
+        logging.info("start test send ...")
         while True:
             logging.info("判断transmit是否准备...")
             if self.redis.hget(self.tname,"transmit")=="1":
@@ -196,7 +196,7 @@ class TSerial(Basic):
                                 if self.nextfile == 1:
                                     self.getInitUrl(url)
                                     break
-                            self.redis.hset(self.tstatus,"currentfile",url)
+                            self.redis.hset(self.tname,"currentfile",url)
                             self.writeFiles()
                     if self.args.a or self.args.A:
                         self.writeAscii()
@@ -205,8 +205,9 @@ class TSerial(Basic):
         if self.args.s or self.args.A:
             self.getWriteSpeed()
             self.redis.hset(self.tname,"transmitspeed",self.transmit_speeds/10)
-        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0,"times":int(self.redis.hget(self.tname,"times"))-1,"trstatus":"read"})
+        self.redis.hmset(self.tname,{"ok":0,"transmit":0,"write":0})
         time.sleep(0.5)
+        logging.info("send over")
 
     def run(self):
         self.write()
