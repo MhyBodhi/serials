@@ -154,7 +154,7 @@ class Basic():
             ]
             report_dicts.extend(speed_rows)
 
-        with open("../report/" + "".join(self.ser.name.split("/")) + 'tr.csv', 'w', newline='', encoding="utf-8") as f:
+        with open("../report/" + "".join(self.ser.name.split("/")) + 'tr.csv', 'a', newline='', encoding="utf-8") as f:
             l_csv = csv.writer(f)
             l_csv.writerow(device_baudrate)
 

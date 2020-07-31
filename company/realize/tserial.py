@@ -69,6 +69,7 @@ class TSerial(Basic):
                 self.dstfile = open(self.dstpath, "wb")
         else:
             self.srcpath = url.strip()
+            print("文件名",self.srcpath)
 
             if os.path.exists(self.srcpath):
                 self.srcfile = open(r"%s" % self.srcpath, "rb")

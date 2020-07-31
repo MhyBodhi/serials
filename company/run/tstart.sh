@@ -1,4 +1,9 @@
 #!/bin/bash
-sudo python3 ../main/start.py -n /dev/ttySWK0 -t -s -b 115200 -c 10
-#sudo python3 ../main/start.py -n /dev/ttyXRUSB0 -t -b 115200 -c 3 -p abc.txt
-#sudo python3 ../main/start.py -n /dev/ttyS4 -t -b 115200 -c 3 -p "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593724415494&di=5e8e5f90ed2e5ef786ddde6f406a8ff2&imgtype=0&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3457343279%2C3072766965%26fm%3D214%26gp%3D0.jpg"
+sudo python3 ../main/start.py -n /dev/ttySWK0 -t -a -b 115200 -c 100 # 指定波特率测试100次ascii码
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -a -b 115200,9600 -c 100 # 指定多个波特率测试100次ascii码
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -s -b 115200 # 指定波特率,测试速率
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -f -b 115200 -p ../main/a.txt -c 10 # 传输文件
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -f -b 115200,9600 -p ../main/a.txt -c 10 # 指定多个波特率,传输文件
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -f -b 115200 -p ../main/a.jpg,../main/a.txt,../main/a.doc -c 5 # 指定多个文件传输
+#sudo python3 ../main/start.py -n /dev/ttySWK0 -t -s -f -a -b 115200 -p ../main/a.jpg,../main/a.txt,../main/a.doc -c 5 # 测试所有项
+#sudo python3 ../main/start.py -n /dev/ttyXRUSB0,/dev/ttyXRUSB1,/dev/ttyXRUSB2 -t -s -f -a -b 115200 -p ../main/a.jpg,../main/a.txt,../main/a.doc -c 5 # 多进程测试所有项
