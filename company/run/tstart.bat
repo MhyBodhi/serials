@@ -1,3 +1,0 @@
-@echo off
-python ../main/start.py -n com7 -t -b  57600,115200,230400 -c 3
-pause...

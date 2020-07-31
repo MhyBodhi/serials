@@ -101,7 +101,6 @@ class TSerial(Basic):
         logging.info("测试发送文件...")
         logging.info("发送文件大小(字节):%s"%os.path.getsize(self.srcpath))
         self.redis.hset(self.tname,"srcfilesize",os.path.getsize(self.srcpath))
-        self.redis.hset(self.tname,"srcfiletime",time.time())
         while True:
             self.trstatus = self.redis.hget(self.tname, "trstatus")
             if self.trstatus == "write":
@@ -122,6 +121,7 @@ class TSerial(Basic):
                     else:
                         self.redis.hset(self.tname, "fileenable", 0)
                         self.srcfile.close()
+
                         self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath)})
                         self.redis.hset(self.tname, "trstatus", "read")
                         break
@@ -154,6 +154,7 @@ class TSerial(Basic):
                     self.redis.hset(self.tname, "ascii", sendstr)
                     self.redis.hset(self.tname, "trstatus", "read")
                     break
+
                 logging.info(("写入的字节数大小:", self.bytes_number))
                 self.redis.hset(self.tname, "bytes_number", self.bytes_number)
                 self.redis.hset(self.tname, "ascii", sendstr)
@@ -172,7 +173,8 @@ class TSerial(Basic):
                 self.bytes_number = self.ser.write(sendstr)
                 end = time.time()
                 self.transmit_speeds += self.bytes_number / (end - start) / 1024
-                self.status = "read"
+                self.redis.hset(self.tname,"bytes_number",self.bytes_number)
+                self.redis.hset(self.tname,"trstatus","read")
                 times -= 1
         logging.info("测试发送速率完成")
 
@@ -211,7 +213,8 @@ class TSerial(Basic):
 
     def run(self):
         self.write()
-        self.srcfile.close()
+        if self.args.f:
+            self.srcfile.close()
         self.redis.close()
 
 
