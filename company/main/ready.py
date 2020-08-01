@@ -4,19 +4,18 @@ import time
 from multiprocessing import Process,Lock
 from threading import Thread
 import serial
-from realize.tserial import TSerial
-from realize.rserial import RSerial
-from realize.trserial import TRSerial
-
 
 def run(ser,server,args):
     if server=="t":
+        from realize.tserial import TSerial
         r = TSerial(ser,args)
         r.run()
     elif server=="r":
+        from realize.rserial import RSerial
         r = RSerial(ser,args)
         r.run()
     elif server=="tr":
+        from realize.trserial import TRSerial
         lock = Lock()
         r = TRSerial(ser, lock,args)
         r.run()
