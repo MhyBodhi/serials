@@ -14,7 +14,7 @@ class Basic():
 
         self.args = args
         # redis实例
-        pool = redis.ConnectionPool(host='192.168.1.113', port=6379, decode_responses=True)
+        pool = redis.ConnectionPool(host=args.redis.strip(), port=6379, decode_responses=True)
         self.redis = redis.Redis(connection_pool=pool,db=0)
         # Rserver status
         self.rserverstatus = False

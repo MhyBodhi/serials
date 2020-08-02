@@ -18,6 +18,8 @@ def start():
     parser.add_argument("-t", action='store_true', default=False, help="main-up txserver:listening transmit data")
     parser.add_argument("-r", action='store_true', default=False, help="main-up rxserver:listening receive data")
     parser.add_argument("-tr", action='store_true', default=False, help="main-up run:listening transmit and receive data on this machine")
+    #指定redis地址
+    parser.add_argument("-ip","--redis",default="192.168.1.113",help="Specify redis server address")
     #测试Ascii码选项
     parser.add_argument("-a",action='store_true', default=False, help="add Test ASCII code")
     #测试文件传输选项
@@ -73,7 +75,7 @@ def start():
         parser.print_help()
         sys.exit()
     times = 1
-    r = redis.Redis(host='192.168.1.113', port=6379, decode_responses=True)
+    r = redis.Redis(host=args.redis.strip(), port=6379, decode_responses=True)
     for baudrate in baudrates:
         if server == "t" or server == "r":
             #测试多端收发数据
