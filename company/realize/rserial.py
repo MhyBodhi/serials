@@ -198,6 +198,7 @@ class RSerial(Basic):
             print("完成...")
             self.redis.hmset(self.tstatus, {"end": 1, "read": 0,"trstatus":"write"})
         logging.info("receive over")
+        self.redis.hset("main","times",int(self.redis.hget("main","times"))+1)
 
     def run(self):
         logging.info("main receive...")

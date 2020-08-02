@@ -2,6 +2,7 @@ import os
 import sys
 sys.path.append("..")
 import argparse
+import redis
 from ready import os,main
 
 def start():
@@ -71,8 +72,22 @@ def start():
         print("请输入设备名称,-n")
         parser.print_help()
         sys.exit()
+    times = 1
+    r = redis.Redis(host='192.168.1.113', port=6379, decode_responses=True)
     for baudrate in baudrates:
-        main(baudrate,args,server)
+        if server == "t" or server == "r":
+            #测试多端收发数据
+            if times == 1:
+                r.hset("main","times",1)
+            while True:
+                #等待接收端测试完成
+                if int(r.hget("main","times")) == times:
+                    break
+            main(baudrate,args,server)
+            times += 1
+        else:
+            #测试自收发数据
+            main(baudrate, args, server)
 
 if __name__ == '__main__':
     start()
