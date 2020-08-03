@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a69eca5-24d9-4eca-8fd6-1cdbbea8ac12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serials.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/__init__.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/__init__.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/basic/trbasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/trbasic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/company/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/main/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/main/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/run/rstart.bat" beforeDir="false" afterPath="$PROJECT_DIR$/company/run/rstart.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/run/tstart.bat" beforeDir="false" afterPath="$PROJECT_DIR$/company/run/tstart.bat" afterDir="false" />
     </list>
@@ -127,7 +119,7 @@
       <workItem from="1596371566991" duration="57000" />
       <workItem from="1596371653481" duration="168000" />
       <workItem from="1596371941957" duration="3097000" />
-      <workItem from="1596416768622" duration="13884000" />
+      <workItem from="1596416768622" duration="13986000" />
     </task>
     <servers />
   </component>
