@@ -22,7 +22,7 @@ class TSerial(Basic):
                  "times": self.times,
                  "reporttimes": self.times, "ok": 0,"transmit": 0, "srcmd5": 0,
                  "trstatus": "write", "fileenable": 1,"nextfile":1,
-                 "files":json.dumps(self.urls),"f":0,"a":0,"s":0,"A":0})
+                 "files":json.dumps(self.urls),"send_time":0,"f":0,"a":0,"s":0,"A":0})
         #储存测试项
         if self.args.A:self.redis.hmset(self.tname, {"f":1,"a":1,"s":1,"A":1})
         if self.args.f:self.redis.hset(self.tname,"f",1)
