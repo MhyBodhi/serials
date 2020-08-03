@@ -176,7 +176,7 @@ class RSerial(Basic):
                     if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
                         self.files_nature[url]["success"] += 1
                     else:
-                        logging.info(("文件%s"%url,"第"+str(times)+"次md5失败"))
+                        logging.error(("文件%s"%url,"第"+str(times)+"次md5失败"))
                     #启动接收文件功能
                     self.redis.hset(self.tstatus, "fileenable", 1)
                     # 执行初始化下次测试
@@ -187,11 +187,11 @@ class RSerial(Basic):
                     yield result
                     if not result:
                         if len(self.startcontent) == 1:
-                            logging.info("单个ascii码第"+str(times)+"次测试失败")
+                            logging.error("单个ascii码第"+str(times)+"次测试失败")
                         elif 1 < len(self.startcontent) < 256:
-                            logging.info("多个ascii码第"+str(times)+"次测试失败")
+                            logging.error("多个ascii码第"+str(times)+"次测试失败")
                         elif len(self.startcontent) == 256:
-                            logging.info("全部ascii码第" + str(times) + "次测试失败")
+                            logging.error("全部ascii码第" + str(times) + "次测试失败")
                 logging.info("read测试Ascii码完成")
             logging.info("read测试第"+str(times)+"次完成")
             times += 1

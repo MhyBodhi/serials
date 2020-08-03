@@ -225,6 +225,8 @@ class TRSerial(TRBasic):
                             self.files_nature[self.srcpath]["success"] += 1
                         else:
                             self.files_nature[url]["success"] += 1
+                    else:
+                        logging.error(("文件%s" % url, "第" + str(times) + "次md5失败"))
 
                     self.fileenable = True
                     # 执行初始化下次测试
@@ -237,11 +239,11 @@ class TRSerial(TRBasic):
                     yield result
                     if not result:
                         if len(self.startcontent) == 1:
-                            logging.info("单个ascii码第"+str(times)+"次测试失败")
+                            logging.error("单个ascii码第"+str(times)+"次测试失败")
                         elif 1 < len(self.startcontent) < 256:
-                            logging.info("多个ascii码第"+str(times)+"次测试失败")
+                            logging.error("多个ascii码第"+str(times)+"次测试失败")
                         elif len(self.startcontent) == 256:
-                            logging.info("全部ascii码第" + str(times) + "次测试失败")
+                            logging.error("全部ascii码第" + str(times) + "次测试失败")
                 logging.info("read测试Ascii码完成")
             logging.info("read测试第"+str(times)+"次完成")
             times += 1
