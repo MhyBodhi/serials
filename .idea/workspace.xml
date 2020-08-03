@@ -22,8 +22,6 @@
     <list default="true" id="1a69eca5-24d9-4eca-8fd6-1cdbbea8ac12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/realize/rserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/rserial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/realize/tserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/tserial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <workItem from="1596371941957" duration="3097000" />
       <workItem from="1596416768622" duration="17332000" />
       <workItem from="1596446324997" duration="1595000" />
-      <workItem from="1596464275309" duration="6199000" />
+      <workItem from="1596464275309" duration="6758000" />
     </task>
     <servers />
   </component>
