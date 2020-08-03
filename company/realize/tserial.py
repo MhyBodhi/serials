@@ -103,6 +103,7 @@ class TSerial(Basic):
         logging.info("测试发送文件...")
         logging.info("发送文件大小(字节):%s"%os.path.getsize(self.srcpath))
         self.redis.hset(self.tname,"srcfilesize",os.path.getsize(self.srcpath))
+        self.redis.hset(self.tname,"send_time",0)
         while True:
             self.trstatus = self.redis.hget(self.tname, "trstatus")
             if self.trstatus == "write":
@@ -111,21 +112,18 @@ class TSerial(Basic):
                     data = self.srcfile.read(2048)
                     if data:
                         try:
+                            start_time = time.time()
                             self.bytes_number = self.ser.write(data)
-                            self.redis.hset(self.tname, "bytes_number", self.bytes_number)
-                            self.redis.hset(self.tname, "trstatus", "read")
+                            end_time = time.time()
+                            self.redis.hset(self.tname,"send_time",int(self.redis.hget(self.tname,"send_time"))+end_time-start_time)
+                            self.redis.hset(self.tname, {"bytes_number":self.bytes_number,"trstatus": "read"})
                         except serial.serialutil.SerialTimeoutException as e:
-                            self.redis.hset(self.tname, "fileenable", 0)
                             self.srcfile.close()
-                            self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath)})
-                            self.redis.hset(self.tname, "trstatus", "read")
+                            self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath),"trstatus":"read","fileenable": 0})
                             break
                     else:
-                        self.redis.hset(self.tname, "fileenable", 0)
                         self.srcfile.close()
-
-                        self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath)})
-                        self.redis.hset(self.tname, "trstatus", "read")
+                        self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath),"trstatus": "read","fileenable": 0})
                         break
         logging.info("测试发送文件完成")
 

@@ -71,6 +71,8 @@ class Basic():
         self.nextfile = 1
         #传输文件
         self.files = None
+        #接收时间
+        self.receive_time = 0
         #文件测试记录
         self.files_nature = {}
 

@@ -53,7 +53,7 @@ class RSerial(Basic):
         logging.info("测试接收文件...")
         self.dstpath = "../resources/"+self.fileprefix+"dst." + self.redis.hget(self.tstatus,"filetype")
         self.dstfile = open(self.dstpath, "wb")
-        self.start_sendfile_time = time.time()
+        self.receive_time = 0
         while True:
             self.trstatus = self.redis.hget(self.tstatus, "trstatus")
             self.bytes_number = int(self.redis.hget(self.tstatus,"bytes_number"))
@@ -63,7 +63,10 @@ class RSerial(Basic):
                 self.fileenable = int(self.redis.hget(self.tstatus, "fileenable"))
                 if self.fileenable:
                     if self.ser.in_waiting:
+                        start_time = time.time()
                         recstr = self.ser.read(self.bytes_number)  # self.bytes_number
+                        end_time = time.time()
+                        self.receive_time += end_time - start_time
                         self.dstfile.write(recstr)
                         self.redis.hset(self.tstatus,"trstatus","write")
                     # else:
@@ -72,7 +75,6 @@ class RSerial(Basic):
                 else:
                     logging.info("接收文件完成")
                     self.dstfile.close()
-                    self.end_receive_time = time.time()
                     logging.info("接收文件大小(字节):%s"%os.path.getsize(self.dstpath))
                     # 清理缓冲区内容
                     self.ser.reset_input_buffer()
@@ -171,7 +173,7 @@ class RSerial(Basic):
 
                     self.readFiles()
                     if times == 1:
-                        self.files_nature[url] = {"size": self.redis.hget(self.tstatus,"srcfilesize"),"time": self.end_receive_time - self.start_sendfile_time ,"success": 0}
+                        self.files_nature[url] = {"size": self.redis.hget(self.tstatus,"srcfilesize"),"time": self.receive_time + int(self.redis.hget(self.tstatus,"send_time")),"success": 0}
                     # 验证md5
                     if self.redis.hget(self.tstatus,"srcmd5") == self.getFileMd5(self.dstpath):
                         self.files_nature[url]["success"] += 1
