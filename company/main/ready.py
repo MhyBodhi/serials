@@ -1,3 +1,4 @@
+import sys
 import csv
 import os
 import time
@@ -36,7 +37,10 @@ def main(baudrate,args,server):
         print("设备读取失败")
         return
     for ser in sers:
-        plist.append(Thread(target=run, args=(ser,server,args)))
+        if sys.platform == "win32":
+            plist.append(Thread(target=run, args=(ser,server,args)))
+        else:
+            plist.append(Process(target=run, args=(ser,server,args)))
     for i in plist:
         i.start()
     for j in plist:
