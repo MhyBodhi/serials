@@ -11,27 +11,19 @@ class Basic():
         self.ser = ser
         self.fileprefix = "".join(self.ser.name.split("/"))
         self.url = args.p.strip()
-
         self.args = args
         # redis实例
         pool = redis.ConnectionPool(host=args.redis.strip(), port=6379, decode_responses=True)
         self.redis = redis.Redis(connection_pool=pool,db=0)
-        # Rserver status
-        self.rserverstatus = False
-        # Tserver status
-        self.tserverstatus = False
         # 测试次数
         self.times = args.times
         if self.times == 0:
             raise ValueError("times不能为0")
         #hkey
         self.tname = self.ser.name + "status"
-        #成功与失败次数统计
-        self.success = 0
-        self.fail = 0
         #发送方设备名
         self.device_name = None
-        #二次建立确认tstatus
+        #接收端建立确认tstatus
         self.tstatus = None
         #写入的bytes_number
         self.bytes_number = None
