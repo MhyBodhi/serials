@@ -21,13 +21,15 @@
   2. 指定波特率
     `-b指定单个或多个波特率,多个以逗号分隔eg.-b 115200,9600,19200，默认值115200`
   3. 指定测试设备
-    `-n单个或多个设备，指定多个设备时为开启进程模式eg.-n /dev/ttyXRUSB0,/dev/ttyXRUSB1,/dev/ttyXRUSB2，必选参数，无默认值`
-  4. 指定测试源文件路径,本地或网络路径
-     `-p 指定本地或网络路径作为传输源文件,eg.-p /home/kylin/a.jpg or -p https://.../.../xxx.jpg`
-     `执行测试文件队列，文件间以逗号分隔,eg.-p /home/kylin/a.jpg,/home/kylin/a.txt,./a.doc`
-  5. 指定测试次数
+    `-n指定单个或多个设备，指定多个设备时为开启进程模式eg.-n /dev/ttyXRUSB0,/dev/ttyXRUSB1,/dev/ttyXRUSB2，必选参数，无默认值`
+  4. 指定redis服务器地址
+    `-ip指定redis服务器ip地址,eg.-ip 192.168.1.xxx,端口默认为6379`
+  5. 指定测试源文件路径,本地或网络路径
+    `-p 指定本地或网络路径作为传输源文件,eg.-p /home/kylin/a.jpg or -p https://.../.../xxx.jpg`
+    `执行测试文件队列，文件间以逗号分隔,eg.-p /home/kylin/a.jpg,/home/kylin/a.txt,./a.doc`
+  6. 指定测试次数
     `-c 指定测试次数number,eg.-c 10，默认值为10次`
-  6. 指定测试项
+  7. 指定测试项
      `-f 增加测试文件`
      `-a 增加测试Ascii码`
      `-s 增加测试传输速率`
