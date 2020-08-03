@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a69eca5-24d9-4eca-8fd6-1cdbbea8ac12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/serials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serials.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/__init__.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/__init__.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/basic/trbasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/trbasic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/company/install.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/main/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/main/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/run/rstart.bat" beforeDir="false" afterPath="$PROJECT_DIR$/company/run/rstart.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/run/tstart.bat" beforeDir="false" afterPath="$PROJECT_DIR$/company/run/tstart.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +59,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="serials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/company" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/company/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testredis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="serials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.testredis" />
       </list>
     </recent_temporary>
@@ -96,6 +127,7 @@
       <workItem from="1596371566991" duration="57000" />
       <workItem from="1596371653481" duration="168000" />
       <workItem from="1596371941957" duration="3097000" />
+      <workItem from="1596416768622" duration="13884000" />
     </task>
     <servers />
   </component>
@@ -115,28 +147,45 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="337" key="GridCell.Tab.0.bottom" timestamp="1596374062103">
+    <state width="1323" height="283" key="GridCell.Tab.0.bottom" timestamp="1596437866522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="337" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596374062103" />
-    <state width="1323" height="337" key="GridCell.Tab.0.center" timestamp="1596374062103">
+    <state width="1323" height="283" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596437866522" />
+    <state width="1323" height="283" key="GridCell.Tab.0.center" timestamp="1596437866522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="337" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596374062103" />
-    <state width="1323" height="337" key="GridCell.Tab.0.left" timestamp="1596374062103">
+    <state width="1323" height="283" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596437866522" />
+    <state width="1323" height="283" key="GridCell.Tab.0.left" timestamp="1596437866522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="337" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596374062103" />
-    <state width="1323" height="337" key="GridCell.Tab.0.right" timestamp="1596374062103">
+    <state width="1323" height="283" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596437866522" />
+    <state width="1323" height="283" key="GridCell.Tab.0.right" timestamp="1596437866522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="337" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596374062103" />
-    <state x="114" y="0" key="SettingsEditor" timestamp="1596371825449">
+    <state width="1323" height="283" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596437866522" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1596426129574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="114" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596371825449" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596426129574" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1596426129574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596426129574" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1596426129574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596426129574" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1596426129574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596426129574" />
+    <state x="114" y="0" key="SettingsEditor" timestamp="1596416815043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="114" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596416815043" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/serials$test.coverage" NAME="test Coverage Results" MODIFIED="1596427184917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/company" />
     <SUITE FILE_PATH="coverage/serials$testredis.coverage" NAME="testredis Coverage Results" MODIFIED="1596373808552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

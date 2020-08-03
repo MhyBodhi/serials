@@ -5,11 +5,26 @@ import argparse
 import redis
 from ready import os,main
 
+def init_files(server):
+    if server == "tr" or server == "r":
+        boolean = not os.path.exists("../report") or not os.path.exists("../resources")
+        if boolean:
+            if sys.platform=="win32":
+                os.system("cd .. & md report resources")
+            else:
+                os.system("cd .. && sudo mkdir resources report &> /dev/null")
+    # 清理生成的子报告
+    try:
+        for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
+            os.remove("../report/" + file)
+    except:pass
+    #清理总报告
+    try:
+        os.remove("../total.csv")
+    except:pass
+
 def start():
-    if sys.platform=="win32":
-        os.system("start ..\__init__.bat")
-    else:
-        os.system("bash ../__init__.sh")
+    baudrates = []
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--times",type=int,default=10, help="test_times:number")
     parser.add_argument("-n", "--devices", default=None, help="devices_name:eg./dev/ttyXRUSB0,/dev/ttyXRUSB1>...")
@@ -28,19 +43,7 @@ def start():
     parser.add_argument("-s",action='store_true', default=False, help="add Test transmission rate")
     #测试所有项
     parser.add_argument("-A",action='store_true', default=False, help="add Test All")
-    #清理生成的子报告
-    try:
-        for file in [file for file in os.listdir("../report/") if file.endswith("csv")]:
-            os.remove("../report/"+file)
-    except:
-        pass
-    try:
-        os.remove("../total.csv")
-    except:
-        pass
-    baudrates = []
     args = parser.parse_args()
-
     if (args.tr and args.r) or (args.tr and args.t):
         print("参数输入有误")
         parser.print_help()
@@ -74,6 +77,8 @@ def start():
         print("请输入设备名称,-n")
         parser.print_help()
         sys.exit()
+    #初始化文件
+    init_files(server)
     times = 1
     r = redis.Redis(host=args.redis.strip(), port=6379, decode_responses=True)
     for baudrate in baudrates:

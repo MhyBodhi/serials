@@ -128,7 +128,7 @@ class Basic():
                 files_rows = [
                     {"测试项": "md5", "次数": self.times, "传输文件名": file,
                      "大小(单位:字节B)": self.files_nature[file]["size"], "成功次数": success, "失败次数": self.times - success,
-                     "成功率": "%.2f%%" % (success / self.times * 100), "速率（KB/s）": "/",
+                     "成功率": "%.2f%%" % (success / self.times * 100), "速率（KB/s）": "%.2f"%(self.files_nature[file]["size"]/self.files_nature[file]["time"]/1024),
                      "单次传输所花时间（单位:秒s）": "%.2f" % (self.files_nature[file]["time"]),
                      },
                 ]
