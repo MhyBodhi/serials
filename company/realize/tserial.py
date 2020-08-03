@@ -28,7 +28,7 @@ class TSerial(Basic):
         if self.args.f:self.redis.hset(self.tname,"f",1)
         if self.args.a:self.redis.hset(self.tname,"a",1)
         if self.args.s:self.redis.hset(self.tname,"s",1)
-
+        #存储设备名
         if self.ser.name.endswith("0"):
             self.redis.hset("devices", "device0", self.ser.name)
         elif self.ser.name.endswith("1"):
