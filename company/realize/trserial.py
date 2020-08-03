@@ -237,11 +237,11 @@ class TRSerial(TRBasic):
                     yield result
                     if not result:
                         if len(self.startcontent) == 1:
-                            logging.info("单个ascii码"+str(times)+"次测试失败")
+                            logging.info("单个ascii码第"+str(times)+"次测试失败")
                         elif 1 < len(self.startcontent) < 256:
-                            logging.info("多个ascii码"+str(times)+"次测试失败")
+                            logging.info("多个ascii码第"+str(times)+"次测试失败")
                         elif len(self.startcontent) == 256:
-                            logging.info("全部ascii码" + str(times) + "次测试失败")
+                            logging.info("全部ascii码第" + str(times) + "次测试失败")
                 logging.info("read测试Ascii码完成")
             logging.info("read测试第"+str(times)+"次完成")
             times += 1
