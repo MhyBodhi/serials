@@ -37,7 +37,7 @@
 
 ### 例子
     1. 自收发
-        sudo python3 ../main/start.py -n /dev/ttySWK0 -tr -a -b 115200 -c 100 # 指定波特率测试100次ascii码
+        sudo python3 ../main/start.py -n /dev/ttySWK0 -tr -a -b 115200 -c 100 -ip 192.168.1.113 # 指定波特率测试100次ascii码
         sudo python3 ../main/start.py -n /dev/ttySWK0 -tr -a -b 115200,9600 -c 100 # 指定多个波特率测试100次ascii码`
         sudo python3 ../main/start.py -n /dev/ttySWK0 -tr -s -b 115200 # 指定波特率,测试速率
         sudo python3 ../main/start.py -n /dev/ttySWK0 -tr -f -b 115200 -p ../main/a.txt -c 10 # 传输文件
