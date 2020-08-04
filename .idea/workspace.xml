@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a69eca5-24d9-4eca-8fd6-1cdbbea8ac12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serials.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/basic/trbasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/trbasic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company/realize/rserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/rserial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/realize/tserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/tserial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/report/com7tr.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/resources/com7dst.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/company/resources/com7dst.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/rlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/company/rlog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <workItem from="1596416768622" duration="17332000" />
       <workItem from="1596446324997" duration="1595000" />
       <workItem from="1596464275309" duration="7394000" />
-      <workItem from="1596505695119" duration="2046000" />
+      <workItem from="1596505695119" duration="2769000" />
     </task>
     <servers />
   </component>

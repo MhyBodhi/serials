@@ -2228,3 +2228,140 @@
 2020-08-04 10:12:26,286 rserial.py[line:136] INFO 测试接收速率完成
 2020-08-04 10:12:26,287 rserial.py[line:205] INFO read测试接收速率完成
 2020-08-04 10:12:26,289 rserial.py[line:210] INFO receive over
+2020-08-04 10:24:52,051 rserial.py[line:214] INFO main receive...
+2020-08-04 10:24:52,052 rserial.py[line:42] INFO 与tserver未建立连接...
+2020-08-04 10:24:55,054 rserial.py[line:24] INFO ('包含设备名称数据：', '/dev/ttySWK0/dev/tty')
+2020-08-04 10:24:55,055 rserial.py[line:29] INFO ('设备名称:', '/dev/ttySWK0')
+2020-08-04 10:24:55,057 rserial.py[line:35] INFO 正在建立连接...
+2020-08-04 10:24:55,802 rserial.py[line:165] INFO start test receive ...
+2020-08-04 10:24:55,803 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:00,893 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:00,894 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:25:00,894 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:00,896 rserial.py[line:180] ERROR ('文件../main/a.jpg', '第1次md5失败')
+2020-08-04 10:25:00,897 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:13,770 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:13,771 rserial.py[line:78] INFO 接收文件大小(字节):30213
+2020-08-04 10:25:13,772 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:13,774 rserial.py[line:180] ERROR ('文件../main/a.txt', '第1次md5失败')
+2020-08-04 10:25:13,775 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:14,406 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:14,407 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:25:14,407 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:14,408 rserial.py[line:199] INFO read测试第1次完成
+2020-08-04 10:25:14,409 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:29,450 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:29,451 rserial.py[line:78] INFO 接收文件大小(字节):54277
+2020-08-04 10:25:29,452 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:29,453 rserial.py[line:180] ERROR ('文件../main/a.jpg', '第2次md5失败')
+2020-08-04 10:25:29,455 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:32,281 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:32,282 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:25:32,283 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:32,285 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:32,914 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:32,915 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:25:32,915 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:32,917 rserial.py[line:199] INFO read测试第2次完成
+2020-08-04 10:25:32,919 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:37,926 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:37,926 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:25:37,927 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:37,930 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:40,749 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:40,750 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:25:40,751 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:40,753 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:41,372 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:41,373 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:25:41,374 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:41,377 rserial.py[line:199] INFO read测试第3次完成
+2020-08-04 10:25:41,378 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:46,404 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:46,405 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:25:46,406 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:46,409 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:49,217 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:49,218 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:25:49,219 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:49,221 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:49,847 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:49,848 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:25:49,849 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:49,852 rserial.py[line:199] INFO read测试第4次完成
+2020-08-04 10:25:49,853 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:54,868 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:54,869 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:25:54,870 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:54,873 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:57,671 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:57,671 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:25:57,672 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:57,675 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:25:58,296 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:25:58,297 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:25:58,298 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:25:58,300 rserial.py[line:199] INFO read测试第5次完成
+2020-08-04 10:25:58,302 rserial.py[line:210] INFO receive over
+2020-08-04 10:35:20,483 rserial.py[line:214] INFO main receive...
+2020-08-04 10:35:20,484 rserial.py[line:42] INFO 与tserver未建立连接...
+2020-08-04 10:35:23,485 rserial.py[line:24] INFO ('包含设备名称数据：', '/dev/ttySWK0/dev/tty')
+2020-08-04 10:35:23,485 rserial.py[line:29] INFO ('设备名称:', '/dev/ttySWK0')
+2020-08-04 10:35:23,486 rserial.py[line:35] INFO 正在建立连接...
+2020-08-04 10:35:23,702 rserial.py[line:165] INFO start test receive ...
+2020-08-04 10:35:23,703 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:28,725 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:28,726 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:35:28,726 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:28,729 rserial.py[line:180] ERROR ('文件../main/a.jpg', '第1次md5失败')
+2020-08-04 10:35:28,730 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:31,738 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:31,739 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:35:31,740 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:31,742 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:32,387 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:32,388 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:35:32,389 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:32,391 rserial.py[line:199] INFO read测试第1次完成
+2020-08-04 10:35:32,392 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:37,424 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:37,425 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:35:37,426 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:37,428 rserial.py[line:180] ERROR ('文件../main/a.jpg', '第2次md5失败')
+2020-08-04 10:35:37,430 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:40,243 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:40,244 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:35:40,245 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:40,248 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:40,889 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:40,890 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:35:40,893 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:40,897 rserial.py[line:199] INFO read测试第2次完成
+2020-08-04 10:35:40,898 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:45,929 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:45,929 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:35:45,930 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:45,933 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:58,715 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:58,716 rserial.py[line:78] INFO 接收文件大小(字节):30213
+2020-08-04 10:35:58,717 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:58,718 rserial.py[line:180] ERROR ('文件../main/a.txt', '第3次md5失败')
+2020-08-04 10:35:58,720 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:35:59,355 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:35:59,357 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:35:59,358 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:35:59,362 rserial.py[line:199] INFO read测试第3次完成
+2020-08-04 10:35:59,363 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:36:04,370 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:36:04,371 rserial.py[line:78] INFO 接收文件大小(字节):54405
+2020-08-04 10:36:04,373 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:36:04,377 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:36:07,389 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:36:07,391 rserial.py[line:78] INFO 接收文件大小(字节):30405
+2020-08-04 10:36:07,393 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:36:07,396 rserial.py[line:53] INFO 测试接收文件...
+2020-08-04 10:36:08,018 rserial.py[line:76] INFO 接收文件完成
+2020-08-04 10:36:08,019 rserial.py[line:78] INFO 接收文件大小(字节):6628
+2020-08-04 10:36:08,020 rserial.py[line:83] INFO 测试接收文件完成
+2020-08-04 10:36:08,025 rserial.py[line:199] INFO read测试第4次完成
+2020-08-04 10:36:08,027 rserial.py[line:53] INFO 测试接收文件...
