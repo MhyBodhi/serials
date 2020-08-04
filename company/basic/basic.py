@@ -92,7 +92,7 @@ class Basic():
 
         device_baudrate = ["设备名", self.ser.name, "波特率", self.ser.baudrate]
 
-        headers = ["测试项", "次数", "传输文件名", "大小(单位:字节B)", "成功次数", "失败次数", "成功率", "速率（KB/s）", "单次平均传输所花时间（单位:秒s）"]
+        headers = ["测试项", "次数", "传输文件名", "大小(单位:字节B)", "成功次数", "失败次数", "成功率", "速率（KB/s）", "平均单次传输所花时间（单位:秒s）"]
         report_dicts = []
         # 统计Ascii码
         if self.args.a or self.args.A:
@@ -102,15 +102,15 @@ class Basic():
             ascii_rows = [
                 {"测试项": "单个ascii码", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": self.sc_success, "失败次数": self.sc_fail,
-                 "成功率": "%.2f%%" % (sc_percent), "速率（KB/s）": "/", "单次平均传输所花时间（单位:秒s）": "/",
+                 "成功率": "%.2f%%" % (sc_percent), "速率（KB/s）": "/", "平均单次传输所花时间（单位:秒s）": "/",
                  },
                 {"测试项": "多个ascii码", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": self.mc_success, "失败次数": self.mc_fail,
-                 "成功率": "%.2f%%" % (mc_percent), "速率（KB/s）": "/", "单次平均传输所花时间（单位:秒s）": "/",
+                 "成功率": "%.2f%%" % (mc_percent), "速率（KB/s）": "/", "平均单次传输所花时间（单位:秒s）": "/",
                  },
                 {"测试项": "全部ascii码", "次数": self.times, "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": self.ac_success, "失败次数": self.ac_fail,
-                 "成功率": "%.2f%%" % (ac_percent), "速率（KB/s）": "/", "单次平均传输所花时间（单位:秒s）": "/",
+                 "成功率": "%.2f%%" % (ac_percent), "速率（KB/s）": "/", "平均单次传输所花时间（单位:秒s）": "/",
                  },
             ]
             report_dicts.extend(ascii_rows)
@@ -124,7 +124,7 @@ class Basic():
                     {"测试项": "md5", "次数": self.times, "传输文件名": file,
                      "大小(单位:字节B)": self.files_nature[file]["size"], "成功次数": success, "失败次数": self.times - success,
                      "成功率": "%.2f%%"%(success/self.times*100), "速率（KB/s）": "%.2f"%(float(self.files_nature[file]["size"])/transmit_time/1024),
-                     "单次平均传输所花时间（单位:秒s）": "%.2f"%transmit_time,
+                     "平均单次传输所花时间（单位:秒s）": "%.2f"%transmit_time,
                      },
                 ]
                 report_dicts.extend(files_rows)
@@ -140,11 +140,11 @@ class Basic():
             speed_rows = [
                 {"测试项": "发送速率", "次数": "/", "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": "/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": "%.2f" % send_speed, "单次平均传输所花时间（单位:秒s）": "/",
+                 "成功率": "/", "速率（KB/s）": "%.2f" % send_speed, "平均单次传输所花时间（单位:秒s）": "/",
                  },
                 {"测试项": "接收速率", "次数": "/", "传输文件名": "/",
                  "大小(单位:字节B)": "/", "成功次数": "/", "失败次数": "/",
-                 "成功率": "/", "速率（KB/s）": receive_speed, "单次平均传输所花时间（单位:秒s）": "/",
+                 "成功率": "/", "速率（KB/s）": receive_speed, "平均单次传输所花时间（单位:秒s）": "/",
                  },
             ]
             report_dicts.extend(speed_rows)
