@@ -179,7 +179,7 @@ class RSerial(Basic):
                     else:
                         logging.error(("文件%s"%url,"第"+str(times)+"次md5失败"))
                     #累计当前文件传输时间
-                    self.files_nature[url]["time"] += int(self.redis.hget(self.tstatus,"send_time"))+self.receive_time
+                    self.files_nature[url]["time"] += float(self.redis.hget(self.tstatus,"send_time"))+self.receive_time
                     #启动接收文件功能
                     self.redis.hset(self.tstatus, "fileenable", 1)
                     # 执行初始化下次测试

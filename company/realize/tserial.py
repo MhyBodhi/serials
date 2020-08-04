@@ -115,8 +115,8 @@ class TSerial(Basic):
                             start_time = time.time()
                             self.bytes_number = self.ser.write(data)
                             end_time = time.time()
-                            self.redis.hset(self.tname,"send_time",int(self.redis.hget(self.tname,"send_time"))+end_time-start_time)
-                            self.redis.hset(self.tname, {"bytes_number":self.bytes_number,"trstatus": "read"})
+                            self.redis.hset(self.tname,"send_time",float(self.redis.hget(self.tname,"send_time"))+end_time-start_time)
+                            self.redis.hmset(self.tname, {"bytes_number":self.bytes_number,"trstatus": "read"})
                         except serial.serialutil.SerialTimeoutException as e:
                             self.srcfile.close()
                             self.redis.hmset(self.tname, {"srcmd5": self.getFileMd5(self.srcpath),"trstatus":"read","fileenable": 0})
