@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a69eca5-24d9-4eca-8fd6-1cdbbea8ac12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/basic/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/basic/basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/resources/com7dst.doc" beforeDir="false" afterPath="$PROJECT_DIR$/company/resources/com7dst.doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/resources/com7dst.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/company/resources/com7dst.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/resources/com7dst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/company/resources/com7dst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company/rlog.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/realize/rserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/rserial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/realize/tserial.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/realize/tserial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +123,7 @@
       <workItem from="1596446324997" duration="1595000" />
       <workItem from="1596464275309" duration="7394000" />
       <workItem from="1596505695119" duration="4354000" />
+      <workItem from="1599098828050" duration="224000" />
     </task>
     <servers />
   </component>

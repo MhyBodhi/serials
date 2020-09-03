@@ -80,12 +80,11 @@ class TSerial(Basic):
                 raise FileNotFoundError
 
     def initConnect(self):
+        logging.info("连接rserver...")
         # 与rserver建立连接初始化...
         while True:
-            logging.info("连接rserver...")
             if self.redis.hget(self.tname, "read") == "0" and self.redis.hget(self.tname, "end") == "1":
                 self.redis.hset(self.tname, "write", 1)
-                logging.info("与rserver没有建立连接...")
                 while True:
                     logging.info(("发送本机设备名称...", self.ser.name))
                     self.ser.write(self.ser.name.encode("utf-8"))

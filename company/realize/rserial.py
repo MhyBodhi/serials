@@ -14,6 +14,7 @@ class RSerial(Basic):
         self.dstpath = None
 
     def ininConnect(self):
+        logging.info("连接tserver...")
         #建立连接...
         while True:
             self.devices = self.redis.hvals("devices")
@@ -35,11 +36,9 @@ class RSerial(Basic):
                     logging.info("正在建立连接...")
                     break
                 else:
-                    logging.info("缓冲区收到数据...")
-                    logging.info("与tserver未建立连接...")
+                    logging.info("缓冲区收到数据...不支持该波特率...")
                     time.sleep(1)
             else:
-                logging.info("与tserver未建立连接...")
                 time.sleep(3)
 
         # 清理input缓冲区
